@@ -3,7 +3,7 @@
 	<info>
 		<name>Fighter</name>
 		<update version="0.3.9">
-			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/classes/class-fighter.xml" />
+			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-fighter.xml" />
 		</update>
 	</info>
 
