@@ -2,12 +2,14 @@
 <elements>
 	<info>
 		<name>Elf</name>
-		<update version="0.2">
+		<update version="0.21">
 			<file name="race-elf.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-elf.xml" />
 		</update>
 	</info>
 
 	<element name="Elf" type="Race" source="Player’s Handbook" id="ID_RACE_ELF">
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>
 			<h4>SLENDER AND GRACEFUL</h4>

@@ -4,13 +4,15 @@
 		<name>Gnome</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="race-gnome.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-gnome.xml" />
 		</update>
 	</info>
 
   <element name="Gnome" type="Race" source="Player’s Handbook" id="ID_RACE_GNOME">
-    <description>
+    <requirements>ID_GODS_LIVING</requirements>
+	<compendium display="false" />
+	<description>
       <p class="flavor">A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.</p>
 
       <h4>VIBRANT EXPRESSION</h4>

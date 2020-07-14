@@ -3,9 +3,10 @@
 	<info>
 		<name>Deities</name>
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>Deities from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.23">
+		<update version="0.24">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/deities.xml" />
 		</update>
 	</info>	
@@ -26,6 +27,7 @@
 	</element>
 	<element name="Auril" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AURIL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of winter</p>
 		</description>
@@ -42,6 +44,7 @@
 	</element>
 	<element name="Azuth" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AZUTH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of wizards</p>
 		</description>
@@ -58,6 +61,7 @@
 	</element>
 	<element name="Bane" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BANE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of tyranny</p>
 		</description>
@@ -74,6 +78,7 @@
 	</element>
 	<element name="Beshaba" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BESHABA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of misfortune</p>
 		</description>
@@ -90,6 +95,7 @@
 	</element>
 	<element name="Bhaal" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BHAAL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of murder</p>
 		</description>
@@ -106,6 +112,7 @@
 	</element>
 	<element name="Chauntea" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHAUNTEA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of agriculture</p>
 		</description>
@@ -122,6 +129,7 @@
 	</element>
 	<element name="Cyric" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CYRIC">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of lies</p>
 		</description>
@@ -138,6 +146,7 @@
 	</element>
 	<element name="Deneir" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DENEIR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of writing</p>
 		</description>
@@ -154,6 +163,7 @@
 	</element>
 	<element name="Eldath" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ELDATH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of peace</p>
 		</description>
@@ -170,6 +180,7 @@
 	</element>
 	<element name="Gond" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GOND">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -186,6 +197,7 @@
 	</element>
 	<element name="Helm" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HELM">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of protection</p>
 		</description>
@@ -202,6 +214,7 @@
 	</element>
 	<element name="Ilmater" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ILMATER">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of endurance</p>
 		</description>
@@ -218,6 +231,7 @@
 	</element>
 	<element name="Kelemvor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KELEMVOR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of the dead</p>
 		</description>
@@ -234,6 +248,7 @@
 	</element>
 	<element name="Lathander" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LATHANDER">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of birth and renewal</p>
 		</description>
@@ -250,6 +265,7 @@
 	</element>
 	<element name="Leira" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LEIRA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of illusion</p>
 		</description>
@@ -266,6 +282,7 @@
 	</element>
 	<element name="Lliira" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LLIIRA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of joy</p>
 		</description>
@@ -282,6 +299,7 @@
 	</element>
 	<element name="Loviatar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LOVIATAR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of pain</p>
 		</description>
@@ -298,6 +316,7 @@
 	</element>
 	<element name="Malar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MALAR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of the hunt</p>
 		</description>
@@ -314,6 +333,7 @@
 	</element>
 	<element name="Mask" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MASK">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of thieves</p>
 		</description>
@@ -330,6 +350,7 @@
 	</element>
 	<element name="Mielikki" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MIELIKKI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of forests</p>
 		</description>
@@ -346,6 +367,7 @@
 	</element>
 	<element name="Milil" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MILIL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of poetry and song</p>
 		</description>
@@ -362,6 +384,7 @@
 	</element>
 	<element name="Myrkul" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MYRKUL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of death</p>
 		</description>
@@ -378,6 +401,7 @@
 	</element>
 	<element name="Mystra" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MYSTRA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of magic</p>
 		</description>
@@ -394,6 +418,7 @@
 	</element>
 	<element name="Oghma" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OGHMA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of knowledge</p>
 		</description>
@@ -410,6 +435,7 @@
 	</element>
 	<element name="Savras" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SAVRAS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of divination and fate</p>
 		</description>
@@ -426,6 +452,7 @@
 	</element>
 	<element name="Selune" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SELUNE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of the moon</p>
 		</description>
@@ -442,6 +469,7 @@
 	</element>
 	<element name="Shar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SHAR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of darkness and loss</p>
 		</description>
@@ -458,6 +486,7 @@
 	</element>
 	<element name="Silvanus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SILVANUS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of wild nature</p>
 		</description>
@@ -474,6 +503,7 @@
 	</element>
 	<element name="Sune" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SUNE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of love and beauty</p>
 		</description>
@@ -490,6 +520,7 @@
 	</element>
 	<element name="Talona" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TALONA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of disease and poison</p>
 		</description>
@@ -506,6 +537,7 @@
 	</element>
 	<element name="Talos" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TALOS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of storms</p>
 		</description>
@@ -522,6 +554,7 @@
 	</element>
 	<element name="Tempus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TEMPUS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of war</p>
 		</description>
@@ -538,6 +571,7 @@
 	</element>
 	<element name="Torm" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TORM">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of courage and self-sacrifice</p>
 		</description>
@@ -554,6 +588,7 @@
 	</element>
 	<element name="Tymora" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TYMORA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of good fortune</p>
 		</description>
@@ -570,6 +605,7 @@
 	</element>
 	<element name="Tyr" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TYR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of justice</p>
 		</description>
@@ -586,6 +622,7 @@
 	</element>
 	<element name="Umberlee" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_UMBERLEE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of the sea</p>
 		</description>
@@ -602,6 +639,7 @@
 	</element>
 	<element name="Waukeen" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_WAUKEEN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of trade</p>
 		</description>
@@ -620,6 +658,7 @@
 	<!-- Greyhawk -->
 	<element name="Beory" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BEORY">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of nature</p>
 		</description>
@@ -636,6 +675,7 @@
 	</element>
 	<element name="Boccob" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BOCCOB">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of magic</p>
 		</description>
@@ -652,6 +692,7 @@
 	</element>
 	<element name="Celestian" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CELESTIAN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of stars and wanderers</p>
 		</description>
@@ -668,6 +709,7 @@
 	</element>
 	<element name="Ehlonna" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_EHLONNA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of woodlands</p>
 		</description>
@@ -684,6 +726,7 @@
 	</element>
 	<element name="Erythnul" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ERYTHNUL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of envy and slaughter</p>
 		</description>
@@ -700,6 +743,7 @@
 	</element>
 	<element name="Fharlanghn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_FHARLANGHN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of horizons and travel</p>
 		</description>
@@ -716,6 +760,7 @@
 	</element>
 	<element name="Heironeous" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HEIRONEOUS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of chivalry and valor</p>
 		</description>
@@ -732,6 +777,7 @@
 	</element>
 	<element name="Hextor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HEXTOR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of war and discord</p>
 		</description>
@@ -748,6 +794,7 @@
 	</element>
 	<element name="Kord" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KORD">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of athletics and sport</p>
 		</description>
@@ -764,6 +811,7 @@
 	</element>
 	<element name="Incabulos" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_INCABULOS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of plague and famine</p>
 		</description>
@@ -780,6 +828,7 @@
 	</element>
 	<element name="Istus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ISTUS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of fate and destiny</p>
 		</description>
@@ -796,6 +845,7 @@
 	</element>
 	<element name="luz" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LUZ">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of pain and oppression</p>
 		</description>
@@ -812,6 +862,7 @@
 	</element>
 	<element name="Nerull" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_NERULL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of death</p>
 		</description>
@@ -828,6 +879,7 @@
 	</element>
 	<element name="Obad-Hai" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OBAD_HAI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of nature</p>
 		</description>
@@ -844,6 +896,7 @@
 	</element>
 	<element name="Olidammara" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OLIDAMMARA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of revelry</p>
 		</description>
@@ -860,6 +913,7 @@
 	</element>
 	<element name="Pelor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PELOR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of the sun and healing</p>
 		</description>
@@ -876,6 +930,7 @@
 	</element>
 	<element name="Pholtus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PHOLTUS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of light and law</p>
 		</description>
@@ -892,6 +947,7 @@
 	</element>
 	<element name="Ralishaz" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RALISHAZ">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of ill luck and insanity</p>
 		</description>
@@ -908,6 +964,7 @@
 	</element>
 	<element name="Rao" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RAO">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of peace and reason</p>
 		</description>
@@ -924,6 +981,7 @@
 	</element>
 	<element name="St. Cuthbert" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ST_CUTHBERT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of common sense and zeal</p>
 		</description>
@@ -940,6 +998,7 @@
 	</element>
 	<element name="Tharizdun" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THARIZDUN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of eternal darkness</p>
 		</description>
@@ -956,6 +1015,7 @@
 	</element>
 	<element name="Trithereon" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TRITHEREON">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of liberty and retribution</p>
 		</description>
@@ -972,6 +1032,7 @@
 	</element>
 	<element name="Ulaa" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ULAA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of hills and mountains</p>
 		</description>
@@ -988,6 +1049,7 @@
 	</element>
 	<element name="Vecna" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_VECNA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of evil secrets</p>
 		</description>
@@ -1004,6 +1066,7 @@
 	</element>
 	<element name="Wee Jas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_WEE_JAS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of magic and death</p>
 		</description>
@@ -1022,6 +1085,7 @@
 	<!-- Dragonlance -->
 	<element name="Paladine" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PALADINE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of rulers and guardians</p>
 		</description>
@@ -1038,6 +1102,7 @@
 	</element>
 	<element name="Branchala" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BRANCHALA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of music</p>
 		</description>
@@ -1054,6 +1119,7 @@
 	</element>
 	<element name="Habbakuk" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HABBAKUK">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of animal life and the sea</p>
 		</description>
@@ -1070,6 +1136,7 @@
 	</element>
 	<element name="Kiri-Jolith" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KIRI_JOLITH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of honor and war</p>
 		</description>
@@ -1086,6 +1153,7 @@
 	</element>
 	<element name="Majere" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MAJERE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of meditation and order</p>
 		</description>
@@ -1102,6 +1170,7 @@
 	</element>
 	<element name="Mishakal" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MISHAKAL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of healing</p>
 		</description>
@@ -1118,6 +1187,7 @@
 	</element>
 	<element name="Solinari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SOLINARI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of good magic</p>
 		</description>
@@ -1134,6 +1204,7 @@
 	</element>
 	<element name="Gilean" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GILEAN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of knowledge</p>
 		</description>
@@ -1150,6 +1221,7 @@
 	</element>
 	<element name="Chislev" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHISLEV">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of nature</p>
 		</description>
@@ -1166,6 +1238,7 @@
 	</element>
 	<element name="Reorx" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_REORX">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -1182,6 +1255,7 @@
 	</element>
 	<element name="Shinare" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SHINARE">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of wealth and trade</p>
 		</description>
@@ -1198,6 +1272,7 @@
 	</element>
 	<element name="Sirrion" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SIRRION">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of fire and change</p>
 		</description>
@@ -1214,6 +1289,7 @@
 	</element>
 	<element name="Zivilyn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ZIVILYN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of wisdom</p>
 		</description>
@@ -1230,6 +1306,7 @@
 	</element>
 	<element name="Lunitari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LUNITARI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of neutral magic</p>
 		</description>
@@ -1246,6 +1323,7 @@
 	</element>
 	<element name="Takhisis" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TAKHISIS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of night and hatred</p>
 		</description>
@@ -1262,6 +1340,7 @@
 	</element>
 	<element name="Chemosh" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHEMOSH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of the undead</p>
 		</description>
@@ -1278,6 +1357,7 @@
 	</element>
 	<element name="Hiddukel" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HIDDUKEL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of lies and greed</p>
 		</description>
@@ -1294,6 +1374,7 @@
 	</element>
 	<element name="Morgion" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MORGION">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of disease and secrecy</p>
 		</description>
@@ -1310,6 +1391,7 @@
 	</element>
 	<element name="Sargonnas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SARGONNAS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of vengeance and fire</p>
 		</description>
@@ -1326,6 +1408,7 @@
 	</element>
 	<element name="Zeboim" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ZEBOIM">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of the sea and storms</p>
 		</description>
@@ -1342,6 +1425,7 @@
 	</element>
 	<element name="Nuitari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_NUITARI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of evil magic</p>
 		</description>
@@ -1360,6 +1444,7 @@
 	<!-- Eberron -->
 	<element name="Arawai" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ARAWAI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of fertility</p>
 		</description>
@@ -1376,6 +1461,7 @@
 	</element>
 	<element name="Aureon" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AUREON">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of law and knowledge</p>
 		</description>
@@ -1392,6 +1478,7 @@
 	</element>
 	<element name="Balinor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BALINOR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of beasts and the hunt</p>
 		</description>
@@ -1408,6 +1495,7 @@
 	</element>
 	<element name="Boldrei" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BOLDREI">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of community and home</p>
 		</description>
@@ -1424,6 +1512,7 @@
 	</element>
 	<element name="Dol Arrah" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DOL_ARRAH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of sunlight and honor</p>
 		</description>
@@ -1440,6 +1529,7 @@
 	</element>
 	<element name="Dol Dorn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DOL_DORN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of strength at arms</p>
 		</description>
@@ -1456,6 +1546,7 @@
 	</element>
 	<element name="Kol Korran" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KOL_KORRAN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of trade and wealth</p>
 		</description>
@@ -1472,6 +1563,7 @@
 	</element>
 	<element name="Olladra" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OLLADRA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of good fortune</p>
 		</description>
@@ -1488,6 +1580,7 @@
 	</element>
 	<element name="Onatar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ONATAR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -1504,6 +1597,7 @@
 	</element>
 	<element name="The Devourer" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_DEVOURER">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of nature’s wrath</p>
 		</description>
@@ -1520,6 +1614,7 @@
 	</element>
 	<element name="The Fury" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_FURY">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goddess of wrath and madness</p>
 		</description>
@@ -1536,6 +1631,7 @@
 	</element>
 	<element name="The Keeper" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_KEEPER">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of greed and death</p>
 		</description>
@@ -1552,6 +1648,7 @@
 	</element>
 	<element name="The Mockery" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_MOCKERY">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of violence and treachery</p>
 		</description>
@@ -1568,6 +1665,7 @@
 	</element>
 	<element name="The Shadow" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SHADOW">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of dark magic</p>
 		</description>
@@ -1584,6 +1682,7 @@
 	</element>
 	<element name="The Traveler" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_TRAVELER">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">deity of chaos and change</p>
 		</description>
@@ -1600,6 +1699,7 @@
 	</element>
 	<element name="The Silver Flame" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SILVER_FLAME">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">deity of protection and good</p>
 		</description>
@@ -1616,6 +1716,7 @@
 	</element>
 	<element name="The Blood of Vol" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_BLOOD_OF_VOL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">philosophy of immortality and undeath</p>
 		</description>
@@ -1632,6 +1733,7 @@
 	</element>
 	<element name="Cults of the Dragon Below" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CULTS_OF_THE_DRAGON_BELOW">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">deities of madness</p>
 		</description>
@@ -1648,6 +1750,7 @@
 	</element>
 	<element name="The Path of Light" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_PATH_OF_LIGHT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">philosophy of light and self-improvement</p>
 		</description>
@@ -1664,6 +1767,7 @@
 	</element>
 	<element name="The Undying Court" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_UNDYING_COURT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">elven ancestors</p>
 		</description>
@@ -1680,6 +1784,7 @@
 	</element>
 	<element name="The Spirits of the Past" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SPIRITS_OF_THE_PAST">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">elven ancestors</p>
 		</description>
@@ -1698,6 +1803,7 @@
 	<!-- Forgotten Realms -->
 	<element name="Bahamut" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BAHAMUT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">dragon god of good</p>
 		</description>
@@ -1714,6 +1820,7 @@
 	</element>
 	<element name="Blibdoolpoolp" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BLIBDOOLPOOLP">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">kuo-toa goddess</p>
 		</description>
@@ -1730,6 +1837,7 @@
 	</element>
 	<element name="Corellon Larethian" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CORELLON_LARETHIAN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">elf deity of art and magic</p>
 		</description>
@@ -1746,6 +1854,7 @@
 	</element>
 	<element name="Deep Sashelas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DEEP_SASHELAS">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">elf god of the sea</p>
 		</description>
@@ -1762,6 +1871,7 @@
 	</element>
 	<element name="Eadro" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_EADRO">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">merfolk deity of the sea</p>
 		</description>
@@ -1778,6 +1888,7 @@
 	</element>
 	<element name="Garl Glittergold" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GARL_GLITTERGOLD">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">gnome god of trickery and wiles</p>
 		</description>
@@ -1794,6 +1905,7 @@
 	</element>
 	<element name="Grolantor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GROLANTOR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">hill giant god of war</p>
 		</description>
@@ -1810,6 +1922,7 @@
 	</element>
 	<element name="Gruumsh" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GRUUMSH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">orc god of storms and war</p>
 		</description>
@@ -1826,6 +1939,7 @@
 	</element>
 	<element name="Hruggek" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HRUGGEK">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">bugbear god of violence</p>
 		</description>
@@ -1842,6 +1956,7 @@
 	</element>
 	<element name="Kurtulmak" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KURTULMAK">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">kobold god of war and mining</p>
 		</description>
@@ -1858,6 +1973,7 @@
 	</element>
 	<element name="Laogzed" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LAOGZED">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">troglodyte god of hunger</p>
 		</description>
@@ -1874,6 +1990,7 @@
 	</element>
 	<element name="Lolth" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LOLTH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">drow goddess of spiders</p>
 		</description>
@@ -1890,6 +2007,7 @@
 	</element>
 	<element name="Maglubiyet" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MAGLUBIYET">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">goblinoid god of war</p>
 		</description>
@@ -1906,6 +2024,7 @@
 	</element>
 	<element name="Moradin" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MORADIN">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">dwarf god of creation</p>
 		</description>
@@ -1922,6 +2041,7 @@
 	</element>
 	<element name="Rillifane Rallathil" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RILLIFANE_RALLATHIL">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">wood elf god of nature</p>
 		</description>
@@ -1938,6 +2058,7 @@
 	</element>
 	<element name="Sehanine Moonbow" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEHANINE_MOONBOW">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">elf goddess of the moon</p>
 		</description>
@@ -1954,6 +2075,7 @@
 	</element>
 	<element name="Sekolah" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEKOLAH">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">sahuagin god of the hunt</p>
 		</description>
@@ -1970,6 +2092,7 @@
 	</element>
 	<element name="Semuanya" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEMUANYA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">lizardfolk deity of survival</p>
 		</description>
@@ -1986,6 +2109,7 @@
 	</element>
 	<element name="Skerrit" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SKERRIT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">centaur and satyr god of nature</p>
 		</description>
@@ -2002,6 +2126,7 @@
 	</element>
 	<element name="Skoraeus Stonebones" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SKORAEUS_STONEBONES">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of stone giants and art</p>
 		</description>
@@ -2018,6 +2143,7 @@
 	</element>
 	<element name="Surtur" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SURTUR">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of fire giants and craft</p>
 		</description>
@@ -2034,6 +2160,7 @@
 	</element>
 	<element name="Thrym" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THRYM">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">god of frost giants and strength</p>
 		</description>
@@ -2050,6 +2177,7 @@
 	</element>
 	<element name="Tiamat" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TIAMAT">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">dragon goddess of evil</p>
 		</description>
@@ -2066,6 +2194,7 @@
 	</element>
 	<element name="Yondalla" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_YONDALLA">
 		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">halfling goddess of fertility and protection</p>
 		</description>

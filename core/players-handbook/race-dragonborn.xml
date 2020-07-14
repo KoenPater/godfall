@@ -4,12 +4,14 @@
 		<name>Dragonborn</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-dragonborn.xml" />
 		</update>
 	</info>
 	
 	<element name="Dragonborn" type="Race" source="Player’s Handbook" id="ID_RACE_DRAGONBORN">
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p class="flavor">Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</p>
 			<h4>PROUD DRAGONKIN</h4>
