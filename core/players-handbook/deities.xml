@@ -2,13 +2,26 @@
 <elements>
 	<info>
 		<name>Deities</name>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>Deities from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.2">
+		<update version="0.21">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/deities.xml" />
 		</update>
-	</info>
+	</info>	
+	<element name="The Dead Gods" type="Deity" source="Player’s Handbook" id="ID_GODFALL_DEAD_GODS">
+		<description>
+			<p class="flavor">The dead gods</p>
+		</description>
+		<setters>
+			<set name="setting">Godfall</set>
+		</setters>
+		<sheet>		
+			<description>The dead gods</description>
+		</sheet>
+	</element>
 	<element name="Auril" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AURIL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of winter</p>
 		</description>
@@ -19,11 +32,12 @@
 			<set name="symbol">Six-pointed snowflake</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of winter</description>
 		</sheet>
 	</element>
 	<element name="Azuth" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AZUTH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of wizards</p>
 		</description>
@@ -34,11 +48,12 @@
 			<set name="symbol">Left hand pointing upward, outlined in fire</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of wizards</description>
 		</sheet>
 	</element>
 	<element name="Bane" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BANE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of tyranny</p>
 		</description>
@@ -49,11 +64,12 @@
 			<set name="symbol">Upright black right hand, thumb and fingers together</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of tyranny</description>
 		</sheet>
 	</element>
 	<element name="Beshaba" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BESHABA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of misfortune</p>
 		</description>
@@ -64,11 +80,12 @@
 			<set name="symbol">Black antlers</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of misfortune</description>
 		</sheet>
 	</element>
 	<element name="Bhaal" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BHAAL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of murder</p>
 		</description>
@@ -79,11 +96,12 @@
 			<set name="symbol">Skull surrounded by a ring of blood droplets</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of murder</description>
 		</sheet>
 	</element>
 	<element name="Chauntea" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHAUNTEA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of agriculture</p>
 		</description>
@@ -94,11 +112,12 @@
 			<set name="symbol">Sheaf of grain or a blooming rose over grain</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of agriculture</description>
 		</sheet>
 	</element>
 	<element name="Cyric" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CYRIC">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of lies</p>
 		</description>
@@ -109,11 +128,12 @@
 			<set name="symbol">White jawless skull on black or purple sunburst</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of lies</description>
 		</sheet>
 	</element>
 	<element name="Deneir" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DENEIR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of writing</p>
 		</description>
@@ -124,11 +144,12 @@
 			<set name="symbol">Lit candle above an open eye</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of writing</description>
 		</sheet>
 	</element>
 	<element name="Eldath" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ELDATH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of peace</p>
 		</description>
@@ -139,11 +160,12 @@
 			<set name="symbol">Waterfall plunging into still pool</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of peace</description>
 		</sheet>
 	</element>
 	<element name="Gond" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GOND">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -154,11 +176,12 @@
 			<set name="symbol">Toothed cog with four spokes</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of craft</description>
 		</sheet>
 	</element>
 	<element name="Helm" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HELM">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of protection</p>
 		</description>
@@ -169,11 +192,12 @@
 			<set name="symbol">Staring eye on upright left gauntlet</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of protection</description>
 		</sheet>
 	</element>
 	<element name="Ilmater" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ILMATER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of endurance</p>
 		</description>
@@ -184,11 +208,12 @@
 			<set name="symbol">Hands bound at the wrist with red cord</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of endurance</description>
 		</sheet>
 	</element>
 	<element name="Kelemvor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KELEMVOR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of the dead</p>
 		</description>
@@ -199,11 +224,12 @@
 			<set name="symbol">Upright skeletal arm holding balanced scales</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of the dead</description>
 		</sheet>
 	</element>
 	<element name="Lathander" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LATHANDER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of birth and renewal</p>
 		</description>
@@ -214,11 +240,12 @@
 			<set name="symbol">Road traveling into a sunrise</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of birth and renewal</description>
 		</sheet>
 	</element>
 	<element name="Leira" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LEIRA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of illusion</p>
 		</description>
@@ -229,11 +256,12 @@
 			<set name="symbol">Point-down triangle containing a swirl of mist</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of illusion</description>
 		</sheet>
 	</element>
 	<element name="Lliira" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LLIIRA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of joy</p>
 		</description>
@@ -244,11 +272,12 @@
 			<set name="symbol">Triangle of three six-pointed stars</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of joy</description>
 		</sheet>
 	</element>
 	<element name="Loviatar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LOVIATAR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of pain</p>
 		</description>
@@ -259,11 +288,12 @@
 			<set name="symbol">Nine-tailed barbed scourge</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of pain</description>
 		</sheet>
 	</element>
 	<element name="Malar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MALAR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of the hunt</p>
 		</description>
@@ -274,11 +304,12 @@
 			<set name="symbol">Clawed paw</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of the hunt</description>
 		</sheet>
 	</element>
 	<element name="Mask" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MASK">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of thieves</p>
 		</description>
@@ -289,11 +320,12 @@
 			<set name="symbol">Black mask</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of thieves</description>
 		</sheet>
 	</element>
 	<element name="Mielikki" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MIELIKKI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of forests</p>
 		</description>
@@ -304,11 +336,12 @@
 			<set name="symbol">Unicorn’s head</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of forests</description>
 		</sheet>
 	</element>
 	<element name="Milil" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MILIL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of poetry and song</p>
 		</description>
@@ -319,11 +352,12 @@
 			<set name="symbol">Five-stringed harp made of leaves</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of poetry and song</description>
 		</sheet>
 	</element>
 	<element name="Myrkul" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MYRKUL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of death</p>
 		</description>
@@ -334,11 +368,12 @@
 			<set name="symbol">White human skull</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of death</description>
 		</sheet>
 	</element>
 	<element name="Mystra" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MYSTRA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of magic</p>
 		</description>
@@ -349,11 +384,12 @@
 			<set name="symbol">Circle of seven stars, or nine stars encircling a flowing red mist, or a single star</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of magic</description>
 		</sheet>
 	</element>
 	<element name="Oghma" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OGHMA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of knowledge</p>
 		</description>
@@ -364,11 +400,12 @@
 			<set name="symbol">Blank scroll</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of knowledge</description>
 		</sheet>
 	</element>
 	<element name="Savras" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SAVRAS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of divination and fate</p>
 		</description>
@@ -379,11 +416,12 @@
 			<set name="symbol">Crystal ball containing many kinds of eyes</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of divination and fate</description>
 		</sheet>
 	</element>
 	<element name="Selune" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SELUNE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of the moon</p>
 		</description>
@@ -394,11 +432,12 @@
 			<set name="symbol">Pair of eyes surrounded by seven stars</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of the moon</description>
 		</sheet>
 	</element>
 	<element name="Shar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SHAR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of darkness and loss</p>
 		</description>
@@ -409,11 +448,12 @@
 			<set name="symbol">Black disk encircled with a border</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of darkness and loss</description>
 		</sheet>
 	</element>
 	<element name="Silvanus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SILVANUS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of wild nature</p>
 		</description>
@@ -424,11 +464,12 @@
 			<set name="symbol">Oak leaf</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of wild nature</description>
 		</sheet>
 	</element>
 	<element name="Sune" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SUNE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of love and beauty</p>
 		</description>
@@ -439,11 +480,12 @@
 			<set name="symbol">Face of a beautiful red-haired woman</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of love and beauty</description>
 		</sheet>
 	</element>
 	<element name="Talona" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TALONA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of disease and poison</p>
 		</description>
@@ -454,11 +496,12 @@
 			<set name="symbol">Three teardrops on a triangle</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of disease and poison</description>
 		</sheet>
 	</element>
 	<element name="Talos" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TALOS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of storms</p>
 		</description>
@@ -469,11 +512,12 @@
 			<set name="symbol">Three lightning bolts radiating from a central point</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of storms</description>
 		</sheet>
 	</element>
 	<element name="Tempus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TEMPUS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of war</p>
 		</description>
@@ -484,11 +528,12 @@
 			<set name="symbol">Upright flaming sword</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of war</description>
 		</sheet>
 	</element>
 	<element name="Torm" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TORM">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of courage and self-sacrifice</p>
 		</description>
@@ -499,11 +544,12 @@
 			<set name="symbol">White right gauntlet</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of courage and self-sacrifice</description>
 		</sheet>
 	</element>
 	<element name="Tymora" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TYMORA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of good fortune</p>
 		</description>
@@ -514,11 +560,12 @@
 			<set name="symbol">Face-up coin</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of good fortune</description>
 		</sheet>
 	</element>
 	<element name="Tyr" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TYR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of justice</p>
 		</description>
@@ -529,11 +576,12 @@
 			<set name="symbol">Balanced scales resting on a warhammer</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of justice</description>
 		</sheet>
 	</element>
 	<element name="Umberlee" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_UMBERLEE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of the sea</p>
 		</description>
@@ -544,11 +592,12 @@
 			<set name="symbol">Wave curling left and right</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of the sea</description>
 		</sheet>
 	</element>
 	<element name="Waukeen" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_WAUKEEN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of trade</p>
 		</description>
@@ -559,13 +608,14 @@
 			<set name="symbol">Upright coin with Waukeen’s profile facing left</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of trade</description>
 		</sheet>
 	</element>
 
 	<!-- Greyhawk -->
 	<element name="Beory" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BEORY">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of nature</p>
 		</description>
@@ -576,11 +626,12 @@
 			<set name="symbol">Green disk</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of nature</description>
 		</sheet>
 	</element>
 	<element name="Boccob" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BOCCOB">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of magic</p>
 		</description>
@@ -591,11 +642,12 @@
 			<set name="symbol">Eye within a pentagram</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of magic</description>
 		</sheet>
 	</element>
 	<element name="Celestian" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CELESTIAN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of stars and wanderers</p>
 		</description>
@@ -606,11 +658,12 @@
 			<set name="symbol">Arc of seven stars inside a circle</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of stars and wanderers</description>
 		</sheet>
 	</element>
 	<element name="Ehlonna" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_EHLONNA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of woodlands</p>
 		</description>
@@ -621,11 +674,12 @@
 			<set name="symbol">Unicorn horn</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of woodlands</description>
 		</sheet>
 	</element>
 	<element name="Erythnul" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ERYTHNUL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of envy and slaughter</p>
 		</description>
@@ -636,11 +690,12 @@
 			<set name="symbol">Blood drop</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of envy and slaughter</description>
 		</sheet>
 	</element>
 	<element name="Fharlanghn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_FHARLANGHN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of horizons and travel</p>
 		</description>
@@ -651,11 +706,12 @@
 			<set name="symbol">Circle crossed by a curved horizon line</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of horizons and travel</description>
 		</sheet>
 	</element>
 	<element name="Heironeous" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HEIRONEOUS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of chivalry and valor</p>
 		</description>
@@ -666,11 +722,12 @@
 			<set name="symbol">Lightning bolt</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of chivalry and valor</description>
 		</sheet>
 	</element>
 	<element name="Hextor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HEXTOR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of war and discord</p>
 		</description>
@@ -681,11 +738,12 @@
 			<set name="symbol">Six arrows facing downward in a fan</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of war and discord</description>
 		</sheet>
 	</element>
 	<element name="Kord" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KORD">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of athletics and sport</p>
 		</description>
@@ -696,11 +754,12 @@
 			<set name="symbol">Four spears and four maces radiating out from a central point</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of athletics and sport</description>
 		</sheet>
 	</element>
 	<element name="Incabulos" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_INCABULOS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of plague and famine</p>
 		</description>
@@ -711,11 +770,12 @@
 			<set name="symbol">Reptilian eye with a horizontal diamond</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of plague and famine</description>
 		</sheet>
 	</element>
 	<element name="Istus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ISTUS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of fate and destiny</p>
 		</description>
@@ -726,11 +786,12 @@
 			<set name="symbol">Weaver's spindle with three strands</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of fate and destiny</description>
 		</sheet>
 	</element>
 	<element name="luz" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LUZ">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of pain and oppression</p>
 		</description>
@@ -741,11 +802,12 @@
 			<set name="symbol">Grinning human skull</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of pain and oppression</description>
 		</sheet>
 	</element>
 	<element name="Nerull" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_NERULL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of death</p>
 		</description>
@@ -756,11 +818,12 @@
 			<set name="symbol">Skull with either a sickle or a scythe</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of death</description>
 		</sheet>
 	</element>
 	<element name="Obad-Hai" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OBAD_HAI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of nature</p>
 		</description>
@@ -771,11 +834,12 @@
 			<set name="symbol">Oak leaf and acorn</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of nature</description>
 		</sheet>
 	</element>
 	<element name="Olidammara" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OLIDAMMARA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of revelry</p>
 		</description>
@@ -786,11 +850,12 @@
 			<set name="symbol">Laughing mask</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of revelry</description>
 		</sheet>
 	</element>
 	<element name="Pelor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PELOR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of the sun and healing</p>
 		</description>
@@ -801,11 +866,12 @@
 			<set name="symbol">Sun</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of the sun and healing</description>
 		</sheet>
 	</element>
 	<element name="Pholtus" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PHOLTUS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of light and law</p>
 		</description>
@@ -816,11 +882,12 @@
 			<set name="symbol">Silver sun or full moon partially eclipsed by a smaller crescent moon</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of light and law</description>
 		</sheet>
 	</element>
 	<element name="Ralishaz" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RALISHAZ">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of ill luck and insanity</p>
 		</description>
@@ -831,11 +898,12 @@
 			<set name="symbol">Three bone fate-casting sticks</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of ill luck and insanity</description>
 		</sheet>
 	</element>
 	<element name="Rao" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RAO">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of peace and reason</p>
 		</description>
@@ -846,11 +914,12 @@
 			<set name="symbol">White heart</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of peace and reason</description>
 		</sheet>
 	</element>
 	<element name="St. Cuthbert" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ST_CUTHBERT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of common sense and zeal</p>
 		</description>
@@ -861,11 +930,12 @@
 			<set name="symbol">Circle at the center of a starburst of lines</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of common sense and zeal</description>
 		</sheet>
 	</element>
 	<element name="Tharizdun" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THARIZDUN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of eternal darkness</p>
 		</description>
@@ -876,11 +946,12 @@
 			<set name="symbol">Dark spiral or inverted ziggurat</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of eternal darkness</description>
 		</sheet>
 	</element>
 	<element name="Trithereon" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TRITHEREON">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of liberty and retribution</p>
 		</description>
@@ -891,11 +962,12 @@
 			<set name="symbol">Triskelion</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of liberty and retribution</description>
 		</sheet>
 	</element>
 	<element name="Ulaa" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ULAA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of hills and mountains</p>
 		</description>
@@ -906,11 +978,12 @@
 			<set name="symbol">Mountain with a circle at its heart</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of hills and mountains</description>
 		</sheet>
 	</element>
 	<element name="Vecna" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_VECNA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of evil secrets</p>
 		</description>
@@ -921,11 +994,12 @@
 			<set name="symbol">Hand with eye in the palm</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of evil secrets</description>
 		</sheet>
 	</element>
 	<element name="Wee Jas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_WEE_JAS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of magic and death</p>
 		</description>
@@ -936,13 +1010,14 @@
 			<set name="symbol">Red skull in front of fireball</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of magic and death</description>
 		</sheet>
 	</element>
 
 	<!-- Dragonlance -->
 	<element name="Paladine" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_PALADINE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of rulers and guardians</p>
 		</description>
@@ -953,11 +1028,12 @@
 			<set name="symbol">Silver triangle</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of rulers and guardians</description>
 		</sheet>
 	</element>
 	<element name="Branchala" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BRANCHALA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of music</p>
 		</description>
@@ -968,11 +1044,12 @@
 			<set name="symbol">Bard’s harp</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of music</description>
 		</sheet>
 	</element>
 	<element name="Habbakuk" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HABBAKUK">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of animal life and the sea</p>
 		</description>
@@ -983,11 +1060,12 @@
 			<set name="symbol">Blue bird</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of animal life and the sea</description>
 		</sheet>
 	</element>
 	<element name="Kiri-Jolith" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KIRI_JOLITH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of honor and war</p>
 		</description>
@@ -998,11 +1076,12 @@
 			<set name="symbol">Bison’s horns</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of honor and war</description>
 		</sheet>
 	</element>
 	<element name="Majere" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MAJERE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of meditation and order</p>
 		</description>
@@ -1013,11 +1092,12 @@
 			<set name="symbol">Copper spider</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of meditation and order</description>
 		</sheet>
 	</element>
 	<element name="Mishakal" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MISHAKAL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of healing</p>
 		</description>
@@ -1028,11 +1108,12 @@
 			<set name="symbol">Blue infinity sign</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of healing</description>
 		</sheet>
 	</element>
 	<element name="Solinari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SOLINARI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of good magic</p>
 		</description>
@@ -1043,11 +1124,12 @@
 			<set name="symbol">White circle or sphere</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of good magic</description>
 		</sheet>
 	</element>
 	<element name="Gilean" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GILEAN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of knowledge</p>
 		</description>
@@ -1058,11 +1140,12 @@
 			<set name="symbol">Open book</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of knowledge</description>
 		</sheet>
 	</element>
 	<element name="Chislev" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHISLEV">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of nature</p>
 		</description>
@@ -1073,11 +1156,12 @@
 			<set name="symbol">Feather</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of nature</description>
 		</sheet>
 	</element>
 	<element name="Reorx" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_REORX">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -1088,11 +1172,12 @@
 			<set name="symbol">Forging hammer</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of craft</description>
 		</sheet>
 	</element>
 	<element name="Shinare" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SHINARE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of wealth and trade</p>
 		</description>
@@ -1103,11 +1188,12 @@
 			<set name="symbol">Griffon’s wing</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of wealth and trade</description>
 		</sheet>
 	</element>
 	<element name="Sirrion" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SIRRION">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of fire and change</p>
 		</description>
@@ -1118,11 +1204,12 @@
 			<set name="symbol">Multi-colored fire</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of fire and change</description>
 		</sheet>
 	</element>
 	<element name="Zivilyn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ZIVILYN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of wisdom</p>
 		</description>
@@ -1133,11 +1220,12 @@
 			<set name="symbol">Great green or gold tree</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of wisdom</description>
 		</sheet>
 	</element>
 	<element name="Lunitari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LUNITARI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of neutral magic</p>
 		</description>
@@ -1148,11 +1236,12 @@
 			<set name="symbol">Red circle or sphere</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of neutral magic</description>
 		</sheet>
 	</element>
 	<element name="Takhisis" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TAKHISIS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of night and hatred</p>
 		</description>
@@ -1163,11 +1252,12 @@
 			<set name="symbol">Black crescent</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of night and hatred</description>
 		</sheet>
 	</element>
 	<element name="Chemosh" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CHEMOSH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of the undead</p>
 		</description>
@@ -1178,11 +1268,12 @@
 			<set name="symbol">Yellow skull</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of the undead</description>
 		</sheet>
 	</element>
 	<element name="Hiddukel" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HIDDUKEL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of lies and greed</p>
 		</description>
@@ -1193,11 +1284,12 @@
 			<set name="symbol">Broken merchant’s scales</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of lies and greed</description>
 		</sheet>
 	</element>
 	<element name="Morgion" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MORGION">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of disease and secrecy</p>
 		</description>
@@ -1208,11 +1300,12 @@
 			<set name="symbol">Hood with two red eyes</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of disease and secrecy</description>
 		</sheet>
 	</element>
 	<element name="Sargonnas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SARGONNAS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of vengeance and fire</p>
 		</description>
@@ -1223,11 +1316,12 @@
 			<set name="symbol">Stylized red condor</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of vengeance and fire</description>
 		</sheet>
 	</element>
 	<element name="Zeboim" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ZEBOIM">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of the sea and storms</p>
 		</description>
@@ -1238,11 +1332,12 @@
 			<set name="symbol">Turtle shell</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of the sea and storms</description>
 		</sheet>
 	</element>
 	<element name="Nuitari" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_NUITARI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of evil magic</p>
 		</description>
@@ -1253,13 +1348,14 @@
 			<set name="symbol">Black circle or sphere</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of evil magic</description>
 		</sheet>
 	</element>
 
 	<!-- Eberron -->
 	<element name="Arawai" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ARAWAI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of fertility</p>
 		</description>
@@ -1270,11 +1366,12 @@
 			<set name="symbol">Sheaf of wheat tied with green ribbon</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of fertility</description>
 		</sheet>
 	</element>
 	<element name="Aureon" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AUREON">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of law and knowledge</p>
 		</description>
@@ -1285,11 +1382,12 @@
 			<set name="symbol">Open tome</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of law and knowledge</description>
 		</sheet>
 	</element>
 	<element name="Balinor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BALINOR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of beasts and the hunt</p>
 		</description>
@@ -1300,11 +1398,12 @@
 			<set name="symbol">Pair of antlers</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of beasts and the hunt</description>
 		</sheet>
 	</element>
 	<element name="Boldrei" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BOLDREI">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of community and home</p>
 		</description>
@@ -1315,11 +1414,12 @@
 			<set name="symbol">Fire in a stone hearth</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of community and home</description>
 		</sheet>
 	</element>
 	<element name="Dol Arrah" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DOL_ARRAH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of sunlight and honor</p>
 		</description>
@@ -1330,11 +1430,12 @@
 			<set name="symbol">Rising sun</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of sunlight and honor</description>
 		</sheet>
 	</element>
 	<element name="Dol Dorn" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DOL_DORN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of strength at arms</p>
 		</description>
@@ -1345,11 +1446,12 @@
 			<set name="symbol">Longsword crossed over a shield</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of strength at arms</description>
 		</sheet>
 	</element>
 	<element name="Kol Korran" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KOL_KORRAN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of trade and wealth</p>
 		</description>
@@ -1360,11 +1462,12 @@
 			<set name="symbol">Nine-sided gold coin</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of trade and wealth</description>
 		</sheet>
 	</element>
 	<element name="Olladra" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_OLLADRA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of good fortune</p>
 		</description>
@@ -1375,11 +1478,12 @@
 			<set name="symbol">Domino</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of good fortune</description>
 		</sheet>
 	</element>
 	<element name="Onatar" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_ONATAR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of craft</p>
 		</description>
@@ -1390,11 +1494,12 @@
 			<set name="symbol">Crossed hammer and tongs</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of craft</description>
 		</sheet>
 	</element>
 	<element name="The Devourer" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_DEVOURER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of nature’s wrath</p>
 		</description>
@@ -1405,11 +1510,12 @@
 			<set name="symbol">Bundle of five sharpened bones</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of nature’s wrath</description>
 		</sheet>
 	</element>
 	<element name="The Fury" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_FURY">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goddess of wrath and madness</p>
 		</description>
@@ -1420,11 +1526,12 @@
 			<set name="symbol">Winged wyrm with woman’s head and upper body</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goddess of wrath and madness</description>
 		</sheet>
 	</element>
 	<element name="The Keeper" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_KEEPER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of greed and death</p>
 		</description>
@@ -1435,11 +1542,12 @@
 			<set name="symbol">Dragonshard stone in the shape of a fang</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of greed and death</description>
 		</sheet>
 	</element>
 	<element name="The Mockery" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_MOCKERY">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of violence and treachery</p>
 		</description>
@@ -1450,11 +1558,12 @@
 			<set name="symbol">Five blood-spattered tools</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of violence and treachery</description>
 		</sheet>
 	</element>
 	<element name="The Shadow" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SHADOW">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of dark magic</p>
 		</description>
@@ -1465,11 +1574,12 @@
 			<set name="symbol">Obsidian tower</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of dark magic</description>
 		</sheet>
 	</element>
 	<element name="The Traveler" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_TRAVELER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">deity of chaos and change</p>
 		</description>
@@ -1480,11 +1590,12 @@
 			<set name="symbol">Four crossed, rune-inscribed bones</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>deity of chaos and change</description>
 		</sheet>
 	</element>
 	<element name="The Silver Flame" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SILVER_FLAME">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">deity of protection and good</p>
 		</description>
@@ -1495,11 +1606,12 @@
 			<set name="symbol">Flame drawn on silver or molded from silver</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>deity of protection and good</description>
 		</sheet>
 	</element>
 	<element name="The Blood of Vol" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_BLOOD_OF_VOL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">philosophy of immortality and undeath</p>
 		</description>
@@ -1510,11 +1622,12 @@
 			<set name="symbol">Stylized dragon skull on red teardrop gem</set>
 			<set name="gender">philosophy of immortality and undeath</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>philosophy of immortality and undeath</description>
 		</sheet>
 	</element>
 	<element name="Cults of the Dragon Below" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CULTS_OF_THE_DRAGON_BELOW">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">deities of madness</p>
 		</description>
@@ -1525,11 +1638,12 @@
 			<set name="symbol">Varies</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>deities of madness</description>
 		</sheet>
 	</element>
 	<element name="The Path of Light" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_PATH_OF_LIGHT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">philosophy of light and self-improvement</p>
 		</description>
@@ -1540,11 +1654,12 @@
 			<set name="symbol">Brilliant crystal</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>philosophy of light and self-improvement</description>
 		</sheet>
 	</element>
 	<element name="The Undying Court" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_UNDYING_COURT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">elven ancestors</p>
 		</description>
@@ -1555,11 +1670,12 @@
 			<set name="symbol">Varies</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>elven ancestors</description>
 		</sheet>
 	</element>
 	<element name="The Spirits of the Past" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THE_SPIRITS_OF_THE_PAST">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">elven ancestors</p>
 		</description>
@@ -1570,13 +1686,14 @@
 			<set name="symbol">Varies</set>
 			<set name="gender"></set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>elven ancestors</description>
 		</sheet>
 	</element>
 
 	<!-- Forgotten Realms -->
 	<element name="Bahamut" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BAHAMUT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">dragon god of good</p>
 		</description>
@@ -1587,11 +1704,12 @@
 			<set name="symbol">Dragon’s head in profile</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>dragon god of good</description>
 		</sheet>
 	</element>
 	<element name="Blibdoolpoolp" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_BLIBDOOLPOOLP">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">kuo-toa goddess</p>
 		</description>
@@ -1602,11 +1720,12 @@
 			<set name="symbol">Lobster head or black pearl</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>kuo-toa goddess</description>
 		</sheet>
 	</element>
 	<element name="Corellon Larethian" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_CORELLON_LARETHIAN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">elf deity of art and magic</p>
 		</description>
@@ -1617,11 +1736,12 @@
 			<set name="symbol">Quarter moon or starburst</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>elf deity of art and magic</description>
 		</sheet>
 	</element>
 	<element name="Deep Sashelas" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_DEEP_SASHELAS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">elf god of the sea</p>
 		</description>
@@ -1632,11 +1752,12 @@
 			<set name="symbol">Dolphin</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>elf god of the sea</description>
 		</sheet>
 	</element>
 	<element name="Eadro" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_EADRO">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">merfolk deity of the sea</p>
 		</description>
@@ -1647,11 +1768,12 @@
 			<set name="symbol">Spiral design</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>merfolk deity of the sea</description>
 		</sheet>
 	</element>
 	<element name="Garl Glittergold" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GARL_GLITTERGOLD">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">gnome god of trickery and wiles</p>
 		</description>
@@ -1662,11 +1784,12 @@
 			<set name="symbol">Gold nugget</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>gnome god of trickery and wiles</description>
 		</sheet>
 	</element>
 	<element name="Grolantor" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GROLANTOR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">hill giant god of war</p>
 		</description>
@@ -1677,11 +1800,12 @@
 			<set name="symbol">Wooden club</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>hill giant god of war</description>
 		</sheet>
 	</element>
 	<element name="Gruumsh" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_GRUUMSH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">orc god of storms and war</p>
 		</description>
@@ -1692,11 +1816,12 @@
 			<set name="symbol">Unblinking eye</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>orc god of storms and war</description>
 		</sheet>
 	</element>
 	<element name="Hruggek" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HRUGGEK">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">bugbear god of violence</p>
 		</description>
@@ -1707,11 +1832,12 @@
 			<set name="symbol">Morningstar</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>bugbear god of violence</description>
 		</sheet>
 	</element>
 	<element name="Kurtulmak" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_KURTULMAK">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">kobold god of war and mining</p>
 		</description>
@@ -1722,11 +1848,12 @@
 			<set name="symbol">Gnome skull</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>kobold god of war and mining</description>
 		</sheet>
 	</element>
 	<element name="Laogzed" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LAOGZED">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">troglodyte god of hunger</p>
 		</description>
@@ -1737,11 +1864,12 @@
 			<set name="symbol">Image of the lizard/toad god</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>troglodyte god of hunger</description>
 		</sheet>
 	</element>
 	<element name="Lolth" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_LOLTH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">drow goddess of spiders</p>
 		</description>
@@ -1752,11 +1880,12 @@
 			<set name="symbol">Spider</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>drow goddess of spiders</description>
 		</sheet>
 	</element>
 	<element name="Maglubiyet" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MAGLUBIYET">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">goblinoid god of war</p>
 		</description>
@@ -1767,11 +1896,12 @@
 			<set name="symbol">Bloody axe</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>goblinoid god of war</description>
 		</sheet>
 	</element>
 	<element name="Moradin" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_MORADIN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">dwarf god of creation</p>
 		</description>
@@ -1782,11 +1912,12 @@
 			<set name="symbol">Hammer and anvil</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>dwarf god of creation</description>
 		</sheet>
 	</element>
 	<element name="Rillifane Rallathil" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_RILLIFANE_RALLATHIL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">wood elf god of nature</p>
 		</description>
@@ -1797,11 +1928,12 @@
 			<set name="symbol">Oak</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>wood elf god of nature</description>
 		</sheet>
 	</element>
 	<element name="Sehanine Moonbow" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEHANINE_MOONBOW">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">elf goddess of the moon</p>
 		</description>
@@ -1812,11 +1944,12 @@
 			<set name="symbol">Crescent moon</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>elf goddess of the moon</description>
 		</sheet>
 	</element>
 	<element name="Sekolah" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEKOLAH">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">sahuagin god of the hunt</p>
 		</description>
@@ -1827,11 +1960,12 @@
 			<set name="symbol">Shark</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>sahuagin god of the hunt</description>
 		</sheet>
 	</element>
 	<element name="Semuanya" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SEMUANYA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">lizardfolk deity of survival</p>
 		</description>
@@ -1842,11 +1976,12 @@
 			<set name="symbol">Egg</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>lizardfolk deity of survival</description>
 		</sheet>
 	</element>
 	<element name="Skerrit" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SKERRIT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">centaur and satyr god of nature</p>
 		</description>
@@ -1857,11 +1992,12 @@
 			<set name="symbol">Oak growing from acorn</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>centaur and satyr god of nature</description>
 		</sheet>
 	</element>
 	<element name="Skoraeus Stonebones" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SKORAEUS_STONEBONES">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of stone giants and art</p>
 		</description>
@@ -1872,11 +2008,12 @@
 			<set name="symbol">Stalactite</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of stone giants and art</description>
 		</sheet>
 	</element>
 	<element name="Surtur" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_SURTUR">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of fire giants and craft</p>
 		</description>
@@ -1887,11 +2024,12 @@
 			<set name="symbol">Flaming sword</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of fire giants and craft</description>
 		</sheet>
 	</element>
 	<element name="Thrym" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_THRYM">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">god of frost giants and strength</p>
 		</description>
@@ -1902,11 +2040,12 @@
 			<set name="symbol">White double-bladed axe</set>
 			<set name="gender">male</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>god of frost giants and strength</description>
 		</sheet>
 	</element>
 	<element name="Tiamat" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_TIAMAT">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">dragon goddess of evil</p>
 		</description>
@@ -1917,11 +2056,12 @@
 			<set name="symbol">Dragon head with five claw marks</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>dragon goddess of evil</description>
 		</sheet>
 	</element>
 	<element name="Yondalla" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_YONDALLA">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p class="flavor">halfling goddess of fertility and protection</p>
 		</description>
@@ -1932,7 +2072,7 @@
 			<set name="symbol">Shield</set>
 			<set name="gender">female</set>
 		</setters>
-		<sheet>
+		<sheet>		
 			<description>halfling goddess of fertility and protection</description>
 		</sheet>
 	</element>
