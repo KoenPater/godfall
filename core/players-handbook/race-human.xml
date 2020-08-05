@@ -4,53 +4,33 @@
 		<name>Human</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.2">
+		<update version="0.3.5">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-human.xml" />
 		</update>
 	</info>
 
   <element name="Human" type="Race" source="Player’s Handbook" id="ID_RACE_HUMAN">
     <description>
-      <p class="flavor">Although they lost much in the Fall, humanity remains the dominant civilized race on the continent of Tal Ahmur. Whether they seek to survive in the ruins of their once-great kingdom of Caladon, the savage frontier of the Verge, or the decadent city states of the Nightlands, humanity refuses to let their time be past.</p>
+      <p class="flavor">Although they lost much in the Fall, humans remain the dominant race on Tal Ahmur. Whether they seek to survive in the ruins of their once-great kingdom of Caladon, the savage frontier of the Verge, or the decadent city states of the Nightlands, humanity refuses to let their time be past.</p>
 
       <h4>HUMAN NAMES AND ETHNICITIES</h4>
-      <p class="indent">The humans on Tal Ahmur can usually trace their lineage to one or more of the four ethnic groups described below. You can use these groups and the typical names of their members as inspiration for your character.</p>
+      <p class="indent">The humans on Tal Ahmur can usually trace their lineage back to one or more of the ethnic groups described below. You can use these groups and the typical names of their members as inspiration for your character.</p>
 
       <h6>Caladonian</h6>
-      <p>Caladonians are tall, fair-skinned folk with blue or steely gray eyes. Most have blond hair, but black, red, or light brown are also common. They are known as industrious and driven (or just plain stubborn, depending on who you ask).</p>
-      <p>Once Caladonians held the mightiest kingdom on Tal Ahmur, renowned for its many knightly orders and esteemed academies. Then the heavens fell and Caladon was obliterated. Today many Caladonians make their living amidst the ruins of their former kingdom, banded together in isolated villages or small fortresses called holdfasts.</p>
-      <p><span class="feature">Caladonian Names:</span>(Male) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (female) Arveene, Esvele, Jhessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag</p>
+      <p>Caladonians are tall, fair-skinned folk with blue or steely gray eyes. Most have blond hair, but brown and red are also common. They are known as industrious and driven (or just plain stubborn, depending on who you ask).</p>
+      <p>Caladonians can be found all over the Afterworld, though they are most common in the east.</p>
+      <p><span class="feature">Caladonian Names:</span>(Male) Darvin, Dorn, Evendur, Geth, Helm, Malcer, Morn, Randal, Stedd; (female) Amafrey, Arveene, Esvele, Jhessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag</p>
 	  
-	  <h6>Calishite</h6>
-      <p>Shorter and slighter in build than most other humans, Calishites have dusky brown skin, hair, and eyes. They’re found primarily in southwest Faerûn.</p>
-      <p><span class="feature">Calishite Names:</span>(Male) Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, Jasmal, Meilil, Seipora, Yasheira, Zasheida; (surnames) Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</p>
-  
-      <h6>Chondathan</h6>
-      <p>Chondathans are slender, tawny-skinned folk with brown hair that ranges from almost blond to almost black. Most are tall and have green or brown eyes, but these traits are hardly universal. Humans of Chondathan descent dominate the central lands of Faerûn. around the Inner Sea.</p>
-      <p><span class="feature">Chondathan Names:</span>(Male) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (female) Arveene, Esvele, Jhessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag</p>
-  
-      <h6>Damaran</h6>
-      <p>Found primarily in the northwest of Faerûn, Damarans are of moderate height and build, with skin hues ranging from tawny to fair. Their hair is usually brown or black, and their eye color varies widely, though brown is most common.</p>
-      <p><span class="feature">Damaran Names:</span>(Male) Bor, Fodel, Glar, Grigor, Igan, Ivor, Kosef, Mival, Orel, Pavel, Sergor; (female) Alethra, Kara, Katernin, Mara, Natali, Olma, Tana, Zora; (surnames) Bersk, Chernin, Dotsk, Kulenov, Marsk, Nemetsk, Shemov, Starag</p>
-   
-      <h6>Mulan</h6>
-      <p>Dominant in the eastern and southeastern shores of the Inner Sea, the Mulan are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown, but in the lands where the Mulan are most prominent, nobles and many other Mulan shave off all their hair.</p>
-      <p><span class="feature">Mulan Names:</span>(Male) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt</p>
-  
-      <h6>Rashemi</h6>
-      <p>Most often found east of the Inner Sea and often intermingled with the Mulan, Rashemis tend to be short, stout, and muscular. They usually have dusky skin, dark eyes, and thick black hair.</p>
-      <p><span class="feature">Rashemi Names:</span>(Male) Borivik, Faurgar, Jandar, Kanithar, Madislak, Ralmevik, Shaumar, Vladislak; (female) Fyevarra, Hulmarra, Immith, Imzel, Navarra, Shevarra, Tammith. Yuldra; (surnames) Chergoba, Dyernina, Iltazyara, Murnyethara, Stayanoga, Ulmokina</p>
-  
-      <h6>Shou</h6>
-      <p>The Shou are the most numerous and powerful ethnic group in Kara-Tur, far to the east of Faerûn. They are yellowish-bronze in hue, with black hair and dark eyes. Shou surnames are usually presented before the given name.</p>
-      <p><span class="feature">Shou Names:</span>(Male) An, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Wen; (female) Bai, Chao, Jia, Lei, Mei, Qiao, Shui, Tai; (surnames) Chien, Huang, Kao, Kung, Lao, Ling, Mei, Pin, Shin, Sum, Tan, Wan</p>
- 
-      <h6>Tethyrian</h6>
-      <p>Widespread along the entire Sword Coast at the western edge of Faerûn, Tethyrians are of medium build and height, with dusky skin that tends to grow fairer the farther north they dwell. Their hair and eye color varies widely, but brown hair and blue eyes are the most common. Tethyrians primarily use Chondathan names.</p>
-
-      <h6>Turami</h6>
-      <p>Native to the southern shore of the Inner Sea, the Turami people are generally tall and muscular, with dark mahogany skin, curly black hair, and dark eyes.</p>
-      <p><span class="feature">Turami Names:</span>(Male) Anton, Diero, Marcon, Pieron, Rimardo, Romero, Salazar, Umbero; (female) Balama, Dona, Faila, Jalana, Luisa, Marta, Quara, Selise, Vonda; (surnames) Agosto, Astorio, Calabra, Domine, Falone, Marivaldi, Pisacar, Ramondo</p>
+	  <h6>Mehrani</h6>
+	  <p>Shorter and slighter in build than most other humans, the Mehrani have dusky brown skin, hair, and eyes. They are often thought of as a passionate and quick-witted people, and are found primarily in the city states of the south.</p>
+      <p><span class="feature">Mehrani Names:</span>(Male) Aseir, Bardeid, Diero, Marcon, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, Jasmal, Meilil, Selise, Yasheira, Zasheida; (surnames) Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</p>
+      
+      <h6>Surati</h6>
+      <p>Dominant in the southwestern desert of Akain, the Surat are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown. They have high cheek bones and high-bridged noses. The Surat are a dutiful people that are rarely found outside their lands.</p>
+      <p><span class="feature">Surati Names:</span>(Male) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt</p>
+       
+       <h6>Chaskan</h6>
+       <p>The Chaska are the aboriginal inhabitants of Tal Ahmur, their bronze skin ranges from a lighter coppery hue to deep brown. Their hair tends to be wavy or curly, and from black to brown. They have strong, broad faces and sturdy builds. Chaskan culture has strong ties to the natural world. They can be most commonly found in the north and west.</p>
 
       <h4>HUMAN TRAITS</h4>
       <p>It’s hard to make generalizations about humans, but your human character has these traits.</p>
@@ -61,7 +41,7 @@
         <span class="feature">Alignment.</span>Humans tend toward no particular alignment. The best and the worst are found among them.<br />
         <span class="feature">Size.</span>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
         <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
-        <span class="feature">Languages.</span>You can speak, read, and write Common and one extra language of your choice.<br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common and one extra standard language of your choice.<br />
       </p>
       <div element="ID_RACE_VARIANT_HUMAN_VARIANT"/>
     </description>
@@ -81,11 +61,11 @@
       <stat name="intelligence" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
       <stat name="wisdom" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />
       <stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" />      
-      <select type="Proficiency" name="Skill Proficiency (Human Variant)" supports="Skill" />
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" requirements="!ID_RACE_VARIANT_HUMAN_VARIANT"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>	  
-      <select type="Language" name="Language (Human)" supports="Standard||Exotic" requirements="!ID_UA_PS_GRANTS_HUMAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
+      <select type="Language" name="Language (Human)" supports="Standard" requirements="!ID_UA_PS_GRANTS_HUMAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
       <select type="Race Variant" name="Human Variant" supports="Human" optional="true" />
     </rules>
   </element>
@@ -103,9 +83,9 @@
     </description>
     <sheet alt="Human" display="false"/>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (Human Variant)" supports="Human Variant" number="2" />
-	  <select type="Class Feature" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
-      <select type="Feat" name="Feat (Human Variant)" />
+      <select type="Racial Trait" name="Ability Score Increase (Human Specialist)" supports="Human Variant" number="2" />
+	  <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
+      <select type="Feat" name="Feat (Human)" />
     </rules>
   </element>
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/source.xml" />
+		</update>
+	</info>
+	<element name="Godfall Campaign Setting" type="Source" source="Core" id="ID_GF_SOURCE_GODFALL">
+		<description>
+			<![CDATA[<p>All rules unique to the Godfall setting.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">GFCS</set>
+			<set name="official">false</set>
+			<set name="core">true</set>
+			<set name="release">20170110</set>
+		</setters>
+	</element>
+</elements>

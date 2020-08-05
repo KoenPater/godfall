@@ -66,6 +66,6 @@
 		<file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
 		<file name="deities.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/deities.xml" />
 		<file name="companions.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/companions.xml" />
-<file name="custom.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/custom.xml" />
+		<file name="custom.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/custom.xml" />
 	</files>
 </index>
