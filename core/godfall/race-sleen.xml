@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Sleen</name>
-		<update version="0.2.5">
+		<update version="0.2.8">
 			<file name="race-sleen.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/race-sleen.xml" />
 		</update>
 	</info>
 	<element name="Sleen" type="Race" source="Godfall Campaign Setting" id="ID_GF_RACE_SLEEN">
 		<description>
-			<p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+			<p class="flavor">Sleen are slender humanoids with sinuous bodies and serpentine features, such as snake-like eyes, a forked tongue, and patches of scales on their skin. They’re regarded as sneaky and magical, and are popularly conceived of as a collection of thieves, sorcerers, or both. Their alluring charm and quick wit often allow them to win humans over regardless of this reputation, however. Sleen do not have a homeland, but instead live among humans, alone or in small conclaves, getting by selling magical trinkets, thieving, and sometimes, adventuring. Long ago, sleen claimed they ruled an empire that encompassed the world. There are many different stories on the nature of this empire, and why it eventually crumbled. Many sleen now believe it was somehow tied to the gods, who the sleen always believed favored the humans. With the gods' demise, these sleen believe their resurgence is imminent.</p>
 			<h4>SLEEN TRAITS</h4>
 			<p>Your sleen character has the following racial traits.</p>
 			<p>
@@ -28,6 +28,8 @@
 		  <!-- names taken from online generator to have at least a few names in here -->
 		  <set name="names" type="custom">Mektla, Zsolshih, Netstlia, Simal, Zsazshi, Zsoamish, Zhaktlishu, Hozsehsass, Zukholli, Yilshashlu, Yala, Totsziss</set>
 		  <set name="names-format">{{custom}}</set>
+          <set name="height" modifier="2d10">5'7"</set>
+		  <set name="weight" modifier="2d4">145 lb.</set>
 		</setters>
 		<rules>
 		  <stat name="charisma" value="2" />
@@ -35,6 +37,7 @@
 		  <stat name="dexterity" value="1" />
 		  <stat name="wisdom" value="-1" />
 		  <stat name="innate speed" value="30" bonus="base" />
+
 		  <grant type="Size" id="ID_SIZE_MEDIUM" />
 		  <grant type="Vision" id="ID_VISION_DARKVISION" />
 		  <grant type="Language" id="ID_LANGUAGE_COMMON" />
