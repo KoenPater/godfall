@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sleen</name>
-		<update version="0.2.4">
+		<update version="0.2.5">
 			<file name="race-sleen.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/race-sleen.xml" />
 		</update>
 	</info>
