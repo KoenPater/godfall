@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.5">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/source.xml" />
 		</update>
 	</info>
@@ -11,6 +11,7 @@
 		</description>
 		<setters>
 			<set name="url">http://dnd.wizards.com</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
 			<set name="abbreviation">GFCS</set>
 			<set name="official">false</set>
 			<set name="core">true</set>
