@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.4.5">
+    <update version="0.4.7">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -3494,7 +3494,7 @@
   <element name="Goodberry" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GOODBERRY">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p>
+      <p>Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. When you cast this spell again, any berries that have not been consumed lose their potency.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -3672,10 +3672,10 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Guiding Bolt" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GUIDING_BOLT">
+  <element name="Guiding Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GUIDING_BOLT">
     <supports>Cleric</supports>
     <description>
-      <p>A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p>
+      <p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects as well as an additional 3d6 radiant damage, as a flash of light erupts from the point of impact. Furthermore, the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
     </description>
     <setters>
@@ -3684,11 +3684,11 @@
       <set name="school">Evocation</set>
       <set name="time">1 action</set>
       <set name="duration">1 round</set>
-      <set name="range">120 feet</set>
+      <set name="range">5 feet</set>
       <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a weapon</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
@@ -5501,7 +5501,7 @@
       <set name="school">Conjuration</set>
       <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
-      <set name="range">10 feet</set>
+      <set name="range">15 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -5514,7 +5514,7 @@
     <supports>Bard, Druid, Sorcerer, Wizard</supports>
     <description>
       <p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.</p>
-      <p class="indent">The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.</p>
+      <p class="indent">The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or half the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.</p>
       <p class="indent">The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious.</p>
       <p class="indent">The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech.</p>
       <p class="indent">The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.</p>
@@ -6350,7 +6350,7 @@
   <element name="Shield" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHIELD">
     <supports>Sorcerer, Wizard</supports>
     <description>
-      <p>Reaction trigger: You are hit by an attack or targeted by the magic missile spell An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>
+      <p>Reaction trigger: You are hit by an attack or targeted by the magic missile spell. An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -6410,8 +6410,8 @@
   <element name="Shocking Grasp" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHOCKING_GRASP">
     <supports>Sorcerer, Wizard, Artificer</supports>
     <description>
-      <p>Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.</p>
-      <p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+      <p>Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d10 lightning damage, and it can’t take reactions until the start of its next turn.</p>
+      <p class="indent">The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
     </description>
     <setters>
       <set name="keywords">lightning</set>
@@ -6496,7 +6496,7 @@
   <element name="Sleep" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SLEEP">
     <supports>Bard, Sorcerer, Wizard</supports>
     <description>
-      <p>This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p>
+      <p>This spell sends creatures into a magical slumber. Roll 4d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p>
 	    <p class="indent">Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.</p>
 	    <p class="indent">Undead and creatures immune to being charmed aren’t affected by this spell.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.</p>
@@ -7252,7 +7252,7 @@
     <description>
       <p>Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent.</p>
       <p class="indent">This spell has no effect on a shapechanger or a creature with 0 hit points. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn’t affected by this spell.</p>
-      <p class="indent"><b><i>Creature into Creature.</i></b> If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target’s (or its level, if the target doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.</p>
+      <p class="indent"><b><i>Creature into Creature.</i></b> If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target’s (or half its level, if the target doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.</p>
       <p class="indent">The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious.</p>
       <p class="indent">The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.</p>
       <p class="indent">The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.</p>
@@ -7320,7 +7320,7 @@
   <element name="True Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TRUE_STRIKE">
     <supports>Bard, Sorcerer, Warlock, Wizard</supports>
     <description>
-      <p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended.</p>
+      <p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, your first attack roll against the target gains advantage and ignores all disadvantage, provided that this spell hasn’t ended.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -7446,7 +7446,7 @@
   <element name="Wall of Force" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WALL_OF_FORCE">
     <supports>Wizard</supports>
     <description>
-      <p>An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side).</p>
+      <p>An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.</p>
 	  <p class="indent">Nothing can physically pass through the wall. It is immune to all damage and can’t be dispelled by dispel magic. A disintegrate spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.</p>
     </description>
     <setters>
@@ -7716,8 +7716,8 @@
   <element name="Witch Bolt" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WITCH_BOLT">
     <supports>Sorcerer, Warlock, Wizard</supports>
     <description>
-      <p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+      <p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 2d8 lightning damage, and on each of your turns for the duration, you can use your action to deal 2d8 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is outside the spell’s range at the end of your turn or if it has total cover from you.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the initial and subsequent damage both increase by 1d8 for each slot level above 1st.</p>
     </description>
     <setters>
       <set name="keywords">lightning</set>

@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.5">
+		<update version="0.1.7">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -36,8 +36,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You can’t be surprised while you are conscious.
-			Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.</description>
+			<description>You can't be surprised while conscious. Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.</description>
 		</sheet>
 		<rules>
 			<stat name="initiative" value="5" />
@@ -48,13 +47,13 @@
 			<p>You have undergone extensive physical training to gain the following benefits:</p>
 			<ul>
 				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
-				<li>When you are prone, standing up uses only 5 feet of your movement.</li>
+				<li>When you are prone, standing up uses only 5 feet of your movement and doesn't provoke opportunity attacks.</li>
 				<li>Climbing doesn’t cost you extra movement.</li>
 				<li>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>When you are prone, standing up uses only 5 feet of your movement.
+			<description>When you are prone, standing up uses only 5 feet of your movement and doesn't provoke opportunity attacks.
 			Climbing doesn’t cost you extra movement.
 			You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</description>
 		</sheet>
@@ -64,38 +63,53 @@
 	</element>
 	<element name="Charger" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CHARGER">
 		<description>
-			<p>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature.</p>
-			<p class="indent">If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed).</p>
+		<p>You are eager to engage your foes, and know how to add the momentum of your charge to the power of your attack. You gain the following benefits:</p>
+		<ul>
+			<li>When you move at least 20 feet in a straight line to engage a target, the first melee weapon attack you make against that target gains a +5 bonus to damage. In addition, if this attacks hits the target must succeed at a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</li>
+			<li>As a bonus action, you can move up to 10 feet in a straight line to engage a target you were not already engaged with.</li>
+		</ul>
 		</description>
 		<sheet>
-			<description>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature.
-			If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed).</description>
+			<description>Moving at least 20 feet in a straight line before a melee weapon attack adds +5 damage and forces the target to succeed at a Strength saving throw (DC: {{charger:dc}}) or be knocked prone.
+			You can move up to 10 feet in a straight line to engage a target you were not already engaged with as a bonus action.</description>
 		</sheet>
+		<rules>
+			<stat name="charger:dc" value="8" />
+			<stat name="charger:dc" value="proficiency" />
+			<stat name="charger:dc" value="strength:modifier" />
+		</rules>
 	</element>
 	<element name="Crossbow Expert" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CROSSBOWEXPERT">
 		<description>
 			<p>Thanks to extensive practice with the crossbow, you gain the following benefits:</p>
 			<ul>
 				<li>You ignore the loading quality of crossbows with which you are proficient.</li>
-				<li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+				<li>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a crossbow.</li>
 				<li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding.</li>
 			</ul>			
 		</description>
 		<sheet>
 			<description>You ignore the loading quality of crossbows with which you are proficient.
-			Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.
+			You roll one additional weapon damage die when determining the extra damage for a critical hit with a crossbow.
 			When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding.</description>
 		</sheet>
 	</element>
+	<element name="Crowd Controller" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CROWD_CONTROLLER">
+		<description><p>Through force or tactical insight, you know how to get your enemies where you want them. You gain the following benefits:</p>
+		<ul>
+			<li>Increase your Strength or Intelligence score by 1, to a maximum of 20.</li>
+			<li>Whenever you push a creature 10 or more feet, you can push them an additional 5 feet.</li>
+			<li>Once during your turn, when you push a creature 10 or more feet, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</li>
+		</ul>
+		</description>
+	</element>
+
 	<element name="Defensive Duelist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
-		<prerequisite>Dexterity 13 or higher</prerequisite>
-		<requirements>[dex:13]</requirements>
 		<description>
-			<p><i>Prerequisite: Dexterity 13 or higher</i></p>
-			<p>When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</p>
+			<p>When you are wielding a melee weapon with which you are proficient and another creature of size Large or smaller hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</p>
 		</description>
 		<sheet>
-			<description>When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add {{defensive duelist:ac}} to your AC for that attack, potentially causing the attack to miss you.</description>
+			<description>When you are wielding a melee weapon with which you are proficient and another creature of size Large or smaller hits you with a melee attack, you can use your reaction to add {{defensive duelist:ac}} to your AC for that attack, potentially causing the attack to miss you.</description>
 		</sheet>
 		<rules>
 			<stat name="defensive duelist:ac" value="proficiency" />
