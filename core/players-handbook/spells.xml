@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.4.7">
+    <update version="0.4.9">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -10,8 +10,8 @@
   <element name="Acid Splash" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ACID_SPLASH">
     <supports>Sorcerer, Wizard, Artificer</supports>
     <description>
-      <p>You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.</p>
-      <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+      <p>You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d8 acid damage.</p>
+      <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
     </description>
     <setters>
       <set name="keywords">acid</set>
@@ -728,7 +728,7 @@
   <element name="Blade Ward" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BLADE_WARD">
     <supports>Bard, Sorcerer, Warlock, Wizard</supports>
     <description>
-      <p>You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.</p>
+      <p>You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, any weapon attack roll made against you has disadvantage, and you have resistance against any bludgeoning, piercing, and slashing damage it would do.</p>
     </description>
     <setters>
       <set name="keywords">resistance</set>
@@ -7320,20 +7320,20 @@
   <element name="True Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TRUE_STRIKE">
     <supports>Bard, Sorcerer, Warlock, Wizard</supports>
     <description>
-      <p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, your first attack roll against the target gains advantage and ignores all disadvantage, provided that this spell hasn’t ended.</p>
+      <p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. The first attack roll you make against the target gains advantage and ignores all disadvantage, provided that this spell hasn’t ended.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">0</set>
       <set name="school">Divination</set>
       <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 1 round</set>
+      <set name="duration">1 round</set>
       <set name="range">30 feet</set>
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
-      <set name="isConcentration">true</set>
+      <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
