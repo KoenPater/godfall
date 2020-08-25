@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.7">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/source.xml" />
 		</update>
 	</info>
-	<element name="Godfall Campaign Setting" type="Source" source="Core" id="ID_GF_SOURCE_GODFALL">
+	<element name="Godfall Campaign Setting" type="Source" source="Godfall Campaign Setting" id="ID_GF_SOURCE_GODFALL">
 		<description>
 			<![CDATA[<p>All rules unique to the Godfall setting.</p>]]>
 		</description>
@@ -14,7 +14,7 @@
 			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
 			<set name="abbreviation">GFCS</set>
 			<set name="official">false</set>
-			<set name="core">true</set>
+			<set name="core">false</set>
 			<set name="release">20170110</set>
 		</setters>
 	</element>
