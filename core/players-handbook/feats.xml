@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.7">
+		<update version="0.2.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -43,6 +43,8 @@
 		</rules>
 	</element>
 	<element name="Athlete" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ATHLETE">
+		<prerequisite>Proficiency in Acrobatics or Athletics</prerequisite>
+		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS||ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 		<description>
 			<p>You have undergone extensive physical training to gain the following benefits:</p>
 			<ul>
@@ -70,8 +72,8 @@
 		</ul>
 		</description>
 		<sheet>
-			<description>Moving at least 20 feet in a straight line before a melee weapon attack adds +5 damage and forces the target to succeed at a Strength saving throw (DC: {{charger:dc}}) or be knocked prone.
-			You can move up to 10 feet in a straight line to engage a target you were not already engaged with as a bonus action.</description>
+			<description>Moving at least 20 feet in a straight line before a melee weapon attack adds +5 damage and forces the target to succeed at a Strength saving throw (DC: {{charger:dc}}) or be knocked prone.</description>
+			<description action="Bonus Action">You can move up to 10 feet in a straight line to engage a target you were not already engaged with.</description>
 		</sheet>
 		<rules>
 			<stat name="charger:dc" value="8" />
@@ -84,24 +86,29 @@
 			<p>Thanks to extensive practice with the crossbow, you gain the following benefits:</p>
 			<ul>
 				<li>You ignore the loading quality of crossbows with which you are proficient.</li>
-				<li>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a crossbow.</li>
-				<li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding.</li>
+				<li>When using a crossbow to attack a target within 30 feet of you, you can reroll any damage die that rolls a 1 or 2. You must use the new roll, even if the new roll is a 1 or a 2.</li>
+				<li>When you use the Attack action and attack with a one-handed weapon, you can also make an attack with a hand crossbow you are holding.</li>
 			</ul>			
 		</description>
 		<sheet>
 			<description>You ignore the loading quality of crossbows with which you are proficient.
-			You roll one additional weapon damage die when determining the extra damage for a critical hit with a crossbow.
-			When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding.</description>
+			When using a crossbow to attack a target within 30 feet, you can reroll any damage die that rolls a 1 or 2. You must use the new roll even if it's a 1 or 2.
+			When you use the Attack action and attack with a one-handed weapon, you can also make an attack with a hand crossbow you are holding.</description>
 		</sheet>
 	</element>
 	<element name="Crowd Controller" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CROWD_CONTROLLER">
-		<description><p>Through force or tactical insight, you know how to get your enemies where you want them. You gain the following benefits:</p>
+		<description><p>You know how to get your enemies where you want them, and how to keep them there. You gain the following benefits:</p>
 		<ul>
-			<li>Increase your Strength or Intelligence score by 1, to a maximum of 20.</li>
-			<li>Whenever you push a creature 10 or more feet, you can push them an additional 5 feet.</li>
-			<li>Once during your turn, when you push a creature 10 or more feet, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</li>
+			<li>Whenever you reduce a creature's speed by 10 feet or more, you can reduce it by an additional 5 feet.</li>
+			<li>Whenever you push a creature 10 feet or more, you can push them an additional 5 feet.</li>
+			<li>Once during your turn, when you push a creature 10 feet or more, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</li>
 		</ul>
 		</description>
+		<sheet>
+			<description>Whenever you reduce a creature's speed by 10 feet or more, you can reduce it by an additional 5 feet.
+			Whenever you push a creature 10 feet or more, you can push them an additional 5 feet.
+			Once during your turn, when you push a creature 10 feet or more, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</description>
+		</sheet>
 	</element>
 
 	<element name="Defensive Duelist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
@@ -119,18 +126,18 @@
 		<description>
 			<p>You master fighting with two weapons, gaining the following benefits:</p>
 			<ul>
-				<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
-				<li>You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren’t light.</li>
+				<li>You gain a +1 bonus to AC while you are wielding a melee weapon in each hand.</li>
+				<li>Attacking with a second weapon no longer requires a bonus action, but instead can be done as part of the normal Attack action. All other restrictions for two weapon fighting still apply.</li>
 				<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>+1 bonus to AC while you are wielding a separate melee weapon in each hand.
-			You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren’t light.
+			<description>+1 bonus to AC while you are wielding a melee weapon in each hand.
+			Attacking with a second weapon no longer requires a bonus action, but instead can be done as part of the normal Attack action.
 			You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:misc" value="1" equipped="[primary:any],[secondary:any],![primary:versatile]" />
+			<stat name="ac:misc" value="1" equipped="[primary:melee],[secondary:melee]" />
 		</rules>
 	</element>
 	<element name="Dungeon Delver" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DUNGEON_DELVER">
@@ -151,148 +158,103 @@
 		</sheet>
 		<!-- todo: traps resistance condition -->
 	</element>
-	<element name="Durable" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DURABLE">
+	<element name="Survivor" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DURABLE">
+		<prerequisite>Constitution 13 or higher</prerequisite>
+		<requirements>[con:13]</requirements>
 		<description>
-			<p>Hardy and resilient, you gain the following benefits:</p>
+			<p>You refuse to go down, gaining the following benefits:</p>
 			<ul>
 				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
-				<li>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).</li>
+				<li>When you roll a Hit Die to regain hit points, you may double the Constitution modifier that gets added to the roll.</li>
+				<li>You have advantage on Death Saving throws.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals {{durable:hd:bonus}}.</description>
+			<description>When you roll a Hit Die to regain hit points, you double the Constitution modifier that gets added to the roll.
+			You have advantage on Death Saving throws.</description>
 		</sheet>
 		<rules>
 			<stat name="constitution" value="1" />
-			<stat name="durable:constitution modifier" value="constitution:modifier" />
-			<stat name="durable:constitution modifier" value="constitution:modifier" />
-			<stat name="durable:hd:bonus" value="2" bonus="feat:durable" />
-			<stat name="durable:hd:bonus" value="durable:constitution modifier" bonus="feat:durable" />
 		</rules>
 	</element>
-	<element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT">
+	<element name="Fire Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT">
 		<prerequisite>The ability to cast at least one spell</prerequisite>
 		<requirements>[type:spell]</requirements>
 		<description>
-			<p><i>Prerequisite: The ability to cast at least one spell</i></p>
-			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
-			<p class="indent">Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>
-		</description>
-		<sheet display="false" />
+			<p>You have mastered the use of fire magic in combat. You gain the following benefits:</p>
+			<ul>
+				<li>Spells you cast ignore resistance to fire damage.</li>
+				<li>When you cast a spell of 1st level or higher that deals fire damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
+			</ul>
+		</description>		
+		<sheet>
+			<description>Spells you cast ignore resistance to fire damage.
+			When you cast a spell of 1st level or higher that deals fire damage, you can add +{{fireadept:prof}} to the damage roll.</description>
+		</sheet>
 		<rules>
-			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept" />
+			<stat name="fireadept:prof" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Acid" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_ACID">
-		<compendium display="false" />
-		<supports>Elemental Adept</supports>
-		<description>
-			<p>Spells you cast ignore acid resistance. In addition, when you roll damage for a spell you cast that deals acid damage, you can treat any 1 on a damage die as a 2.</p>
-		</description>
-		<sheet alt="Elemental Adept, Acid">
-			<description>Spells you cast ignore acid resistance. Treat any 1 on a damage die as a 2 with acid spells.</description>
-		</sheet>
-	</element>
-	<element name="Cold" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_COLD">
-		<compendium display="false" />
-		<supports>Elemental Adept</supports>
-		<description>
-			<p>Spells you cast ignore cold resistance. In addition, when you roll damage for a spell you cast that deals cold damage, you can treat any 1 on a damage die as a 2.</p>
-		</description>
-		<sheet alt="Elemental Adept, Cold">
-			<description>Spells you cast ignore cold resistance. Treat any 1 on a damage die as a 2 with cold spells.</description>
-		</sheet>
-	</element>
-	<element name="Fire" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_FIRE">
-		<compendium display="false" />
-		<supports>Elemental Adept</supports>
-		<description>
-			<p>Spells you cast ignore fire resistance. In addition, when you roll damage for a spell you cast that deals fire damage, you can treat any 1 on a damage die as a 2.</p>
-		</description>
-		<sheet alt="Elemental Adept, Fire">
-			<description>Spells you cast ignore fire resistance. Treat any 1 on a damage die as a 2 with fire spells.</description>
-		</sheet>
-	</element>
-	<element name="Lightning" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_LIGHTNING">
-		<compendium display="false" />
-		<supports>Elemental Adept</supports>
-		<description>
-			<p>Spells you cast ignore lightning resistance. In addition, when you roll damage for a spell you cast that deals lightning damage, you can treat any 1 on a damage die as a 2.</p>
-		</description>
-		<sheet alt="Elemental Adept, Lightning">
-			<description>Spells you cast ignore lightning resistance. Treat any 1 on a damage die as a 2 with lightning spells.</description>
-		</sheet>
-	</element>
-	<element name="Thunder" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_THUNDER">
-		<compendium display="false" />
-		<supports>Elemental Adept</supports>
-		<description>
-			<p>Spells you cast ignore thunder resistance. In addition, when you roll damage for a spell you cast that deals thunder damage, you can treat any 1 on a damage die as a 2.</p>
-		</description>
-		<sheet alt="Elemental Adept, Thunder">
-			<description>Spells you cast ignore thunder resistance. Treat any 1 on a damage die as a 2 with thunder spells.</description>
-		</sheet>
-	</element>
-	<element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_2">
-		<compendium display="false" />
+	<element name="Cold Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_2">
 		<prerequisite>The ability to cast at least one spell</prerequisite>
-		<requirements>ID_PHB_FEAT_ELEMENTAL_ADEPT,[type:spell]</requirements>
+		<requirements>[type:spell]</requirements>
 		<description>
-			<p><i>Prerequisite: The ability to cast at least one spell</i></p>
-			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
-			<p class="indent">Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>
-		</description>
-		<sheet display="false" />
+			<p>You have mastered the use of cold magic in combat. You gain the following benefits:</p>
+			<ul>
+				<li>Spells you cast ignore resistance to cold damage.</li>
+				<li>When you cast a spell of 1st level or higher that deals cold damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
+			</ul>
+		</description>		
+		<sheet>
+			<description>Spells you cast ignore resistance to cold damage.
+			When you cast a spell of 1st level or higher that deals cold damage, you can add +{{coldadept:prof}} to the damage roll.</description>
+		</sheet>
 		<rules>
-			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept" />
+			<stat name="coldadept:prof" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_3">
-		<compendium display="false" />
+	<element name="Storm Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_3">
 		<prerequisite>The ability to cast at least one spell</prerequisite>
-		<requirements>ID_PHB_FEAT_ELEMENTAL_ADEPT_2,[type:spell]</requirements>
+		<requirements>[type:spell]</requirements>
 		<description>
-			<p><i>Prerequisite: The ability to cast at least one spell</i></p>
-			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
-			<p class="indent">Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>
-		</description>
-		<sheet display="false" />
+			<p>You have mastered the use of lightning and thunder magic in combat. You gain the following benefits:</p>
+			<ul>
+				<li>Spells you cast ignore resistance to lightning and thunder damage.</li>
+				<li>When you cast a spell of 1st level or higher that deals lightning or thunder damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
+			</ul>
+		</description>		
+		<sheet>
+			<description>Spells you cast ignore resistance to lightning and thunder damage.
+			When you cast a spell of 1st level or higher that deals lightning or thunder damage, you can add +{{stormadept:prof}} to the damage roll.</description>
+		</sheet>
 		<rules>
-			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept" />
+			<stat name="stormadept:prof" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_4">
-		<compendium display="false" />
+	<element name="Ruinous Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_4">
 		<prerequisite>The ability to cast at least one spell</prerequisite>
-		<requirements>ID_PHB_FEAT_ELEMENTAL_ADEPT_3,[type:spell]</requirements>
+		<requirements>[type:spell]</requirements>
 		<description>
-			<p><i>Prerequisite: The ability to cast at least one spell</i></p>
-			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
-			<p class="indent">Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>
-		</description>
-		<sheet display="false" />
+			<p>You have mastered the use of acid, necrotic and poison magic in combat. You gain the following benefits:</p>
+			<ul>
+				<li>Spells you cast ignore resistance to acid, necrotic and poison damage.</li>
+				<li>When you cast a spell of 1st level or higher that deals acid, necrotic, or poison damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
+			</ul>
+		</description>		
+		<sheet>
+			<description>Spells you cast ignore resistance to acid, necrotic and poison damage.
+			When you cast a spell of 1st level or higher that deals acid, necrotic, or poison damage, you can add +{{atrophyadept:prof}} to the damage roll.</description>
+		</sheet>
 		<rules>
-			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept" />
+			<stat name="atrophyadept:prof" value="proficiency" />
 		</rules>
 	</element>
 	<element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_5">
 		<compendium display="false" />
 		<prerequisite>The ability to cast at least one spell</prerequisite>
-		<requirements>ID_PHB_FEAT_ELEMENTAL_ADEPT_4,[type:spell]</requirements>
+		<requirements>ID_KP_BLOCKED,[type:spell]</requirements>
 		<description>
-			<p><i>Prerequisite: The ability to cast at least one spell</i></p>
-			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
-			<p class="indent">Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p class="indent">You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept" />
-		</rules>
 	</element>
 	<!-- /elemental adept -->
 	<element name="Grappler" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_GRAPPLER">
