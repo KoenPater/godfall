@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bound</name>
+		<update version="0.0.1">
+			<file name="race-bound.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/race-bound.xml" />
+		</update>
+	</info>
+	<element name="Bound" type="Race" source="Godfall Campaign Setting" id="ID_GF_RACE_BOUND">
+		<description>
+			<p class="flavor">The Bound are humans who survived death. The cause of this strange condition is unknown. There are no records of them existing prior to the Fall. They often look the same as in life, be it slightly paler, though some bear more distinctive marks such as stark white hair or injuries that refuse to heal. While most Bound try to hide these features to better blend in, others accentuate them defiantly with ornate tattoos and elaborate piercings. The Bound are rare. Not many people have ever met one in person, at least knowingly, but the stories are common enough that few doubt their existence. Though some might react fearfully to their presence, they are equally likely to be seen as fellow victims of a broken world.</p>
+			<h4>SLEEN TRAITS</h4>
+			<p>Your sleen character has the following racial traits.</p>
+			<p>
+			<span class="feature">Ability Score Modifiers.</span>Your Charisma score increases by 2 and your Intelligence and Dexterity scores both increase by 1. Your Wisdom score is reduced by 1.<br/>
+			<span class="feature">Age.</span>Sleen mature at the same rate as humans and have lifespans similar in length to theirs. <br/>
+			<span class="feature">Alignment.</span>Sleen culture is generally manipulative and self-centered. They care little for high-minded ideals such as law or chaos and most tend towards neutral evil.<br/>
+			<span class="feature">Size.</span>Sleen match humans in average size and weight. Your size is Medium.<br/>
+			<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+			<span class="feature">Innate Spellcasting.</span>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.<br/>
+			<span class="feature">Poison Immunity.</span>You are immune to poison damage and the poisoned condition.<br/>
+			<span class="feature">Languages.</span>You can speak, read, and write Common and one other standard or exotic language of your choice.<br/>
+			</p>        
+		</description>
+		<sheet display="false"/>
+		<setters>
+		  <!-- names taken from online generator to have at least a few names in here -->
+		  <set name="names" type="custom">Mektla, Zsolshih, Netstlia, Simal, Zsazshi, Zsoamish, Zhaktlishu, Hozsehsass, Zukholli, Yilshashlu, Yala, Totsziss</set>
+		  <set name="names-format">{{custom}}</set>
+          <set name="height" modifier="2d10">5'7"</set>
+		  <set name="weight" modifier="2d4">145 lb.</set>
+		</setters>
+		<rules>
+		  <stat name="charisma" value="2" />
+		  <stat name="intelligence" value="1" />
+		  <stat name="dexterity" value="1" />
+		  <stat name="wisdom" value="-1" />
+		  <stat name="innate speed" value="30" bonus="base" />
+
+		  <grant type="Size" id="ID_SIZE_MEDIUM" />
+		  <grant type="Vision" id="ID_VISION_DARKVISION" />
+		  <grant type="Language" id="ID_LANGUAGE_COMMON" />
+		  <select type="Language" name="Language (Sleen)" supports="Standard||Exotic"/>
+		  <grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_INNATE_SPELLCASTING" />
+		  <grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_POISON_IMMUNITY" />
+		</rules>
+	</element>
+	   
+	<element name="Innate Spellcasting" type="Racial Trait" source="Godfall Campaign Setting" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_INNATE_SPELLCASTING">
+		<description>
+		  <p>You know the Poison Spray cantrip. You can cast Animal Friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast Suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+		  <description>You know the Poison Spray cantrip. You can cast Animal Friendship an unlimited number of times with this trait, but you can target only snakes with it. (Charisma)</description>
+		  <description level="3">You know the Poison Spray cantrip. You can cast Animal Friendship an unlimited number of times with this trait, but you can target only snakes with it. You can also cast Suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. (Charisma)</description>
+		</sheet>
+		<rules>
+		  <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+		  <grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+		  <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" />
+		</rules>
+	</element>   
+	<element name="Magic Resistance" type="Racial Trait" source="Godfall Campaign Setting" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_MAGIC_RESISTANCE">
+		<description>
+		  <p>You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+		  <description>You have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>   
+	<element name="Poison Immunity" type="Racial Trait" source="Godfall Campaign Setting" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_POISON_IMMUNITY">
+		<description>
+		  <p>You are immune to poison damage and the poisoned condition.</p>
+		</description>
+		<sheet>
+		  <description>You are immune to poison damage and the poisoned condition.</description>
+		</sheet>
+		<rules>
+		  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+</elements>
