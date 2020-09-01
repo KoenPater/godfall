@@ -4,7 +4,7 @@
 	<info>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.9">
+		<update version="0.4.3">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-human.xml" />
 		</update>
 	</info>
@@ -20,9 +20,8 @@
         <span class="feature">Size.</span>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
         <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
         <span class="feature">Languages.</span>You can speak, read, and write Common.<br />
-		<span class="feature">Ethnicity.</span>Human traits further depend on the culture in which they were raised. Select one of the following ethnicities to gain additional traits: Caladonian, Mehrani, Chaskan, Surati, or mixed.<br />
+		<span class="feature">Ethnicity.</span>Human traits further depend on the culture in which they were raised. Select one of the following ethnicities to gain additional traits: Caladonian, Mehrani, Chaskan, Surati, or other.<br />
       </p>
-      <div element="ID_RACE_VARIANT_HUMAN_VARIANT"/>
     </description>
     <sheet display="false" />
     <setters>
@@ -40,10 +39,10 @@
       <select type="Race Variant" name="Ethnicity" supports="Human" optional="false" />
     </rules>
   </element>   
-  <element name="Mixed" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT">
+  <element name="Other" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT">
     <supports>Human</supports>
     <description>
-      <p>You consider yourself of mixed heritage. While this could simply mean your parents were of two different ethnic backgrounds, it could also reflect an upbringing that wasn't strongly influenced by any one culture. Maybe you were raised in a cosmopolitan city, or moved around frequently during your formative years. Maybe you didn't care for or actively rebelled against local cultural norms. Whatever the reason, it has made you highly versatile.</p>
+      <p>You consider yourself of mixed or indeterminate heritage. While this could mean your parents were of two different ethnic backgrounds, it could also reflect an upbringing that wasn't strongly influenced by any one culture for other reasons. Maybe you were raised in a cosmopolitan city, or moved around frequently during your formative years. Maybe you didn't care for or actively rebelled against local cultural norms. Whatever the reason, it has made you highly adaptable and versatile.</p>
       <p>
         <span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
 		<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
@@ -53,19 +52,19 @@
     </description>
     <sheet alt="Human" display="false"/>
     <rules>
-      <stat name="strength" value="1" />
-      <stat name="dexterity" value="1" />
-      <stat name="constitution" value="1" />
-      <stat name="intelligence" value="1" />
-      <stat name="wisdom" value="1" />
-      <stat name="charisma" value="1" />      
+      <stat name="strength" value="1" alt="Human"/>
+      <stat name="dexterity" value="1" alt="Human"/>
+      <stat name="constitution" value="1" alt="Human"/>
+      <stat name="intelligence" value="1" alt="Human"/>
+      <stat name="wisdom" value="1" alt="Human"/>
+      <stat name="charisma" value="1" alt="Human"/>      
       <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 	  <select type="Proficiency" name="Tool Proficiency (Human)" supports="Tool" />
 	  <select type="Language" name="Language (Human)" supports="Standard" />
 	  <select type="Language" name="Language (Human)" supports="Standard" />
     </rules>
   </element>
-  <element name="Caladonian" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_CALADONIAN">
+  <element name="Caladonian" type="Race Variant" source="Godfall Campaign Setting" id="ID_RACE_VARIANT_HUMAN_CALADONIAN">
     <supports>Human</supports>
     <description>
 	  <p>Caladonians are tall, fair-skinned folk with blue or steely gray eyes. Most have blond hair, but brown and red are also common. They are known as industrious and driven (or just plain stubborn, depending on who you ask).</p>
@@ -84,14 +83,14 @@
       <stat name="intelligence" value="1" />
       <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Caladonian" number="1" />
-	  <select type="Language" name="Language (Human)" supports="Standard" />
+	  <grant type="Language" id="ID_GFCS_LANGUAGE_CALADONIAN" />
 	  <select type="Feat" name="Feat (Human)" />
     </rules>
   </element>
-  <element name="Mehrani" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_MEHRANI">
+  <element name="Mehrani" type="Race Variant" source="Godfall Campaign Setting" id="ID_RACE_VARIANT_HUMAN_MEHRANI">
     <supports>Human</supports>
     <description>
-	  <p>Shorter and slighter in build than most other humans, the Mehrani have dusky brown skin, hair, and eyes. They are often thought of as a passionate and quick-witted people, and are found primarily in the city states of the south.</p>
+	  <p>Shorter and slighter in build than most other humans, the Mehrani have dusky brown skin and hair, and eyes ranging from brown to orange or green. They are often thought of as a passionate and quick-witted people, and are found primarily in the city states of the south.</p>
       <p><span class="feature">Mehrani Names:</span>(Male) Aseir, Bardeid, Diero, Marcon, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, Jasmal, Meilil, Selise, Yasheira, Zasheida; (surnames) Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</p>
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Dexterity, Charisma, and one other ability score of your choice each increase by 1.<br />
@@ -106,14 +105,15 @@
       <stat name="charisma" value="1" />
       <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Mehrani" number="1" />
-	  <select type="Language" name="Language (Human)" supports="Standard" />
+	  <grant type="Language" id="ID_GFCS_LANGUAGE_MEHRANI" />
 	  <select type="Feat" name="Feat (Human)" />
     </rules>
   </element>
-  <element name="Chaskan" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_CHASKAN">
+  <element name="Chaskan" type="Race Variant" source="Godfall Campaign Setting" id="ID_RACE_VARIANT_HUMAN_CHASKAN">
     <supports>Human</supports>
     <description>
 	  <p>The Chaska are the aboriginal inhabitants of Tal Ahmur, their bronze skin ranges from a lighter coppery hue to deep brown. Their hair tends to be wavy or curly, and from black to brown. They have strong, broad faces and sturdy builds. Chaskan culture has strong ties to the natural world. They can be most commonly found in the north and west.</p>
+	  <p><span class="feature">Chaskan Names:(Male) Ahanu, Ehan, Kanuna, Lusion, Soyala, Tuari, Whakan; (female) Boniwa, Jennesee, Kamali, Nirvelli, Sunki, Talita. There are no traditional Chaskan surnames.</span></p>
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Constitution, Wisdom, and one other ability score of your choice each increase by 1.<br />
 		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
@@ -127,7 +127,30 @@
       <stat name="wisdom" value="1" />
       <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Chaskan" number="1" />
-	  <select type="Language" name="Language (Human)" supports="Standard" />
+	  <grant type="Language" id="ID_GFCS_LANGUAGE_CHASKAN" />
+	  <select type="Feat" name="Feat (Human)" />
+    </rules>
+  </element>
+  
+  <element name="Surati" type="Race Variant" source="Godfall Campaign Setting" id="ID_RACE_VARIANT_HUMAN_SURATI">
+    <supports>Human</supports>
+    <description>
+      <p>Dominant in the southwestern desert of Akain, the Surat are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown. They have high cheek bones and high-bridged noses. The Surat are a dutiful people that are rarely found outside their lands.</p>
+      <p><span class="feature">Surati Names:</span>(Male) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt</p>
+	  <p>
+        <span class="feature">Ability Score Increase.</span>Your Constitution, Intelligence, and one other ability score of your choice each increase by 1.<br />
+		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
+		<span class="feature">Expertise.</span>Select one skill in which you are proficient. You may double the proficiency bonus for that skill.<br />
+		<span class="feature">Languages.</span>You can speak, read, and write Surati.<br />
+      </p>
+    </description>
+    <sheet alt="Human" display="false"/>
+    <rules>
+      <stat name="constitution" value="1" />
+      <stat name="intelligence" value="1" />
+      <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise"/>
+	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Surati" number="1" />
+	  <grant type="Language" id="ID_GFCS_LANGUAGE_SURATI" />
 	  <select type="Feat" name="Feat (Human)" />
     </rules>
   </element>
@@ -145,7 +168,7 @@
   <!--Human Variant Ability Score Increase-->
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT_STRENGTH">
     <compendium display="false" />
-    <supports>Mehrani,Chaskan</supports>
+    <supports>Mehrani,Chaskan,Surati</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -156,7 +179,7 @@
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT_DEXTERITY">
     <compendium display="false" />
-    <supports>Caladonian,Chaskan</supports>
+    <supports>Caladonian,Chaskan,Surati</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -189,7 +212,7 @@
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT_WISDOM">
     <compendium display="false" />
-    <supports>Caladonian,Mehrani</supports>
+    <supports>Caladonian,Mehrani,Surati</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -200,7 +223,7 @@
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HUMAN_VARIANT_CHARISMA">
     <compendium display="false" />
-    <supports>Caladonian,Chaskan</supports>
+    <supports>Caladonian,Chaskan,Surati</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>

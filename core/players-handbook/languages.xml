@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/languages.xml" />
 		</update>
 	</info>
@@ -11,95 +11,98 @@
 	<element name="Common" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_COMMON">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by humans.</p>
+			<p>Also known as 'silver', common is spoken by traders and anyone seeking to communicate with people outside their direct community.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
 			<set name="speakers">Humans</set>
-			<set name="script">Common</set>
+			<set name="script">Arenic</set>
 		</setters>
 	</element>
-	<element name="Dwarvish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DWARVISH">
+	<element name="Drukhar" type="Language" source="Godfall Campaign Setting" id="ID_LANGUAGE_GOBLIN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by dwarves.</p>
+			<p>Typically spoken by the various nefar.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Dwarves</set>
-			<set name="script">Dwarvish</set>
+			<set name="speakers">Nefar</set>
+			<set name="script"></set>
 		</setters>
 	</element>
-	<element name="Elvish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ELVISH">
+		<element name="Caladonian" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_CALADONIAN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by elves.</p>
+			<p>Typically spoken by Caladonians.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Elves</set>
-			<set name="script">Elvish</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Arenic</set>
 		</setters>
 	</element>
-	<element name="Giant" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
+	<element name="Mehrani" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_MEHRANI">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by ogres and giants.</p>
+			<p>Typically spoken by the Mehrani.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Ogres, giants</set>
-			<set name="script">Dwarvish</set>
+			<set name="speakers">Humans</set>
+			<set name="script"></set>
 		</setters>
 	</element>
-	<element name="Gnomish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GNOMISH">
+	<element name="Chaskan" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_CHASKAN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by gnomes.</p>
+			<p>Typically spoken by Chaskans.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Gnomes</set>
-			<set name="script">Dwarvish</set>
+			<set name="speakers">Humans</set>
+			<set name="script"></set>
 		</setters>
 	</element>
-	<element name="Goblin" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GOBLIN">
+	<element name="Surati" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SURATI">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by goblinoids.</p>
+			<p>Typically spoken by the Surat.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Goblinoids</set>
-			<set name="script">Dwarvish</set>
+			<set name="speakers">Humans</set>
+			<set name="script"></set>
 		</setters>
 	</element>
-	<element name="Halfling" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_HALFLING">
+	<element name="Sleenic" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SLEENIC">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by halflings.</p>
+			<p>Typically spoken by the Sleen.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="speakers">Halflings</set>
-			<set name="script">Common</set>
-		</setters>
-	</element>
-	<element name="Orc" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ORC">
-		<supports>Standard</supports>
-		<description>
-			<p>Typically spoken by orcs.</p>
-		</description>
-		<setters>
-			<set name="standard">true</set>
-			<set name="speakers">Orcs</set>
-			<set name="script">Dwarvish</set>
+			<set name="speakers">Sleen</set>
+			<set name="script"></set>
 		</setters>
 	</element>
 
 	<!-- exotic -->
+		<element name="Giant" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by ogres and giants.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Ogres, giants</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
 	<element name="Abyssal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ABYSSAL">
 		<supports>Exotic</supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Typically spoken by demons.</p>
 		</description>
@@ -128,7 +131,7 @@
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Mind flayers, beholders</set>
-			<set name="script">—</set>
+			<set name="script"></set>
 		</setters>
 	</element>
 	<element name="Draconic" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRACONIC">
@@ -157,12 +160,11 @@
 		<supports>Exotic</supports>
 		<description>
 			<p>Typically spoken by elementals.</p>
-			<p>The Primordial language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Elementals</set>
-			<set name="script">Dwarvish</set>
+			<set name="script"></set>
 		</setters>
 	</element>
 	<element name="Sylvan" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_SYLVAN">
@@ -173,11 +175,13 @@
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Fey creatures</set>
-			<set name="script">Elvish</set>
+			<set name="script"></set>
 		</setters>
 	</element>
 	<element name="Undercommon" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_UNDERCOMMON">
 		<supports>Exotic</supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Typically spoken by underdark traders.</p>
 		</description>
@@ -209,4 +213,71 @@
 			<set name="speakers">Rogues</set>
 		</setters>
 	</element>	
+	
+	<!-- old -->
+		<element name="Dwarvish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DWARVISH">
+		<supports></supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by dwarves.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Dwarves</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Elvish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ELVISH">
+		<supports></supports>
+		<compendium display="false" />
+		<requirements>ID_GODS_LIVING</requirements>
+		<description>
+			<p>Typically spoken by elves.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Elves</set>
+			<set name="script">Elvish</set>
+		</setters>
+	</element>
+	<element name="Gnomish" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GNOMISH">
+		<supports></supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by gnomes.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Gnomes</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Halfling" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_HALFLING">
+		<supports></supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by halflings.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Halflings</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+	<element name="Orc" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ORC">
+		<requirements>ID_GODS_LIVING</requirements>
+		<supports></supports>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by orcs.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Orcs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
 </elements>
