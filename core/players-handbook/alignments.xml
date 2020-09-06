@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Alignments</name>
+		<update version="0.0.3">
+			<file name="alignments.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/alignments.xml" />
+		</update>
+	</info>
+
+	<element name="Lawful Good (Paragon)" type="Alignment" source="Player’s Handbook" id="ID_ALIGNMENT_LAWFUL_GOOD">
+		<supports>Standard</supports>
+		<description>
+			<p>A lawful good character acts as a good person is required to act. She combines a selfless commitment to oppose evil with the discipline to fight relentlessly. She tells the truth, keeps her word, helps those in need, and speaks out against injustice. A lawful good character hates to see the guilty go unpunished.</p>
+			<p>Lawful good is the best alignment you can be because it combines honor and compassion.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="abbreviation">LG</set>
+		</setters>
+	</element>
+</elements>
