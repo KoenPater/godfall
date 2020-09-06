@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Bound</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-bound.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/race-bound.xml" />
 		</update>
 	</info>
 	<element name="Bound" type="Race" source="Godfall Campaign Setting" id="ID_GF_RACE_BOUND">
 		<description>
-			<p class="flavor">The Bound are humans who survived death. The cause of this strange condition is unknown. There are no records of them existing prior to the Fall. They often look the same as in life, be it slightly paler, though some bear more distinctive marks such as stark white hair or injuries that refuse to heal. While most Bound try to hide these features to better blend in, others accentuate them defiantly with ornate tattoos and elaborate piercings. The Bound are rare. Not many people have ever met one in person, at least knowingly, but the stories are common enough that few doubt their existence. Though some might react fearfully to their presence, they are equally likely to be seen as fellow victims of a broken world.</p>
+			<p class="flavor">The Bound are humans who woke up in their own bodies after dying. The cause of this strange condition is unknown, though many believe it to be linked to the Fall and the uncertain state of the Afterlife. The Bound often look the same as in life, if slightly paler. Some bear more distinctive marks, such as stark white hair or injuries that refuse to heal. While most Bound try to hide these features to better blend in, others accentuate them defiantly with ornate tattoos and elaborate piercings. The Bound are rare. Not many people have ever met one in person, at least knowingly, but the stories are common enough that few doubt their existence. Though some might react fearfully to their presence, they are equally likely to be seen as fellow victims of a broken world.</p>
 			<h4>SLEEN TRAITS</h4>
 			<p>Your sleen character has the following racial traits.</p>
 			<p>
