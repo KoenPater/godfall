@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/languages.xml" />
 		</update>
 	</info>
@@ -11,7 +11,7 @@
 	<element name="Common" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_COMMON">
 		<supports>Standard</supports>
 		<description>
-			<p>Also known as 'silver', common is spoken by traders and anyone seeking to communicate with people outside their direct community.</p>
+			<p>Also known as 'silver' or 'arenic', common is spoken by traders, travelers, and those living in large or mixed communities.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
@@ -22,7 +22,7 @@
 	<element name="Drukhar" type="Language" source="Godfall Campaign Setting" id="ID_LANGUAGE_GOBLIN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by the various nefar.</p>
+			<p>Typically spoken by the more intelligent nefar (the barbarian races of the Verge).</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
@@ -33,7 +33,7 @@
 		<element name="Caladonian" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_CALADONIAN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by Caladonians.</p>
+			<p>This language is spoken by the Caladonian people.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
@@ -44,151 +44,114 @@
 	<element name="Mehrani" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_MEHRANI">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by the Mehrani.</p>
+			<p>This language is spoken by the Mehrani people.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
 			<set name="speakers">Humans</set>
-			<set name="script"></set>
+			<set name="script">Arenic</set>
 		</setters>
 	</element>
 	<element name="Chaskan" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_CHASKAN">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by Chaskans.</p>
+			<p>This language is spoken by the Chaskan people.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
 			<set name="speakers">Humans</set>
-			<set name="script"></set>
+			<set name="script">Havante</set>
 		</setters>
 	</element>
-	<element name="Surati" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SURATI">
+	<element name="Rankamut" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SURATI">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by the Surat.</p>
+			<p>Also known as 'surati', this language is spoken by the Surati people.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
 			<set name="speakers">Humans</set>
-			<set name="script"></set>
+			<set name="script">Rasum</set>
 		</setters>
 	</element>
-	<element name="Sleenic" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SLEENIC">
+	<element name="Ssesuresh" type="Language" source="Godfall Campaign Setting" id="ID_GFCS_LANGUAGE_SLEENIC">
 		<supports>Standard</supports>
 		<description>
-			<p>Typically spoken by the Sleen.</p>
+			<p>Also known as 'sleenic', this language is spoken by the Sleen.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
 			<set name="speakers">Sleen</set>
-			<set name="script"></set>
+			<set name="script">Rasum</set>
 		</setters>
 	</element>
 
 	<!-- exotic -->
-		<element name="Giant" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
+		<element name="Jotun" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by ogres and giants.</p>
+			<p>Also known as 'giant'. This language is typically spoken by ogres and giants.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Ogres, giants</set>
-			<set name="script"></set>
+			<set name="script">Davek</set>
 		</setters>
 	</element>
 
-	<element name="Abyssal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ABYSSAL">
+	<element name="Demonic" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ABYSSAL">
 		<supports>Exotic</supports>
-		<requirements>ID_GODS_LIVING</requirements>
-		<compendium display="false" />
 		<description>
 			<p>Typically spoken by demons.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Demons</set>
-			<set name="script">Infernal</set>
+			<set name="script">Zhorubad</set>
 		</setters>
 	</element>
-	<element name="Celestial" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
+	<element name="Empyreal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by celestials</p>
+			<p>Typically spoken by celestials.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
-			<set name="speakers">Celestials</set>
-			<set name="script">Celestial</set>
+			<set name="speakers">Gods, archons, fallen</set>
+			<set name="script">Ahn</set>
 		</setters>
 	</element>
-	<element name="Deep Speech" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DEEP_SPEECH">
+	<element name="Thanakaris" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRACONIC">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by mind flayers and beholders.</p>
+			<p>Also known as 'draconic'. This language is typically spoken by dragons.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
-			<set name="speakers">Mind flayers, beholders</set>
-			<set name="script"></set>
-		</setters>
-	</element>
-	<element name="Draconic" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRACONIC">
-		<supports>Exotic</supports>
-		<description>
-			<p>Typically spoken by dragons and dragonborn.</p>
-		</description>
-		<setters>
-			<set name="exotic">true</set>
-			<set name="speakers">Dragons, dragonborn</set>
-			<set name="script">Draconic</set>
-		</setters>
-	</element>
-	<element name="Infernal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_INFERNAL">
-		<supports>Exotic</supports>
-		<description>
-			<p>Typically spoken by devils.</p>
-		</description>
-		<setters>
-			<set name="exotic">true</set>
-			<set name="speakers">Devils</set>
-			<set name="script">Infernal</set>
+			<set name="speakers">Dragons</set>
+			<set name="script">Iokharic</set>
 		</setters>
 	</element>
 	<element name="Primordial" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_PRIMORDIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by elementals.</p>
+			<p>Typically spoken by elementals and other beings from the elemental chaos.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Elementals</set>
-			<set name="script"></set>
+			<set name="script">Zhorubad</set>
 		</setters>
 	</element>
 	<element name="Sylvan" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_SYLVAN">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by fey creatures.</p>
+			<p>Typically spoken by spirits and fey creatures.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
-			<set name="speakers">Fey creatures</set>
+			<set name="speakers">Spirits, fey creatures</set>
 			<set name="script"></set>
-		</setters>
-	</element>
-	<element name="Undercommon" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_UNDERCOMMON">
-		<supports>Exotic</supports>
-		<requirements>ID_GODS_LIVING</requirements>
-		<compendium display="false" />
-		<description>
-			<p>Typically spoken by underdark traders.</p>
-		</description>
-		<setters>
-			<set name="exotic">true</set>
-			<set name="speakers">Underdark traders</set>
-			<set name="script">Elvish</set>
 		</setters>
 	</element>
 
@@ -278,6 +241,45 @@
 			<set name="standard">false</set>
 			<set name="speakers">Orcs</set>
 			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+		<element name="Undercommon" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_UNDERCOMMON">
+		<supports>Exotic</supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by underdark traders.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Underdark traders</set>
+			<set name="script">Elvish</set>
+		</setters>
+	</element>
+	<element name="Infernal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_INFERNAL">
+		<supports>Exotic</supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by devils.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Devils</set>
+			<set name="script">Infernal</set>
+		</setters>
+	</element>
+	<element name="Deep Speech" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DEEP_SPEECH">
+		<supports>Exotic</supports>
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Typically spoken by mind flayers and beholders.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Mind flayers, beholders</set>
+			<set name="script"></set>
 		</setters>
 	</element>
 </elements>
