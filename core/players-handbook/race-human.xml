@@ -4,7 +4,7 @@
 	<info>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.5">
+		<update version="0.4.6">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/race-human.xml" />
 		</update>
 	</info>
@@ -73,7 +73,7 @@
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Strength, Intelligence, and one other ability score of your choice each increase by 1.<br />
 		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
-		<span class="feature">Expertise.</span>Select one skill in which you are proficient. You may double the proficiency bonus for that skill.<br />
+		<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
 		<span class="feature">Languages.</span>You can speak, read, and write Caladonian.<br />
       </p>
     </description>
@@ -81,7 +81,7 @@
     <rules>
       <stat name="strength" value="1" />
       <stat name="intelligence" value="1" />
-      <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise,Skill"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Caladonian" number="1" />
 	  <grant type="Language" id="ID_GFCS_LANGUAGE_CALADONIAN" />
 	  <select type="Feat" name="Feat (Human)" />
@@ -95,7 +95,7 @@
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Dexterity, Charisma, and one other ability score of your choice each increase by 1.<br />
 		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
-		<span class="feature">Expertise.</span>Select one skill in which you are proficient. You may double the proficiency bonus for that skill.<br />
+		<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
 		<span class="feature">Languages.</span>You can speak, read, and write Mehrani.<br />
       </p>
     </description>
@@ -103,7 +103,7 @@
     <rules>
       <stat name="dexterity" value="1" />
       <stat name="charisma" value="1" />
-      <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise,Skill"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Mehrani" number="1" />
 	  <grant type="Language" id="ID_GFCS_LANGUAGE_MEHRANI" />
 	  <select type="Feat" name="Feat (Human)" />
@@ -117,7 +117,7 @@
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Constitution, Wisdom, and one other ability score of your choice each increase by 1.<br />
 		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
-		<span class="feature">Expertise.</span>Select one skill in which you are proficient. You may double the proficiency bonus for that skill.<br />
+		<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
 		<span class="feature">Languages.</span>You can speak, read, and write Chaskan.<br />
       </p>
     </description>
@@ -125,7 +125,7 @@
     <rules>
       <stat name="constitution" value="1" />
       <stat name="wisdom" value="1" />
-      <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise,Skill"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Chaskan" number="1" />
 	  <grant type="Language" id="ID_GFCS_LANGUAGE_CHASKAN" />
 	  <select type="Feat" name="Feat (Human)" />
@@ -140,15 +140,15 @@
 	  <p>
         <span class="feature">Ability Score Increase.</span>Your Dexterity, Intelligence, and one other ability score of your choice each increase by 1.<br />
 		<span class="feature">Feat.</span>You gain one feat for which you meet the prerequisites.<br />
-		<span class="feature">Expertise.</span>Select one skill in which you are proficient. You may double the proficiency bonus for that skill.<br />
-		<span class="feature">Languages.</span>You can speak, read, and write Surati.<br />
+		<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
+		<span class="feature">Languages.</span>You can speak, read, and write Rankamut.<br />
       </p>
     </description>
     <sheet alt="Human" display="false"/>
     <rules>
       <stat name="dexterity" value="1" />
       <stat name="intelligence" value="1" />
-      <select type="Proficiency" name="Expertise (Human)" level="1" number="1" supports="Expertise,Skill"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 	  <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Surati" number="1" />
 	  <grant type="Language" id="ID_GFCS_LANGUAGE_SURATI" />
 	  <select type="Feat" name="Feat (Human)" />

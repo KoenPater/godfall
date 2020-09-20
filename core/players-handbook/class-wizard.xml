@@ -4,25 +4,25 @@
 		<name>Wizard</name>
 		<description>The Wizard class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.1">
+		<update version="0.3.3">
 			<file name="class-wizard.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-wizard.xml" />
 		</update>
 	</info>
 
 	<element name="Wizard" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_WIZARD">
 		<description>
-			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
-			<p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
-			<p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
+			<p class="flavor">Clad in the silver robes that denote her station, a woman closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
+			<p class="indent">Checking and rechecking his work, an old man scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
+			<p class="indent">Crouching on the floor in a dungeon intersection, a man tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
 			<p class="indent">Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
 			<h4>SCHOLARS OF THE ARCANE</h4>
-			<p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
-			<p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient creatures (such as the fey) that are steeped in magic.</p>
+			<p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the old gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
+			<p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, and from ancient tomes and inscriptions found in forgotten places around the world.</p>
 			<h4>THE LURE OF KNOWLEDGE</h4>
 			<p>Wizards’ lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their services as diviners, serve in military forces, or pursue lives of crime or domination.</p>
 			<p class="indent">But the lure of knowledge and power calls even the most unadventurous wizards out of the safety of their libraries and laboratories and into crumbling ruins and lost cities. Most wizards believe that their counterparts in ancient civilizations knew secrets of magic that have been lost to the ages, and discovering those secrets could unlock the path to a power greater than any magic available in the present age.</p>
 			<h4>CREATING A WIZARD </h4>
-			<p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for it? Do you have a natural talent, or did you simply study hard and practice incessantly? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
+			<p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? What sparked your desire to master it? Did you discover you had an aptitude for it, or did you have to make great sacrifices to become proficient at it?</p>
 			<p class="indent">What drew you forth from your life of study? Did your first taste of magical knowledge leave you hungry for more? Have you received word of a secret repository of knowledge not yet plundered by any other wizard? Perhaps you’re simply eager to put your newfound magical skills to the test in the face of danger.</p>
 			<h5>QUICK BUILD</h5>
 			<p>You can make a wizard quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. If you plan to join the School of Enchantment, make Charisma your next-best score. Second, choose the sage background. Third, choose the <i>mage hand</i>, <i>light</i>, and <i>ray of frost</i> cantrips, along with the following 1st-level spells for your spellbook: <i>burning hands,</i> <i>charm person</i>, <i>feather fall</i>, <i>mage armor</i>, <i>magic missile</i>, and <i>sleep</i>.</p>
@@ -53,7 +53,7 @@
 				<li>(a) a scholar’s pack or (b) an explorer’s pack</li>
 				<li>A spellbook</li>
 			</ul>
-			<h5 class="caption">THE </h5>
+			<h5 class="caption">THE WIZARD</h5>
 			<table class="class-features">
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
@@ -147,7 +147,7 @@
 			<p>Each time you gain a wizard level, you can add two wizard spells of your choice to your spellbook for free. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).</p>
 		</description>
 		<sheet display="false">
-			<description>You can prepare {{wizard:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast wizard spells as a ritual.</description>
+			<description>You can prepare {{wizard:spellcasting:prepare}} spells from the your spellbook. You can use an arcane focus to cast spells and can also cast wizard spells as a ritual.</description>
 		</sheet>
 		<spellcasting name="Wizard" ability="Intelligence" prepare="true">
 			<list>Wizard</list>
