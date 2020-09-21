@@ -4,7 +4,7 @@
 		<name>Soldier</name>
 		<description>Soldier Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="background-soldier.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/background-soldier.xml" />
 		</update>
 	</info>
@@ -19,20 +19,7 @@
 				<li><strong>Equipment:</strong> An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck of cards, a set of common clothes, and a belt pouch containing 10 gp</li>
 			</ul>
 			<h5>SPECIALTY</h5>
-			<p>During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose from the options in the table below to determine your role:</p>
-			<table>
-				<thead>
-					<tr><td class="col-10">d8</td><td>Specialty</td></tr>
-				</thead>
-				<tr><td>1</td><td>Officer</td></tr>
-				<tr><td>2</td><td>Scout</td></tr>
-				<tr><td>3</td><td>Infantry</td></tr>
-				<tr><td>4</td><td>Cavalry</td></tr>
-				<tr><td>5</td><td>Healer</td></tr>
-				<tr><td>6</td><td>Quartermaster</td></tr>
-				<tr><td>7</td><td>Standard bearer</td></tr>
-				<tr><td>8</td><td>Support staff (cook, blacksmith, or the like)</td></tr>
-			</table>
+			<p>During your time as a soldier, you had a specific role to play in your unit or army. If you want, you can pick this role from the specialty list.</p>
 			<div element="ID_BACKGROUND_FEATURE_MILITARY_RANK" />
 			<h5>SUGGESTED CHARACTERISTICS</h5>
 			<p>The horrors of war combined with the rigid discipline of military service leave their mark on all soldiers, shaping their ideals, creating strong bonds, and often leaving them scarred and vulnerable to fear, shame, and hatred.</p>

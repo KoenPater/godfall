@@ -4,7 +4,7 @@
 		<name>Entertainer</name>
 		<description>Entertainer Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.7">
 			<file name="background-entertainer.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/background-entertainer.xml" />
 		</update>
 	</info>
@@ -18,22 +18,7 @@
 				<li><strong>Equipment:</strong> musical instrument (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), a costume, and a belt pouch containing 15 gp</li>
 			</ul>
 			<h5>ENTERTAINER ROUTINES</h5>
-			<p>A good entertainer is versatile, spicing up every performance with a variety of different routines. Choose one to three routines or roll on the table below to define your expertise as an entertainer.</p>
-			<table>
-				<thead>
-					<tr><td class="col-10">d10</td><td>Entertainer Routine</td></tr>
-				</thead>
-				<tr><td>1</td><td>Actor</td></tr>
-				<tr><td>2</td><td>Dancer</td></tr>
-				<tr><td>3</td><td>Fire-eater</td></tr>
-				<tr><td>4</td><td>Jester</td></tr>
-				<tr><td>5</td><td>Juggler</td></tr>
-				<tr><td>6</td><td>Instrumentalist</td></tr>
-				<tr><td>7</td><td>Poet</td></tr>
-				<tr><td>8</td><td>Singer</td></tr>
-				<tr><td>9</td><td>Storyteller</td></tr>
-				<tr><td>10</td><td>Tumbler</td></tr>
-			</table>
+			<p>A good entertainer is versatile, spicing up every performance with a variety of different routines. If you want, you can choose one to three routines to define your expertise as an entertainer.</p>
 			<div element="ID_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
 			<h5>SUGGESTED CHARACTERISTICS</h5>
 			<p>Successful entertainers have to be able to capture and hold an audience’s attention, so they tend to have flamboyant or forceful personalities. They’re inclined toward the romantic and often cling to high-minded ideals about the practice of art and the appreciation of beauty.</p>
@@ -63,7 +48,7 @@
 				<item id="9">Storyteller</item>
 				<item id="10">Tumbler</item>
 			</select>
-			<select name="Personality Trait" type="List" number="2">
+			<select name="Personality Trait" type="List" number="1">
 				<item id="1">I know a story relevant to almost every situation.</item>
 				<item id="2">Whenever I come to a new place, I collect local rumors and spread gossip.</item>
 				<item id="3">I’m a hopeless romantic, always searching for that “special someone.”</item>
@@ -103,10 +88,10 @@
 	<element name="Feature: By Popular Demand" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_BY_POPULAR_DEMAND">
 		<supports>Background Feature</supports>
 		<description>
-			<p>You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</p>
+			<p>You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of your performance), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</p>
 		</description>
 		<sheet alt="By Popular Demand">
-			<description>You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</description>
+			<description>You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of your performance), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</description>
 		</sheet>
 	</element>
 	

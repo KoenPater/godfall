@@ -4,7 +4,7 @@
 		<name>Charlatan</name>
 		<description>Charlatan Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="background-charlatan.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/background-charlatan.xml" />
 		</update>
 	</info>
@@ -19,18 +19,7 @@
 				<li><strong>Equipment:</strong> A set of fine clothes, a disguise kit, tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke), and a belt pouch containing 15 gp</li>
 			</ul>
 			<h5>FAVORITE SCHEMES</h5>
-			<p>Every charlatan has an angle he or she uses in preference to other schemes. Choose a favorite scam or roll on the table below.</p>
-			<table>
-				<thead>
-					<tr><td class="col-20">d6</td><td>Scam</td></tr>
-				</thead>
-				<tr><td>1</td><td>I cheat at games of chance.</td></tr>
-				<tr><td>2</td><td>I shave coins or forge documents.</td></tr>
-				<tr><td>3</td><td>I insinuate myself into people’s lives to prey on their weakness and secure their fortunes.</td></tr>
-				<tr><td>4</td><td>I put on new identities like clothes.</td></tr>
-				<tr><td>5</td><td>I run sleight-of-hand cons on street corners.</td></tr>
-				<tr><td>6</td><td>I convince people that worthless junk is worth their hard-earned money.</td></tr>
-			</table>
+			<p>Every charlatan has an angle he or she uses in preference to other schemes. If you want, you can choose a favorite scheme.</p>
 			<div element="ID_BACKGROUND_FEATURE_FALSE_IDENTITY" />
 			<h5>SUGGESTED CHARACTERISTICS</h5>
 			<p>Charlatans are colorful characters who conceal their true selves behind the masks they construct. They reflect what people want to see, what they want to believe, and how they see the world. But their true selves are sometimes plagued by an uneasy conscience, an old enemy, or deep-seated trust issues.</p>
@@ -53,7 +42,7 @@
 				<item id="5">I run sleight-of-hand cons on street corners.</item>
 				<item id="6">I convince people that worthless junk is worth their hard-earned money.</item>
 			</select>
-			<select name="Personality Trait" type="List" number="2">
+			<select name="Personality Trait" type="List" number="1">
 				<item id="1">I fall in and out of love easily, and am always pursuing someone.</item>
 				<item id="2">I have a joke for every occasion, especially occasions where humor is inappropriate.</item>
 				<item id="3">Flattery is my preferred trick for getting what I want.</item>
@@ -93,10 +82,10 @@
 	<element name="Feature: False Identity" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_FALSE_IDENTITY">
 		<supports>Background Feature</supports>
 		<description>
-			<p>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.</p>
+			<p>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.</p>
 		</description>
 		<sheet alt="False Identity">
-			<description>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.</description>
+			<description>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.</description>
 		</sheet>
 	</element>
 </elements>

@@ -36,7 +36,7 @@
 			<grant type="Background Feature" id="ID_WOTC_PHB_BACKGROUND_FEATURE_SAILOR_SHIPS_PASSAGE" requirements="!ID_WOCT_PHB_BACKGROUND_FEATURE_PIRATE_BAD_REPUTATION,!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
 			<select type="Background Variant" name="Variant Sailor" supports="Background Variant, Sailor" optional="true" />
 			<select type="Background Feature" name="Variant Feature" supports="Background Feature, Sailor || Optional Background Feature" optional="true" />
-			<select name="Personality Trait" type="List" number="2">
+			<select name="Personality Trait" type="List" number="1">
 				<item id="1">My friends know they can rely on me, no matter what.</item>
 				<item id="2">I work hard so that I can play hard when the work is done.</item>
 				<item id="3">I enjoy sailing into new ports and making new friends over a flagon of ale.</item>
