@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.2.6">
+		<update version="0.2.8">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -329,17 +329,18 @@
 		</rules>
 	</element>
 	<element name="Heavy Armor Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_HEAVYARMORMASTER">
-		<prerequisite>Proficiency with heavy armor</prerequisite>
-		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+		<prerequisite>Strength 13 or higher, proficiency with heavy armor</prerequisite>
+		<requirements>[str:13],ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
 		<description>
 			<p><i>Prerequisite: Proficiency with heavy armor</i></p>
-			<p>You can use your armor to deflect strikes that would kill others. You gain the following benefit:</p>
+			<p>You can use your armor to deflect strikes that would kill others. You gain the following benefits:</p>
 			<ul>
+				<li>You can don and doff heavy armor as if it were medium armor.</li>
 				<li>While you are wearing heavy armor, you gain resistance to slashing and piercing damage from weapon attacks.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>While you are wearing heavy armor, you gain resistance to slashing and piercing damage from weapon attacks.</description>
+			<description>While you are wearing heavy armor, you gain resistance to slashing and piercing damage from weapon attacks. You don and doff heavy armor as if it were medium.</description>
 		</sheet>
 	</element>
 	<element name="Inspiring Leader" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_INSPIRINGLEADER">
@@ -358,6 +359,8 @@
 		</rules>
 	</element>
 	<element name="Keen Mind" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_KEENMIND">
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits:</p>
 			<ul>
@@ -393,17 +396,17 @@
 		</rules>
 	</element>
 	<element name="Light Armor Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_LIGHTARMORMASTER">
-		<prerequisite>Proficiency with light armor</prerequisite>
-		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+		<prerequisite>Strength 13 or higher, proficiency with light armor</prerequisite>
+		<requirements>[str:13],ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
 		<description>
-			<p><i>Prerequisite: Proficiency with light armor</i></p>
 			<p>You can use your armor to deflect strikes that would kill others. You gain the following benefit:</p>
 			<ul>
+				<li>You can sleep in light armor without suffering exhaustion.</li>
 				<li>While you are wearing light armor, you gain resistance to bludgeoning and piercing damage from weapon attacks.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>While you are wearing light armor, you gain resistance to bludgeoning and piercing damage from weapon attacks.</description>
+			<description>While you are wearing light armor, you gain resistance to bludgeoning and piercing damage from weapon attacks. You can sleep in light armor without suffering exhaustion.</description>
 		</sheet>
 	</element>
 	<element name="Linguist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_LINGUIST">
@@ -466,22 +469,22 @@
 			<select type="Feat Feature" name="Magic Initiate" supports="Magic Initiate" />
 		</rules>
 	</element>
-	<element name="Arcane Student (Bard)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_BARD">
-		<requirements>ID_WOTC_PHB_CLASS_BARD,[int:13]</requirements>
-		<prerequisite>Intelligence 13 or higher</prerequisite>
+	<element name="Arcane Mastery (Bard)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_BARD">
+		<requirements>ID_WOTC_PHB_CLASS_BARD,[int:13],ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<prerequisite>Intelligence 13 or higher, proficiency in Arcana</prerequisite>
 		<description>
-			<p>Though your magic comes naturally, you've studied hard to uncover its mysteries and gain greater control over it. You gain the following benefits:</p>
+			<p>Though your magic comes naturally, you've studied hard to master its mysteries. You gain the following benefits:</p>
 			<p>You learn one cantrip of your choice from the bard’s spell list.</p>
-			<p>In addition, choose two spells from the bard's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
+			<p>In addition, choose a number of spells equal to your Intelligence modifier from the bard's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
 		</description>
 		<sheet>
 			<description><p>You learn one cantrip of your choice from the bard’s spell list.</p>
-			<p>In addition, choose two spells from the bard's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
+			<p>In addition, choose {{intelligence:modifier}} spells from the bard's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
 			</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Arcane Student (Bard)" supports="0,Bard" number="1" />
-			<select type="Spell" name="Arcane Student (Bard)" supports="((0)||($(spellcasting:slots))),Bard" number="2" spellcasting="Bard"/>
+			<select type="Spell" name="Arcane Mastery (Bard)" supports="0,Bard" number="1" />
+			<select type="Spell" name="Arcane Mastery (Bard)" supports="($(spellcasting:slots)),Bard" number="($(intelligence:modifier))" spellcasting="Bard"/>
 		</rules>
 	</element>
 	<element name="Cleric" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_CLERIC">
@@ -518,11 +521,11 @@
 			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Druid" />
 		</rules>
 	</element>
-	<element name="Arcane Student (Sorcerer)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_SORCERER">
-		<requirements>ID_WOTC_PHB_CLASS_SORCERER,[int:13]</requirements>
-		<prerequisite>Intelligence 13 or higher</prerequisite>
+	<element name="Arcane Mastery (Sorcerer)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_SORCERER">
+		<requirements>ID_WOTC_PHB_CLASS_SORCERER,[int:13],ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<prerequisite>Intelligence 13 or higher, proficiency in Arcana</prerequisite>
 		<description>
-			<p>Though your magic comes naturally, you've studied hard to uncover its mysteries and gain greater control over it. You gain the following benefits:</p>
+			<p>Though your magic comes naturally, you've studied hard to master its mysteries. You gain the following benefits:</p>
 			<p>You learn one cantrip of your choice from the sorcerer’s spell list.</p>
 			<p>In addition, choose two spells from the sorcerer's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
 		</description>
@@ -532,15 +535,15 @@
 			</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Arcane Student (Sorcerer)" supports="0,Sorcerer" number="1" />
-			<select type="Spell" name="Arcane Student (Sorcerer)" supports="((0)||($(spellcasting:slots))),Sorcerer" number="2" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Arcane Mastery (Sorcerer)" supports="0,Sorcerer" number="1" />
+			<select type="Spell" name="Arcane Mastery (Sorcerer)" supports="($(spellcasting:slots)),Sorcerer" number="2" spellcasting="Sorcerer"/>
 		</rules>
 	</element>
-	<element name="Arcane Student (Warlock)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WARLOCK">
-		<requirements>ID_WOTC_PHB_CLASS_WARLOCK,[int:13]</requirements>
-		<prerequisite>Intelligence 13 or higher</prerequisite>
+	<element name="Arcane Mastery (Warlock)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WARLOCK">
+		<requirements>ID_WOTC_PHB_CLASS_WARLOCK,[int:13],ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<prerequisite>Intelligence 13 or higher, proficiency in Arcana</prerequisite>
 		<description>
-			<p>Though your magic has been gained through your patron, you've studied hard to uncover its mysteries and gain greater control over it. You gain the following benefits:</p>
+			<p>Though your magic has been gained through your patron, you've studied hard to master its mysteries. You gain the following benefits:</p>
 			<p>You learn one cantrip of your choice from the warlock’s spell list.</p>
 			<p>In addition, choose two spells from the warlock's list of a level that you can cast. You learn those spells, and they do not count towards your maximum number of spells known.</p>
 		</description>
@@ -550,13 +553,13 @@
 			</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Arcane Student (Warlock)" supports="0,Warlock" number="1" />
-			<select type="Spell" name="Arcane Student (Warlock)" supports="((0)||($(spellcasting:slots))),Warlock" number="2" spellcasting="Warlock"/>
+			<select type="Spell" name="Arcane Mastery (Warlock)" supports="0,Warlock" number="1" />
+			<select type="Spell" name="Arcane Mastery (Warlock)" supports="($(spellcasting:slots)),Warlock" number="2" spellcasting="Warlock"/>
 		</rules>
 	</element>
-	<element name="Arcane Student (Wizard)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WIZARD">
-		<requirements>ID_WOTC_PHB_CLASS_WIZARD,[int:15]</requirements>
-		<prerequisite>Intelligence 15 or higher</prerequisite>
+	<element name="Arcane Mastery (Wizard)" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WIZARD">
+		<requirements>ID_WOTC_PHB_CLASS_WIZARD,[int:15],ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<prerequisite>Intelligence 15 or higher, proficiency in Arcana</prerequisite>
 		<description>
 			<p>Your curiosity for magic and spellcraft puts other wizards to shame. You gain the following benefits:</p>
 			<p>You learn one cantrip of your choice from the wizard’s spell list.</p>
@@ -568,8 +571,8 @@
 			</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Arcane Student (Wizard)" supports="0,Wizard" number="1" />
-			<select type="Spell" name="Arcane Student (Wizard)" supports="((0)||($(spellcasting:slots))),Wizard" number="4" spellcasting="Wizard"/>
+			<select type="Spell" name="Arcane Mastery (Wizard)" supports="0,Wizard" number="1" />
+			<select type="Spell" name="Arcane Mastery (Wizard)" supports="($(spellcasting:slots)),Wizard" number="4" spellcasting="Wizard"/>
 		</rules>
 	</element>
 	<!-- /magic initiate -->
@@ -602,17 +605,17 @@
 		</rules>
 	</element>
 	<element name="Medium Armor Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MEDIUMARMORMASTER">
-		<prerequisite>Proficiency with medium armor</prerequisite>
-		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+		<prerequisite>Strength 13 or higher, proficiency with medium armor</prerequisite>
+		<requirements>[str:13],ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
 		<description>
-			<p><i>Prerequisite: Proficiency with medium armor</i></p>
 			<p>You can use your armor to deflect strikes that would kill others. You gain the following benefit:</p>
 			<ul>
+				<li>You can don and doff medium armor as if it were light armor.</li>
 				<li>While you are wearing medium armor, you gain resistance to bludgeoning and slashing damage from weapon attacks.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>While you are wearing medium armor, you gain resistance to bludgeoning and slashing damage from weapon attacks.</description>
+			<description>While you are wearing medium armor, you gain resistance to bludgeoning and slashing damage from weapon attacks. You can don and doff medium armor as if it were light.</description>
 		</sheet>
 	</element>
 	<element name="Mobile" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MOBILE">
@@ -717,24 +720,24 @@
 		</rules>
 	</element>
 	<element name="Unyielding Might" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_STRENGTH">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH,[str:15]</requirements>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_STRENGTH || ID_PHB_FEAT_RESILIENT_STRENGTH),[str:15]</requirements>
 		<prerequisite>Strength 15 or higher</prerequisite>
 		<description>
-			<p>Your Strength and one other ability score of your choice both increase by 1.</p>
+			<p>Your Strength and Constitution both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Strength saving throws.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<stat name="strength" value="1" alt="Unyielding Might" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Unyielding Might)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM" alt="Unyielding Might"/>
+			<stat name="constitution" value="1" alt="Unyielding Might" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Lightning Reflexes" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_DEXTERITY">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY,[dex:15]</requirements>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY || ID_PHB_FEAT_RESILIENT_DEXTERITY),[dex:15]</requirements>
 		<prerequisite>Dexterity 15 or higher</prerequisite>
 		<description>
-			<p>Your Dexterity increases by 1.</p>
+			<p>Your Dexterity increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Dexterity saving throws.</p>
 		</description>
 		<sheet display="false" />
@@ -744,10 +747,10 @@
 		</rules>
 	</element>
 	<element name="Great Fortitude" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CONSTITUTION">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION,[con:15]</requirements>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION || ID_PHB_FEAT_RESILIENT_CONSTITUTION),[con:15]</requirements>
 		<prerequisite>Constitution 15 or higher</prerequisite>
 		<description>
-			<p>Your Constitution increases by 1.</p>
+			<p>Your Constitution increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Constitution saving throws.</p>
 		</description>
 		<sheet display="false" />
@@ -756,44 +759,44 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
-	<element name="Canny Resolve" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_INTELLIGENCE">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE,[int:15]</requirements>
+	<element name="Keen Mind" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_INTELLIGENCE">
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE || ID_PHB_FEAT_RESILIENT_INTELLIGENCE),[int:15]</requirements>
 		<prerequisite>Intelligence 15 or higher</prerequisite>
 		<description>
-			<p>Your Intelligence and one other ability score of your choice both increase by 1.</p>
+			<p>Your Intelligence and Dexterity both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Intelligence saving throws.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="intelligence" value="1" alt="Canny Resolve" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Canny Resolve)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM" alt="Canny Resolve"/>
+			<stat name="intelligence" value="1" alt="Keen Mind" />
+			<stat name="dexterity" value="1" alt="Keen Mind" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 		</rules>
 	</element>
-	<element name="Iron Will" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_WISDOM">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM,[wis:15]</requirements>
+	<element name="Iron Vigilance" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_WISDOM">
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_WISDOM || ID_PHB_FEAT_RESILIENT_WISDOM),[wis:15]</requirements>
 		<prerequisite>Wisdom 15 or higher</prerequisite>
 		<description>
-			<p>Your Wisdom increases by 1.</p>
+			<p>Your Wisdom increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Wisdom saving throws.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="wisdom" value="1" alt="Iron Will" />
+			<stat name="wisdom" value="1" alt="Iron Vigilance" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
 		</rules>
 	</element>
-	<element name="Strong Soul" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CHARISMA">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA,[cha:15]</requirements>
+	<element name="Old Soul" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CHARISMA">
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CHARISMA || ID_PHB_FEAT_RESILIENT_CHARISMA),[cha:15]</requirements>
 		<prerequisite>Charisma 15 or higher</prerequisite>
 		<description>
-			<p>Your Charisma and one other ability score of your choice both increase by 1.</p>
+			<p>Your Charisma and Wisdom both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Charisma saving throws.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<stat name="charisma" value="1" alt="Old Soul" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Old Soul)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" alt="Old Soul"/>			
+			<stat name="wisdom" value="1" alt="Old Soul" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
