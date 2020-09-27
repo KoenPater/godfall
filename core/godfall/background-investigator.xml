@@ -4,7 +4,7 @@
 		<name>Investigator</name>
 		<description>Investigator Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="background-investigator.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/background-investigator.xml" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIATE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 			<select type="Language" name="Language (Investigator)" number="1" supports="Standard" />
 			<select type="Proficiency" name="Tool Proficiency (Investigator)" number="1" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
 			<grant type="Background Feature" id="ID_GFCS_BACKGROUND_FEATURE_EAR_TO_THE_GROUND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>

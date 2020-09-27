@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/languages.xml" />
 		</update>
 	</info>
@@ -90,7 +90,7 @@
 	<element name="Deep Speech" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DEEP_SPEECH">
 		<supports>Exotic</supports>
 		<description>
-			<p>An alien language spoken by sinister beings that live deep beneath the earth.</p>
+			<p>An alien language spoken by sinister beings that live deep beneath the earth, as well as their worshippers.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
@@ -102,7 +102,7 @@
 	<element name="Jotun" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
 		<supports>Exotic</supports>
 		<description>
-			<p>Also known as 'giant'. This language is typically spoken by ogres and giants.</p>
+			<p>Also known as 'giant'. This language is spoken by giants and shares some similarity with the human tongue.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
@@ -122,21 +122,21 @@
 			<set name="script">Zhorubad</set>
 		</setters>
 	</element>
-	<element name="Supernal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
+	<element name="Empyrean" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>The prime language. When spoken properly by celestial beings, can be understood by all creatures.</p>
+			<p>The first language. When spoken properly by celestial beings, can be understood by all creatures.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Gods, archons, fallen</set>
-			<set name="script">Empyrean</set>
+			<set name="script">Ahn</set>
 		</setters>
 	</element>
 	<element name="Thanakaris" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRACONIC">
 		<supports>Exotic</supports>
 		<description>
-			<p>Also known as 'draconic'. This language is typically spoken by dragons.</p>
+			<p>Also known as 'draconic'. This complex language is spoken by dragons.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
@@ -147,7 +147,7 @@
 	<element name="Primordial" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_PRIMORDIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Perhaps the oldest language. Typically spoken by elementals and other beings from the elemental chaos.</p>
+			<p>This ancient language is spoken by beings from the elemental chaos, outside of reality.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
