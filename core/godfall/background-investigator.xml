@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Investigator</name>
+		<description>Investigator Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="background-investigator.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/godfall/background-investigator.xml" />
+		</update>
+	</info>
+
+	<element name="Investigator" type="Background" source="Player’s Handbook" id="ID_GFCS_BACKGROUND_INVESTIGATOR">
+		<description>
+			<p>You are experienced in getting answers. You might have served your hometown as part of the law enforcement, investigating crime scenes and tracking down criminals. Perhaps you offered your skills to the highest bidder as a bounty hunter. Or maybe you are on a personal quest, chasing down answers to a mystery that still haunts you to this day.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Investigate</li>
+				<li><strong>Tool Proficiencies:</strong> Choose either thieves’ tools or disguise kit</li>
+				<li><strong>Languages:</strong>One standard language of your choice</li>
+				<li><strong>Equipment:</strong>Either a set of thieves' tools or a disguise kit, a set of manacles, a set of unassuming clothes, and a belt pouch containing 10 gp.</li>
+			</ul>
+			<div element="ID_GFCS_BACKGROUND_FEATURE_EAR_TO_THE_GROUND" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Investigators are often inquisitive, curious, thorough, and sometimes a bit paranoid. The secrets they deal in can make them cynical, but also determined.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Investigate, Thieves' Tools or Disguise Kit, Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIATE" />
+			<select type="Language" name="Language (Investigator)" number="1" supports="Standard" />
+			<select type="Proficiency" name="Tool Proficiency (Investigator)" number="1" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Background Feature" id="ID_GFCS_BACKGROUND_FEATURE_EAR_TO_THE_GROUND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="List" name="Personality Trait" number="1">
+				<item id="1">I am incredibly slow to trust. Those who seem the fairest often have the most to hide.</item>
+				<item id="2">There’s nothing I like more than a good mystery.</item>
+				<item id="3">I can’t stop asking questions!</item>
+				<item id="4">I require silence to do my work. I detest noise.</item>
+				<item id="5">My art is as important as my investigation, and I often paint what I find.</item>
+				<item id="6">Once I've started an investigation, nothing can stop from getting the answer.</item>
+				<item id="7">My deductive abilities come naturally to me. I'm not sure why it's so hard for others.</item>
+				<item id="8">I really can't stand all this subterfuge and dishonesty.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Duty. I make sure that those who run or hide from the law will face it (Lawful)</item>
+				<item id="2">Greed. I don't care who I'm tracking, as long as I'm getting paid (Evil)</item>
+				<item id="3">Emancipation. Those in power think they are safe, but they all have secrets that can bring them down (Chaotic)</item>
+				<item id="4">Charity. I help those who have nowhere else to turn, by getting them the answers they need (Good)</item>
+				<item id="5">Truth. It is always better to know (Any)</item>
+				<item id="6">Justice. I track down and punish those who deserve it (Any)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">I need to uncover the truth behind a tragedy from my past.</item>
+				<item id="2">I take contracts in the hope that one day I can repay a large debt.</item>
+				<item id="3">I learned a terrible secret about a powerful person or group.</item>
+				<item id="4">A person I care deeply about is still out there, somewhere.</item>
+				<item id="5">I'd do anything for the few people I trust.</item>
+				<item id="6">I serve a greater cause, and will protect it from any enemies.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">I will never skip an opportunity to prove how clever I am.</item>
+				<item id="2">I’m too greedy for my own good. I can’t resist a contract no matter the risk.</item>
+				<item id="3">If you lie to me I will bring you down.</item>
+				<item id="4">I recognize that face, they must be gaining on me!</item>
+				<item id="5">I am suspicious of strangers and expect the worst of them.</item>
+				<item id="6">Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</item>
+			</select>
+		</rules>
+	</element>
+	
+	<element name="Feature: Ear to the Ground" type="Background Feature" source="Player’s Handbook" id="ID_GFCS_BACKGROUND_FEATURE_EAR_TO_THE_GROUND">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have a feel for finding people who can help you along with your inquiries. In any community you visit, you can quickly find out who to talk to about the local comings and goings partaining to your current area of interest, and how to get into contact with this person (or group).
+			</p>
+		</description>
+		<sheet alt="Ear to the Ground" />
+	</element>
+</elements>
