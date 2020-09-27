@@ -4,7 +4,7 @@
 		<name>Outlander</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="background-outlander.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/background-outlander.xml" />
 		</update>
 	</info>
@@ -19,22 +19,7 @@
 				<li><strong>Equipment:</strong> A staff, a hunting trap, a trophy from an animal you killed, a set of traveler’s clothes, and a belt pouch containing 10 gp</li>
 			</ul>
 			<h5>Origin</h5>
-			<p>You’ve been to strange places and seen things that others cannot begin to fathom. Consider some of the distant lands you have visited, and how they impacted you. You can roll on the following table to determine your occupation during your time in the wild, or choose one that best fits your character.</p>
-			<table>
-				<thead>
-					<tr><td class="col-10">d10</td><td>Origin</td></tr>
-				</thead>
-				<tr><td>1</td><td>Forester</td></tr>
-				<tr><td>2</td><td>Trapper</td></tr>
-				<tr><td>3</td><td>Homesteader</td></tr>
-				<tr><td>4</td><td>Guide</td></tr>
-				<tr><td>5</td><td>Exile or outcast</td></tr>
-				<tr><td>6</td><td>Bounty hunter</td></tr>
-				<tr><td>7</td><td>Pilgrim</td></tr>
-				<tr><td>8</td><td>Tribal nomad</td></tr>
-				<tr><td>9</td><td>Hunter-gatherer</td></tr>
-				<tr><td>10</td><td>Tribal marauder</td></tr>
-			</table>
+			<p>You’ve been to strange places and seen things that others cannot begin to fathom. Consider some of the distant lands you have visited, and how they impacted you. If you want, you can choose your occupation during your time in the wild.</p>
 			<div element="ID_BACKGROUND_FEATURE_WANDERER" />
 			<h5>Suggested Characteristics</h5>
 			<p>Often considered rude and uncouth among civilized folk, outlanders have little respect for the niceties of life in the cities. The ties of tribe, clan, family, and the natural world of which they are a part are the most important bonds to most outlanders.</p>
@@ -61,7 +46,7 @@
 				<item id="9">Hunter-gatherer</item>
 				<item id="10">Tribal marauder</item>
 			</select>
-			<select name="Personality Trait" type="List" number="2">
+			<select name="Personality Trait" type="List" number="1">
 				<item id="1">I’m driven by a wanderlust that led me away from home.</item>
 				<item id="2">I watch over my friends as if they were a litter of newborn pups.</item>
 				<item id="3">I once ran twenty-five miles without stopping to warn to my clan of an approaching orc horde. I’d do it again if I had to.</item>
@@ -83,7 +68,7 @@
 				<item id="1">My family, clan, or tribe is the most important thing in my life, even when they are far from me.</item>
 				<item id="2">An injury to the unspoiled wilderness of my home is an injury to me.</item>
 				<item id="3">I will bring terrible wrath down on the evildoers who destroyed my homeland.</item>
-				<item id="4">I am the last of my tribe, and it is up to me to ensure their names enter legend.</item>
+				<item id="4">I am the last of my family or tribe, and it is up to me to ensure their names enter legend.</item>
 				<item id="5">I suffer awful visions of a coming disaster and will do anything to prevent it.</item>
 				<item id="6">It is my duty to provide children to sustain my tribe.</item>
 			</select>
@@ -101,7 +86,7 @@
 	<element name="Feature: Wanderer" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_WANDERER">
 		<supports>Background Feature</supports>
 		<description>
-			<p>You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</p>
+			<p>You have an excellent memory for geography, and you can always recall the general layout of terrain, settlements, and other features around you if you've seen them before (even just on a map). In addition, you can find food and fresh water for yourself without much effort, provided that the land offers berries, small game, water, and so forth.</p>
 		</description>
 		<sheet alt="Wanderer" />
 	</element>

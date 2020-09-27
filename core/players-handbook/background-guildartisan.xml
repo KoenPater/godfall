@@ -4,7 +4,7 @@
 		<name>Guild Artisan</name>
 		<description>Guild Artisan Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="background-guildartisan.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/background-guildartisan.xml" />
 		</update>
 	</info>
@@ -19,32 +19,7 @@
 				<li><strong>Equipment:</strong>A set of artisan’s tools (one of your choice), a letter of introduction from your guild, a set of traveler’s clothes, and a belt pouch containing 15 gp</li>
 			</ul>
 			<h5>GUILD BUSINESS</h5>
-			<p>Guilds are generally found in cities large enough to support several artisans practicing the same trade. However, your guild might instead be a loose network of artisans who each work in a different village within a larger realm. Work with your DM to determine the nature of your guild. You can select your guild business from the Guild Business table or roll randomly.</p>
-			<table>
-				<thead>
-					<tr><td>d20</td><td>Guild Business</td></tr>
-				</thead>
-				<tr><td>1</td><td>Alchemists and apothecaries</td></tr>
-				<tr><td>2</td><td>Armorers, locksmiths, and finesmiths</td></tr>
-				<tr><td>3</td><td>Brewers, distillers, and vintners</td></tr>
-				<tr><td>4</td><td>Calligraphers, scribes, and scriveners</td></tr>
-				<tr><td>5</td><td>Carpenters, roofers, and plasterers</td></tr>
-				<tr><td>6</td><td>Cartographers, surveyors, and chart-makers</td></tr>
-				<tr><td>7</td><td>Cobblers and shoemakers</td></tr>
-				<tr><td>8</td><td>Cooks and bakers</td></tr>
-				<tr><td>9</td><td>Glassblowers and glaziers</td></tr>
-				<tr><td>10</td><td>Jewelers and gemcutters</td></tr>
-				<tr><td>11</td><td>Leatherworkers, skinners, and tanners</td></tr>
-				<tr><td>12</td><td>Masons and stonecutters</td></tr>
-				<tr><td>13</td><td>Painters, limners, and sign-makers</td></tr>
-				<tr><td>14</td><td>Potters and tile-makers</td></tr>
-				<tr><td>15</td><td>Shipwrights and sailmakers</td></tr>
-				<tr><td>16</td><td>Smiths and metal-forgers</td></tr>
-				<tr><td>17</td><td>Tinkers, pewterers, and casters</td></tr>
-				<tr><td>18</td><td>Wagon-makers and wheelwrights</td></tr>
-				<tr><td>19</td><td>Weavers and dyers</td></tr>
-				<tr><td>20</td><td>Woodcarvers, coopers, and bowyer</td></tr>
-			</table>
+			<p>Guilds are generally found in cities large enough to support several artisans practicing the same trade. However, your guild might instead be a loose network of artisans who each work in a different village within a larger realm. Work with your DM to determine the nature of your guild. You can select your guild business from the Guild Business list.</p>
 			<p>As a member of your guild, you know the skills needed to create finished items from raw materials (reflected in your proficiency with a certain kind of artisan’s tools), as well as the principles of trade and good business practices. The question now is whether you abandon your trade for adventure, or take on the extra effort to weave adventuring and trade together.</p>
 			<div element="ID_BACKGROUND_FEATURE_GUILD_MEMBERSHIP" />
 			<h5>SUGGESTED CHARACTERISTICS</h5>
@@ -64,7 +39,7 @@
 			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_GUILD_MEMBERSHIP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
 			<select type="Background Variant" name="Variant Guild Artisan" supports="Variant Guild Artisan" optional="true" />
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-			<select name="Guild Business" type="List" optional="true">
+			<select name="Guild Business" type="List">
 				<item id="1">Alchemists and apothecaries</item>
 				<item id="2">Armorers, locksmiths, and finesmiths</item>
 				<item id="3">Brewers, distillers, and vintners</item>
@@ -86,7 +61,7 @@
 				<item id="19">Weavers and dyers</item>
 				<item id="20">Woodcarvers, coopers, and bowyers</item>
 			</select>
-			<select name="Personality Trait" type="List" number="2">
+			<select name="Personality Trait" type="List" number="1">
 				<item id="1">I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.</item>
 				<item id="2">I’m a snob who looks down on those who can’t appreciate fine art.</item>
 				<item id="3">I always want to know how things work and what makes people tick.</item>
@@ -137,7 +112,7 @@
 		<supports>Variant Guild Artisan</supports>
 		<description>
 			<p>Instead of an artisans’ guild, you might belong to a guild of traders, caravan masters, or shopkeepers. You don’t craft items yourself but earn a living by buying and selling the works of others (or the raw materials artisans need to practice their craft). Your guild might be a large merchant consortium (or family) with interests across the region. Perhaps you transported goods from one place to another, by ship, wagon, or caravan, or bought them from traveling traders and sold them in your own little shop. In some ways, the traveling merchant’s life lends itself to adventure far more than the life of an artisan.</p>
-			<p class="indent">Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language. And instead of artisan’s tools, you can start with a mule and a cart.</p>
+			<p class="indent">Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional standard language. And instead of artisan’s tools, you can start with a mule and a cart.</p>
 		</description>
 		<sheet alt="Guild Merchant" />
 		<rules>
@@ -147,7 +122,7 @@
 	<element name="Navigator’s Tools" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_GUILD_MERCHANT_OPTION_A">
 		<supports>Guild Merchant Option</supports>
 		<description>
-			<p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language.</p>
+			<p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional standard language.</p>
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
@@ -156,10 +131,10 @@
 	<element name="Additional Language" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_GUILD_MERCHANT_OPTION_B">
 		<supports>Guild Merchant Option</supports>
 		<description>
-			<p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language.</p>
+			<p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional standard language.</p>
 		</description>
 		<rules>
-			<select type="Language" name="Language (Guild Merchant)" supports="Standard||Exotic" />
+			<select type="Language" name="Language (Guild Merchant)" supports="Standard" />
 		</rules>
 	</element>
 </elements>

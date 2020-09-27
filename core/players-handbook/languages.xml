@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/languages.xml" />
 		</update>
 	</info>
@@ -87,7 +87,19 @@
 	</element>
 
 	<!-- exotic -->
-		<element name="Jotun" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
+	<element name="Deep Speech" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DEEP_SPEECH">
+		<supports>Exotic</supports>
+		<description>
+			<p>An alien language spoken by sinister beings that live deep beneath the earth.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Mind flayers, beholders</set>
+			<set name="script">Xilgaruvet</set>
+		</setters>
+	</element>
+
+	<element name="Jotun" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_GIANT">
 		<supports>Exotic</supports>
 		<description>
 			<p>Also known as 'giant'. This language is typically spoken by ogres and giants.</p>
@@ -102,7 +114,7 @@
 	<element name="Demonic" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_ABYSSAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by demons.</p>
+			<p>This dark perversion of primordial is spoken by demons.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
@@ -110,15 +122,15 @@
 			<set name="script">Zhorubad</set>
 		</setters>
 	</element>
-	<element name="Empyreal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
+	<element name="Supernal" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_CELESTIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by celestials.</p>
+			<p>The prime language. When spoken properly by celestial beings, can be understood by all creatures.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
 			<set name="speakers">Gods, archons, fallen</set>
-			<set name="script">Ahn</set>
+			<set name="script">Empyrean</set>
 		</setters>
 	</element>
 	<element name="Thanakaris" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRACONIC">
@@ -135,7 +147,7 @@
 	<element name="Primordial" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_PRIMORDIAL">
 		<supports>Exotic</supports>
 		<description>
-			<p>Typically spoken by elementals and other beings from the elemental chaos.</p>
+			<p>Perhaps the oldest language. Typically spoken by elementals and other beings from the elemental chaos.</p>
 		</description>
 		<setters>
 			<set name="exotic">true</set>
@@ -267,19 +279,6 @@
 			<set name="exotic">true</set>
 			<set name="speakers">Devils</set>
 			<set name="script">Infernal</set>
-		</setters>
-	</element>
-	<element name="Deep Speech" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DEEP_SPEECH">
-		<supports>Exotic</supports>
-		<requirements>ID_GODS_LIVING</requirements>
-		<compendium display="false" />
-		<description>
-			<p>Typically spoken by mind flayers and beholders.</p>
-		</description>
-		<setters>
-			<set name="exotic">true</set>
-			<set name="speakers">Mind flayers, beholders</set>
-			<set name="script"></set>
 		</setters>
 	</element>
 </elements>
