@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.2">
+		<update version="0.3.3">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -169,7 +169,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -183,14 +183,7 @@
 			<p class="indent">You choose additional favored terrain types at 6th and 10th level.</p>
 		</description>
 		<sheet>
-			<description>While in your favored terrain, you gain advantage on initiative rolls, Dexterity saving throws, and double the proficiency bonus for Intelligence and Wisdom checks related to the terrain.
-			In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:
-			Difficult terrain doesn’t slow your group’s travel.
-			Your group can’t become lost except by magical means.
-			Even when you are engaged in another activity while traveling, you remain alert to danger.
-			If you are traveling alone, you can move stealthily at a normal pace.
-			When you forage, you find twice as much food as you normally would.
-			While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
+			<description>While in your favored terrain, you gain advantage on initiative rolls, Dexterity saving throws, and double the proficiency bonus for ability checks related to the terrain. In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits: Difficult terrain doesn’t slow your group’s travel. Your group can’t become lost except by magical means. Even when you are engaged in another activity while traveling, you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="1" />
@@ -705,7 +698,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -725,7 +718,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -745,7 +738,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -765,7 +758,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -785,7 +778,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -805,7 +798,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -825,7 +818,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
@@ -845,7 +838,7 @@
 			<ul>
 				<li>You gain advantage on initiative rolls.</li>
 				<li>You gain advantage on Dexterity saving throws.</li>
-				<li>When you make an Intelligence or Wisdom check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
+				<li>When you make an ability check related to the terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</li>
 			</ul>
 			<p class="indent">In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits:</p>
 			<ul>
