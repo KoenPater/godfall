@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.0">
+		<update version="0.3.1">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -277,9 +277,9 @@
 		</sheet>
 	</element>
 	<element name="Heavy Weapon Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_GREATWEAPONMASTER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
 		<description>
-			<prerequisite>Strength 13 or higher</prerequisite>
-			<requirements>[str:13]</requirements>
 			<p>You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes.</p> 
 			<p>When wielding a weapon with the versatile or heavy traits that you are proficient with, you gain the following benefits:</p>
 			<ul>
@@ -460,7 +460,7 @@
 		<description>
 			<p>Your exposure to the Feywild or one of its denizens has left a magical mark on you. You gain the following benefits:</p>
 			<ul>
-				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>Increase your Wisdom or Charisma score by 1, to a maximum of 20.</li>
 				<li>You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</li>
 			</ul>
 		</description>
@@ -468,7 +468,7 @@
 			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase, Fey Touched" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Ability Score Improvement" name="Ability Score Increase, Fey Touched" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
 			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
 			<select type="Spell" name="1st-level Spell, Fey Touched" supports="1,(Divination||Enchantment)" />
 		</rules>
@@ -477,7 +477,7 @@
 		<description>
 			<p>Your soul is touched by the Shadowfell, leaving you with an aptitude for its dark powers. You gain the following benefits:</p>
 			<ul>
-				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>Increase your Intelligence or Charisma score by 1, to a maximum of 20.</li>
 				<li>You learn the darkness spell and one 1st-level spell of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</li>
 			</ul>
 		</description>
@@ -485,12 +485,12 @@
 			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase, Shadow Touched" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Ability Score Improvement" name="Ability Score Increase, Shadow Touched" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
 			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
 			<select type="Spell" name="1st-level Spell, Shadow Touched" supports="1,(Illusion||Necromancy)" />			
 		</rules>
 	</element>
-	<element name="Arcane Prodigy" type="Feat" source="Player's Handbook" id="ID_WOTC_UA20200713_FEAT_METAMAGIC_ADEPT">
+	<element name="Arcane Prodigy" type="Feat" source="Player’s Handbook" id="ID_WOTC_UA20200713_FEAT_METAMAGIC_ADEPT">
 		<prerequisite>Intelligence 13 or higher, Charisma 13 or higher</prerequisite>
 		<requirements>[int:13],[cha:13],(ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB_CLASS_WARLOCK||ID_WOTC_PHB_CLASS_SORCERER)</requirements>
 		<!-- todo: generic -->
