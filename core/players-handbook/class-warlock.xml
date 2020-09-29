@@ -4,7 +4,7 @@
 		<name>Warlock</name>
 		<description>The Warlock class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.5">
+		<update version="0.4.7">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-warlock.xml" />
 		</update>
 	</info>
@@ -61,25 +61,25 @@
 					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td><td class="col-10">Invocations Known</td></tr>
 				</thead>
 				<tr><td> 1st</td><td class="left">Otherworldly Patron, Pact Magic</td><td>2</td><td>2</td><td>2</td><td>1st</td><td>—</td></tr>
-				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>3</td><td>3</td><td>1st</td><td>2</td></tr>
-				<tr><td> 3rd</td><td class="left">Pact Boon</td><td>2</td><td>4</td><td>3</td><td>2nd</td><td>2</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>3</td><td>2nd</td><td>3</td></tr>
-				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>6</td><td>3</td><td>3rd</td><td>3</td></tr>
-				<tr><td> 6th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>7</td><td>3</td><td>3rd</td><td>4</td></tr>
-				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>8</td><td>3</td><td>4th</td><td>4</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>9</td><td>3</td><td>4th</td><td>5</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>10</td><td>3</td><td>5th</td><td>5</td></tr>
-				<tr><td>10th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>10</td><td>3</td><td>5th</td><td>6</td></tr>
-				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>6</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>7</td></tr>
-				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>4</td><td>12</td><td>4</td><td>5th</td><td>7</td></tr>
-				<tr><td>14th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>12</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>4</td><td>13</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>13</td><td>4</td><td>5th</td><td>9</td></tr>
-				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>4</td><td>14</td><td>5</td><td>5th</td><td>9</td></tr>
-				<tr><td>18th</td><td class="left">—</td><td>4</td><td>14</td><td>5</td><td>5th</td><td>10</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>15</td><td>5</td><td>5th</td><td>10</td></tr>
-				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>15</td><td>5</td><td>5th</td><td>10</td></tr>
+				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>2</td><td>3</td><td>1st</td><td>2</td></tr>
+				<tr><td> 3rd</td><td class="left">Pact Boon</td><td>2</td><td>3</td><td>3</td><td>2nd</td><td>2</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>3</td><td>2nd</td><td>3</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>4</td><td>3</td><td>3rd</td><td>3</td></tr>
+				<tr><td> 6th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>5</td><td>3</td><td>3rd</td><td>4</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>6</td><td>3</td><td>4th</td><td>4</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>6</td><td>3</td><td>4th</td><td>5</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>7</td><td>3</td><td>5th</td><td>5</td></tr>
+				<tr><td>10th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>8</td><td>3</td><td>5th</td><td>6</td></tr>
+				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>4</td><td>9</td><td>4</td><td>5th</td><td>6</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>9</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>4</td><td>10</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>14th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>10</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>9</td></tr>
+				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>4</td><td>12</td><td>5</td><td>5th</td><td>9</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>4</td><td>12</td><td>5</td><td>5th</td><td>10</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>13</td><td>5</td><td>5th</td><td>10</td></tr>
+				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>13</td><td>5</td><td>5th</td><td>10</td></tr>
 			</table>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_PATRON" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
@@ -190,14 +190,12 @@
 			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="10" spellcasting="Warlock" />
 
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Warlock"/>
-			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Warlock"/>
-			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Warlock"/>
-			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Warlock"/>
