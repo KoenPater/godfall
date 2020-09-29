@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.5.2">
+    <update version="0.5.4">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -7796,4 +7796,25 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
+  <element name="Toll the Dead" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_TOLL_THE_DEAD">
+	<supports>Cleric, Warlock, Wizard</supports>
+	<description>
+		<p>You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Constitution saving throw or take 1d8 necrotic damage. If the target is missing at least half of its hit points, it automatically fails its Constitution saving throw.</p>
+		<p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+	</description>
+	<setters>
+		<set name="keywords">necrotic</set>
+		<set name="level">0</set>
+		<set name="school">Necromancy</set>
+		<set name="time">1 action</set>
+		<set name="duration">Instantaneous</set>
+		<set name="range">60 feet</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">true</set>
+		<set name="hasMaterialComponent">false</set>
+		<set name="materialComponent"></set>
+		<set name="isConcentration">false</set>
+		<set name="isRitual">false</set>
+	</setters>
+</element>
 </elements>
