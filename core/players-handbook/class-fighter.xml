@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Fighter</name>
-		<update version="0.4.0">
+		<update version="0.4.1">
 			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-fighter.xml" />
 		</update>
 	</info>
@@ -131,8 +131,8 @@
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
 			<h5 class="caption">DEFENSE</h5>
 			<p>While you are wearing armor, critical hits made against you do not roll any additional damage dice.</p>
-			<h5 class="caption">DUELING</h5>
-			<p>When you are wielding a melee weapon in one hand and no other weapons or shields, you may reroll any attack that rolls a 5 or lower. You must accept the second result, even if it is a 5 or lower.</p>
+			<h5 class="caption">VERSATILE</h5>
+			<p>When you are wielding a one-handed melee weapon in one hand and no other weapons or shields, you gain a +2 bonus to attack rolls. When you are wielding a one-handed melee weapon with two hands, you gain a +1 bonus to damage rolls.</p>
 			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
 			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
 			<h5 class="caption">PROTECTION</h5>
@@ -241,13 +241,13 @@
 			<description>While you are wearing armor, critical hits made against you do not roll any additional damage dice.</description>
 		</sheet>
 	</element>
-	<element name="Dueling" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+	<element name="Versatile" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>When you are wielding a melee weapon in one hand and no other weapons or shields, you may reroll any attack that rolls a 5 or lower. You must accept the second result, even if it is a 5 or lower.</p>
+			<p>When you are wielding a one-handed melee weapon in one hand and no other weapons or shields, you gain a +2 bonus to attack rolls. When you are wielding a one-handed melee weapon with two hands, you gain a +1 bonus to damage rolls.</p>
 		</description>
 		<sheet>
-			<description>When you are wielding a melee weapon in one hand and no other weapons or shields, you may reroll any attack that rolls a 5 or lower. You must accept the second result, even if it is a 5 or lower.</description>
+			<description>When you are wielding a one-handed melee weapon in one hand and no other weapons or shields, you gain a +2 bonus to attack rolls. When you are wielding a one-handed melee weapon with two hands, you gain a +1 bonus to damage rolls.</description>
 		</sheet>
 	</element>
 	<element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
