@@ -4,7 +4,7 @@
 		<name>Warlock</name>
 		<description>The Warlock class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.7">
+		<update version="0.4.8">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-warlock.xml" />
 		</update>
 	</info>
@@ -60,26 +60,26 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td><td class="col-10">Invocations Known</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Otherworldly Patron, Pact Magic</td><td>2</td><td>2</td><td>2</td><td>1st</td><td>—</td></tr>
-				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>2</td><td>3</td><td>1st</td><td>2</td></tr>
-				<tr><td> 3rd</td><td class="left">Pact Boon</td><td>2</td><td>3</td><td>3</td><td>2nd</td><td>2</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>3</td><td>2nd</td><td>3</td></tr>
-				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>4</td><td>3</td><td>3rd</td><td>3</td></tr>
-				<tr><td> 6th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>5</td><td>3</td><td>3rd</td><td>4</td></tr>
-				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>6</td><td>3</td><td>4th</td><td>4</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>6</td><td>3</td><td>4th</td><td>5</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>7</td><td>3</td><td>5th</td><td>5</td></tr>
-				<tr><td>10th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>8</td><td>3</td><td>5th</td><td>6</td></tr>
-				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>4</td><td>9</td><td>4</td><td>5th</td><td>6</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>9</td><td>4</td><td>5th</td><td>7</td></tr>
-				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>4</td><td>10</td><td>4</td><td>5th</td><td>7</td></tr>
-				<tr><td>14th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>10</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>11</td><td>4</td><td>5th</td><td>9</td></tr>
-				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>4</td><td>12</td><td>5</td><td>5th</td><td>9</td></tr>
-				<tr><td>18th</td><td class="left">—</td><td>4</td><td>12</td><td>5</td><td>5th</td><td>10</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>13</td><td>5</td><td>5th</td><td>10</td></tr>
-				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>13</td><td>5</td><td>5th</td><td>10</td></tr>
+				<tr><td> 1st</td><td class="left">Otherworldly Patron, Pact Magic</td><td>1</td><td>2</td><td>2</td><td>1st</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>1</td><td>2</td><td>3</td><td>1st</td><td>2</td></tr>
+				<tr><td> 3rd</td><td class="left">Pact Boon</td><td>1</td><td>3</td><td>3</td><td>2nd</td><td>2</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>3</td><td>2nd</td><td>3</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>2</td><td>4</td><td>3</td><td>3rd</td><td>3</td></tr>
+				<tr><td> 6th</td><td class="left">Otherworldly Patron feature</td><td>2</td><td>5</td><td>3</td><td>3rd</td><td>4</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>2</td><td>6</td><td>3</td><td>4th</td><td>4</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>2</td><td>6</td><td>3</td><td>4th</td><td>5</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>2</td><td>7</td><td>3</td><td>5th</td><td>5</td></tr>
+				<tr><td>10th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>8</td><td>3</td><td>5th</td><td>6</td></tr>
+				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>3</td><td>9</td><td>4</td><td>5th</td><td>6</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3</td><td>9</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>3</td><td>10</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>14th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>10</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>3</td><td>11</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>3</td><td>11</td><td>4</td><td>5th</td><td>9</td></tr>
+				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>3</td><td>12</td><td>4</td><td>5th</td><td>9</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>3</td><td>12</td><td>4</td><td>5th</td><td>10</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>3</td><td>13</td><td>4</td><td>5th</td><td>10</td></tr>
+				<tr><td>20th</td><td class="left">Eldritch Master</td><td>3</td><td>13</td><td>4</td><td>5th</td><td>11</td></tr>
 			</table>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_PATRON" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
@@ -135,8 +135,8 @@
 	<element name="Pact Magic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC">
 		<description>
 			<p>The magic bestowed on you by your patron has given you facility with spells.</p>
-			<h5>CANTRIPS</h5>
-			<p>You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.</p>
+			<h5>ELDRITCH BLAST AND OTHER CANTRIPS</h5>
+			<p>You know Eldritch Blast and one other cantrip of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.</p>
 			<h5>SPELL SLOTS</h5>
 			<p>The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
 			<p class="indent">For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.</p>
@@ -162,11 +162,11 @@
 		<rules>
 			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST"/>
 
 			<stat name="warlock:spellcasting:slots:count" value="2" level="1"/>
 			<stat name="warlock:spellcasting:slots:count" value="1" level="2"/>
 			<stat name="warlock:spellcasting:slots:count" value="1" level="11"/>			
-			<stat name="warlock:spellcasting:slots:count" value="1" level="17"/>
 
 			<stat name="warlock:spellcasting:slot" value="1" level="1" />
 			<stat name="warlock:spellcasting:slot" value="1" level="3" />
@@ -185,7 +185,7 @@
 			<stat name="warlock:spellcasting:slots:4" value="-warlock:spellcasting:slots:count" level="9" />
 			<stat name="warlock:spellcasting:slots:5" value="warlock:spellcasting:slots:count" level="9" />
 
-			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="Warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="1" number="1" spellcasting="Warlock" />
 			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="4" spellcasting="Warlock" />
 			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="10" spellcasting="Warlock" />
 
@@ -219,6 +219,7 @@
 			<select type="Class Feature" name="Eldritch Invocation (Level 14)" supports="Eldritch Invocation" level="14" />
 			<select type="Class Feature" name="Eldritch Invocation (Level 16)" supports="Eldritch Invocation" level="16" />
 			<select type="Class Feature" name="Eldritch Invocation (Level 18)" supports="Eldritch Invocation" level="18" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 20)" supports="Eldritch Invocation" level="20" />
 		</rules>
 	</element>
 	<element name="Pact Boon" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON">
@@ -331,13 +332,13 @@
 		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
 		<description>
 			<p><em>Prerequisite: eldritch blast cantrip</em></p>
-			<p>When you cast <em>eldritch blast</em>, roll d12s instead of d10s to determine the damage it deals on a hit.</p>
+			<p>When you cast <em>eldritch blast</em>, roll d10s instead of d8s to determine the damage it deals on a hit.</p>
 			<div class="reference">
 				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
 			</div>
 		</description>
 		<sheet>
-			<description>When you cast eldritch blast, roll d12s instead of d10s to determine the damage it deals on a hit.</description>
+			<description>When you cast eldritch blast, roll d10s instead of d8s to determine the damage it deals on a hit.</description>
 		</sheet>
 	</element>
 	<element name="Armor of Shadows" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ARMOR_OF_SHADOWS">

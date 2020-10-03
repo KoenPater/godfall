@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.5.4">
+    <update version="0.5.5">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2517,10 +2517,12 @@
     </setters>
   </element>
   <element name="Eldritch Blast" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ELDRITCH_BLAST">
+	<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC</requirements>
     <supports>Warlock</supports>
     <description>
-      <p>You hurl a ball of crackling energy towards a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p>
-	  <p class="indent">The spell creates more than one blast when you reach higher levels: two blasts at 5th level, three blasts at 11th level, and four blasts at 17th level. You can direct the blasts at the same target or at different ones. Make a separate attack roll for each blast.</p>
+	  <p><i>You can only learn this spell as part of the Pact Magic Class Feature.</i></p>
+      <p>You summon a ball of crackling, otherworldly energy into your hand and hurl it towards a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 1d8 + your Charisma modifier.</p>
+	  <p class="indent">The spell creates more than one blast when you reach higher levels in your Pact Magic class: two blasts at 5th level, three blasts at 11th level, and four blasts at 17th level. You can hurl the blasts at the same target or at different ones. Make a separate attack roll for each blast.</p>
     </description>
     <setters>
       <set name="keywords">force</set>
