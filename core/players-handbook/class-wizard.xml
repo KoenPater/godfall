@@ -4,7 +4,7 @@
 		<name>Wizard</name>
 		<description>The Wizard class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.5">
+		<update version="0.3.6">
 			<file name="class-wizard.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-wizard.xml" />
 		</update>
 	</info>
@@ -704,10 +704,10 @@
 	</element>
 	<element name="Grim Harvest" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_NECROMANCY_GRIM_HARVEST">
 		<description>
-			<p>At 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell’s level, or three times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead.</p>
+			<p>At 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell’s level, or four times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead.</p>
 		</description>
 		<sheet>
-			<description>Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hp equal to twice the spell’s level, or three times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead.</description>
+			<description>Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hp equal to twice the spell’s level, or four times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead.</description>
 		</sheet>
 	</element>
 	<element name="Undead Thralls" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_NECROMANCY_UNDEAD_THRALLS">
