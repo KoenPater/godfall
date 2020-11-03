@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Fighter</name>
-		<update version="0.4.1">
+		<update version="0.4.2">
 			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-fighter.xml" />
 		</update>
 	</info>
@@ -130,7 +130,7 @@
 			<h5 class="caption">ARCHERY</h5>
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
 			<h5 class="caption">DEFENSE</h5>
-			<p>While you are wearing armor, critical hits made against you do not roll any additional damage dice.</p>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
 			<h5 class="caption">VERSATILE</h5>
 			<p>When you are wielding a one-handed melee weapon in one hand and no other weapons or shields, you gain a +2 bonus to attack rolls. When you are wielding a one-handed melee weapon with two hands, you gain a +1 bonus to damage rolls.</p>
 			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
@@ -235,11 +235,14 @@
 	<element name="Defense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>While you are wearing armor, critical hits made against you do not roll any additional damage dice.</p>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
 		</description>
 		<sheet>
-			<description>While you are wearing armor, critical hits made against you do not roll any additional damage dice.</description>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
 		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
 	</element>
 	<element name="Versatile" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
