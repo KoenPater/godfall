@@ -4,7 +4,7 @@
 		<name>Wizard</name>
 		<description>The Wizard class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.6">
+		<update version="0.3.7">
 			<file name="class-wizard.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-wizard.xml" />
 		</update>
 	</info>
@@ -359,10 +359,17 @@
 	<element name="Conjuration Savant" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_CONJURATION_CONJURATION_SAVANT">
 		<description>
 			<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy a conjuration spell into your spellbook is halved.</p>
+			<p>In addition, you may add one spell belonging to the conjuration school to your spellbook. This spell must be of a level for which you have spell slots. You may add an additional conjuration spell to your spellbook when you reach 6th, 10th, and 14th level in this class.</p>
 		</description>
 		<sheet>
 			<description>The gold and time you must spend to copy a conjuration spell into your spellbook is halved.</description>
 		</sheet>
+		<rules>
+			<select type="Spell" name="Spellbook (Conjuration Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Conjuration)" level="2" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Conjuration Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Conjuration)" level="6" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Conjuration Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Conjuration)" level="10" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Conjuration Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Conjuration)" level="14" number="1" spellcasting="Wizard" />
+		</rules>
 	</element>
 	<element name="Minor Conjuration" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_CONJURATION_MINOR_CONJURATION">
 		<description>
@@ -772,10 +779,17 @@
 	<element name="Transmutation Savant" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_TRANSMUTATION_TRANSMUTATION_SAVANT">
 		<description>
 			<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy a transmutation spell into your spellbook is halved.</p>
+			<p>In addition, you may add one spell belonging to the transmutation school to your spellbook. This spell must be of a level for which you have spell slots. You may add an additional transmutation spell to your spellbook when you reach 6th, 10th, and 14th level in this class.</p>
 		</description>
 		<sheet>
 			<description>The gold and time you must spend to copy a transmutation spell into your spellbook is halved.</description>
 		</sheet>
+		<rules>
+			<select type="Spell" name="Spellbook (Transmutation Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Transmutation)" level="2" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Transmutation Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Transmutation)" level="6" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Transmutation Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Transmutation)" level="10" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Transmutation Savant)" supports="$(spellcasting:list), $(spellcasting:slots),(Transmutation)" level="14" number="1" spellcasting="Wizard" />
+		</rules>
 	</element>
 	<element name="Minor Alchemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIZARD_TRANSMUTATION_MINOR_ALCHEMY">
 		<description>
