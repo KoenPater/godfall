@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/dungeon-masters-guide/items-firearms.xml" />
 		</update>
 	</info>
@@ -19,7 +19,7 @@
 	</element>
 
 	<!-- explosives -->
-	<element name="Bomb" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BOMB">
+	<element name="Bomb" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BOMB">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage.</p>
@@ -31,7 +31,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Gunpowder, Keg" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_KEG">
+	<element name="Gunpowder, Keg" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_KEG">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Gunpowder is chiefly used to propel a bu 11et out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in waterresistant powder horns.</p>
@@ -44,7 +44,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Gunpowder, Powder Horn" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_POWDER_HORN">
+	<element name="Gunpowder, Powder Horn" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_POWDER_HORN">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Gunpowder is chiefly used to propel a bu 11et out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in waterresistant powder horns.</p>
@@ -58,7 +58,7 @@
 		</setters>
 	</element>
 
-	<element name="Dynamite (stick)" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_DYNAMITE">
+	<element name="Dynamite (stick)" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_DYNAMITE">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a creature can light a s tick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.</p>
@@ -72,7 +72,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Grenade, Fragmentation" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_FRAGMENTATION">
+	<element name="Grenade, Fragmentation" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_FRAGMENTATION">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
@@ -85,7 +85,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Grenade, Smoke" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_SMOKE">
+	<element name="Grenade, Smoke" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_SMOKE">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
@@ -98,7 +98,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Grenade Launcher" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_LAUNCHER">
+	<element name="Grenade Launcher" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_LAUNCHER">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>With a grenade launcher, the character can propel the grenade up to 120 feet away. </p>
@@ -144,7 +144,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET</set> -->
 		</setters>
 	</element>
-	<element name="Bullet" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET">
+	<element name="Bullet" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>The ammunition of a renaissance firearm is destroyed upon use.</p>
@@ -238,7 +238,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
 		</setters>
 	</element>
-	<element name="Bullet" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET_MODERN">
+	<element name="Bullet" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET_MODERN">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>The ammunition of a modern firearm is destroyed upon use.</p>
@@ -300,7 +300,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_ENERGY_CELL</set> -->
 		</setters>
 	</element>
-	<element name="Energy Cell" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_ENERGY_CELL">
+	<element name="Energy Cell" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_ENERGY_CELL">
 		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.</p>
