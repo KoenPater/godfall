@@ -2,13 +2,14 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/dungeon-masters-guide/items-firearms.xml" />
 		</update>
 	</info>
 
 	<!-- firearms option -->
 	<element name="Firearms" type="Option" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_OPTION_FIREARMS">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>If you want to model the swashbuckling style of The Three Musketeers and similar tales, you can introduce gunpowder weapons to your campaign that are associated with the Renaissance. Similarly, in a campaign where a spaceship has crashed or elements of modern-day Earth are present, futuristic or modern firearms might appear.</p>
 		</description>
@@ -19,6 +20,7 @@
 
 	<!-- explosives -->
 	<element name="Bomb" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BOMB">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage.</p>
 		</description>
@@ -30,6 +32,7 @@
 		</setters>
 	</element>
 	<element name="Gunpowder, Keg" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_KEG">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Gunpowder is chiefly used to propel a bu 11et out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in waterresistant powder horns.</p>
 			<p class="indent">Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it (3d6 for a powder horn, 7d6 for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, s hedding br ight light in a 30-foot radius and dim light for an add itional 30 feet.</p>
@@ -42,6 +45,7 @@
 		</setters>
 	</element>
 	<element name="Gunpowder, Powder Horn" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GUNPOWDER_POWDER_HORN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Gunpowder is chiefly used to propel a bu 11et out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in waterresistant powder horns.</p>
 			<p class="indent">Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it (3d6 for a powder horn, 7d6 for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, s hedding br ight light in a 30-foot radius and dim light for an add itional 30 feet.</p>
@@ -55,6 +59,7 @@
 	</element>
 
 	<element name="Dynamite (stick)" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_DYNAMITE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a creature can light a s tick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.</p>
 			<p class="indent">A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).</p>
@@ -68,6 +73,7 @@
 		</setters>
 	</element>
 	<element name="Grenade, Fragmentation" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_FRAGMENTATION">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
 			<p class="indent">Each creature within 20 feet of an exploding fragmentation grenade must make a DC 15 Dexterity saving throw, taking 5d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
@@ -80,6 +86,7 @@
 		</setters>
 	</element>
 	<element name="Grenade, Smoke" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_SMOKE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
 			<p class="indent">One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round.</p>
@@ -92,6 +99,7 @@
 		</setters>
 	</element>
 	<element name="Grenade Launcher" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_GRENADE_LAUNCHER">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>With a grenade launcher, the character can propel the grenade up to 120 feet away. </p>
 		</description>
@@ -108,6 +116,7 @@
 	<!-- Renaissance -->
 	<element name="Pistol" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -122,6 +131,7 @@
 	</element>
 	<element name="Musket" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_MUSKET">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -135,6 +145,7 @@
 		</setters>
 	</element>
 	<element name="Bullet" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>The ammunition of a renaissance firearm is destroyed upon use.</p>
 		</description>
@@ -149,6 +160,7 @@
 	<!-- Modern -->
 	<element name="Pistol, Automatic" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL_AUTOMATIC">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -164,6 +176,7 @@
 	</element>
 	<element name="Revolver" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -179,6 +192,7 @@
 	</element>
 	<element name="Rifle, Hunting" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_HUNTING">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -194,6 +208,7 @@
 	</element>
 	<element name="Rifle, Automatic" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_AUTOMATIC">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_BURST_FIRE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -209,6 +224,7 @@
 	</element>
 	<element name="Shotgun" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_SHOTGUN">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -223,6 +239,7 @@
 		</setters>
 	</element>
 	<element name="Bullet" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_BULLET_MODERN">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>The ammunition of a modern firearm is destroyed upon use.</p>
 		</description>
@@ -237,6 +254,7 @@
 	<!-- Futuristic -->
 	<element name="Laser Pistol" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -252,6 +270,7 @@
 	</element>
 	<element name="Antimatter Rifle" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_ANTIMATTER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -267,6 +286,7 @@
 	</element>
 	<element name="Laser Rifle" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_GODS_LIVING</requirements>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -281,6 +301,7 @@
 		</setters>
 	</element>
 	<element name="Energy Cell" type="Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_ITEM_ENERGY_CELL">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.</p>
 		</description>
@@ -366,16 +387,19 @@
 
 	<!-- properties -->
 	<element name="Ammunition" type="Weapon Property" source="Internal" id="ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>The ammunition of a firearm is destroyed upon use. Renaissance and modern firearms use bullets. Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.</p>
 		</description>
 	</element>
 	<element name="Burst Fire" type="Weapon Property" source="Internal" id="ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_BURST_FIRE">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>A weapon that has the burst fire property can make a normal single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition.</p>
 		</description>
 	</element>
 	<element name="Reload" type="Weapon Property" source="Internal" id="ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD">
+		<requirements>ID_GODS_LIVING</requirements>
 		<description>
 			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
 		</description>
