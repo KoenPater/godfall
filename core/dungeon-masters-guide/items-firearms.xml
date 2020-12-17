@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/dungeon-masters-guide/items-firearms.xml" />
 		</update>
 	</info>
@@ -114,7 +114,7 @@
 
 
 	<!-- Renaissance -->
-	<element name="Pistol" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL">
+	<element name="Pistol" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -129,7 +129,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET</set> -->
 		</setters>
 	</element>
-	<element name="Musket" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_MUSKET">
+	<element name="Musket" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_MUSKET">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -158,7 +158,7 @@
 	</element>
 
 	<!-- Modern -->
-	<element name="Pistol, Automatic" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL_AUTOMATIC">
+	<element name="Pistol, Automatic" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_PISTOL_AUTOMATIC">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -174,7 +174,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
 		</setters>
 	</element>
-	<element name="Revolver" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_REVOLVER">
+	<element name="Revolver" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -190,7 +190,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
 		</setters>
 	</element>
-	<element name="Rifle, Hunting" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_HUNTING">
+	<element name="Rifle, Hunting" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_HUNTING">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -206,7 +206,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
 		</setters>
 	</element>
-	<element name="Rifle, Automatic" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_AUTOMATIC">
+	<element name="Rifle, Automatic" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_RIFLE_AUTOMATIC">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_BURST_FIRE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -222,7 +222,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
 		</setters>
 	</element>
-	<element name="Shotgun" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_SHOTGUN">
+	<element name="Shotgun" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_SHOTGUN">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -252,7 +252,7 @@
 	</element>
 
 	<!-- Futuristic -->
-	<element name="Laser Pistol" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_PISTOL">
+	<element name="Laser Pistol" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -268,7 +268,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_ENERGY_CELL</set> -->
 		</setters>
 	</element>
-	<element name="Antimatter Rifle" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_ANTIMATTER_RIFLE">
+	<element name="Antimatter Rifle" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_ANTIMATTER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
@@ -284,7 +284,7 @@
 			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_ENERGY_CELL</set> -->
 		</setters>
 	</element>
-	<element name="Laser Rifle" type="Weapon" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_RIFLE">
+	<element name="Laser Rifle" type="Archetype" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_WEAPON_LASER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<requirements>ID_GODS_LIVING</requirements>
 		<description />
