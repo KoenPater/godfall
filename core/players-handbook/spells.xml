@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.5.8">
+    <update version="0.6.0">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -7922,6 +7922,62 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent"></set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+	<element name="Summon Undead" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_SUMMON_UNDEAD">
+        <supports>Wizard</supports>
+        <description>
+            <p>You call forth an undead spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Undead Spirit stat block. When you cast the spell, choose the creature’s form: Ghostly, Putrid, or Skeletal. The spirit resembles an undead creature with the chosen form, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p>The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>			
+            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>
+			<table>
+				<thead>
+					<tr><td>Undead Spirit</td></tr>
+				</thead>
+				<tr><td><i>Medium undead</i></td></tr>				
+				<tr><td><b>Armor Class:</b> 11 + the level of the spell (natural armor)</td></tr>
+				<tr><td><b>Hit Points:</b> 30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each level of the spell above 3rd</td></tr>
+				<tr><td><b>Speed:</b> 30 ft., fly 40 ft. (hover) (Ghostly only)</td></tr>
+			</table>
+			<table>
+				<thead>
+					<tr><td>Str</td><td>Dex</td><td>Con</td><td>Int</td><td>Wis</td><td>Cha</td></tr>
+				</thead>
+				<tr><td>12(+1)</td><td>16(+3)</td><td>15(+2)</td><td>4(-3)</td><td>10(+0)</td><td>9(-1)</td></tr>
+			</table>
+			<table>
+				<tr><td><b>Damage Immunities:</b> necrotic, poison</td></tr>				
+				<tr><td><b>Condition Immunities:</b> exhaustion, frightened, paralyzed, poisoned</td></tr>
+				<tr><td><b>Senses:</b> darkvision 60 ft., passive Perception 10</td></tr>
+				<tr><td><b>Languages:</b> understands the languages you speak</td></tr>
+				<tr><td><b>Challenge:</b> equals the spell's level</td></tr>
+				<tr><td><b>Proficiency Bonus:</b> equals your bonus</td></tr>
+				<tr><td><b>Festering Aura (Putrid Only).</b> Any creature, other than you, that starts its turn within 5 feet of the spirit must succeed on a Constitution saving throw against your spell save DC or be poisoned until the start of its next turn.</td></tr>
+				<tr><td><b>Incorporeal Passage (Ghostly Only).</b> The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an objects, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet traveled.</td></tr>								
+			</table>
+			<table>
+				<thead>
+					<tr><td>Actions</td></tr>
+				</thead>
+				<tr><td><b>Multiattack.</b> The spirit makes a number of attacks equal to half this spell’s level (rounded down).</td></tr>
+				<tr><td><b>Deathly Touch (Ghostly Only).</b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d8 + 3 + the spell’s level necrotic damage, and the creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of the undead until the end of the target’s next turn.</td></tr>
+				<tr><td><b>Grave Bolt (Skeletal Only).</b> <i>Ranged Spell Attack:</i> your spell attack modifier to hit, range 150 ft., one target. Hit: 2d4 + 3 + the spell’s level necrotic damage.</td></tr>
+				<tr><td><b>Rotting Claw (Putrid Only).</b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d6 + 3 + the spell’s level slashing damage. If the target is poisoned, it must succeed on a Constitution saving throw against your spell save DC or be paralyzed until the end of its next turn.</td></tr>
+			</table>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a gilded skull worth at least 300 gp</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
