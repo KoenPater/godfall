@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.3">
+		<update version="0.4.4">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -1060,13 +1060,14 @@
 			<p>You normally select your companion from among the following animals: an <em>ape</em>, a <em>black bear</em>, a <em>boar</em>, a <em>giant badger</em>, a <em>giant weasel</em>, a <em>mule</em>, a <em>panther</em>, or a <em>wolf</em>. However, your DM may allow for different animals, or may pick an animal for you based on the surrounding terrain and on what types of creatures would logically be present in the area.</p>
 			<p>If the selected animal is not present at the start of the ritual, it will be called forth from the wild and appear shortly after the ritual has begun. At the end of the ritual it gains all the benefits listed below. You can have only one animal companion at a time.</p>
 			<p class="indent">The companion is completely devoted to you and obeys your commands as best it can. It rolls for initiative separately and is nominally controlled by the DM, but you can determine its actions, decisions, attitudes, and so on when desired, as long as you are present and conscious. If left to its own device, the companion will focus on protecting you and itself. While traveling through your favored terrain with only the companion, you can move stealthily at a normal pace (as if you were alone).</p>
-			<p class="indent">You animal companion increases in strength as you level. It uses your proficiency bonus rather than its own, and adds its proficiency bonus to its AC and damage rolls. It also becomes proficient with all saving throws. For each level you gain after the 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.</p>
+			<p class="indent">You animal companion increases in strength as you level. It uses your proficiency bonus rather than its own, and adds its proficiency bonus to its AC and damage rolls. It also becomes proficient with all saving throws. Lastly, your animal companion has a number of hit dice equal to your level, which will determine its hit points as normal.</p>
 		</description>
 		<sheet>
 			<description>The companion obeys your commands as best as it can. It acts on its own initiative. While traveling through your favored terrain with only the companion, you can move stealthily at a normal pace. You can obtain a new companion by spending 50 gp worth of rare herbs and food and 8 hours in a bonding ritual. You can only have one animal companion at a time.</description>
 		</sheet>
 		<rules>
 			<select type="Companion" name="Ranger’s Companion" supports="Ranger,Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<stat name="additional:hp:max" value="companion:hplevel" level="3"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="4"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="5"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="6"/>
@@ -1115,16 +1116,16 @@
 	</element>
 	<element name="Bestial Fury" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
 		<description>
-			<p>Beginning at 15th level, when you take damage that reduces you below half your maximum hit points, your animal companion can immediately enter a magical rage to gain the following benefits:
+			<p>Beginning at 15th level, whenever you take damage and are below half your maximum hit points, your animal companion can immediately choose to enter a magical rage to gain the following benefits:
 			<ul>
 			<li>It grows one size larger and gains advantage on all strength and constitution ability checks.</li>
 			<li>It gains resistance to all damage, with the exception of necrotic damage.</li>
-			<li>It adds your Wisdom modifier to both its attack and damage rolls.</li>
-			<li>Lastly, when your animal companion takes the Attack action against an enemy and hits it, that enemy is marked until the start of your companion's next turn. While marked, the enemy suffers disadvantage on any attack roll it makes that targets anybody other than the animal companion. This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</li>
+			<li>It adds your Wisdom modifier to its attack and damage rolls, and to the DC of any of its abilities.</li>
+			<li>This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a long rest.</li>
 			</ul></p>
 		</description>
 		<sheet>
-			<description>When you take damage that reduces you below half your maximum hit points, your animal companion can immediately enter a magical rage to gain the following benefits: It grows one size larger and gains advantage on all strength and constitution ability checks. It gains resistance to all damage, with the exception of necrotic damage. It adds your Wisdom modifier to both its attack and damage rolls. Lastly, when your animal companion takes the Attack action against an enemy and hits it, that enemy is marked until the start of your companion's next turn. While marked, the enemy suffers disadvantage on any attack roll it makes that targets anybody other than the animal companion. This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</description>
+			<description>Whenever you take damage and are below half your maximum hit points, your animal companion can immediately choose to enter a magical rage to gain the following benefits: It grows one size larger and gains advantage on all strength and constitution ability checks. It gains resistance to all damage, with the exception of necrotic damage. It adds your Wisdom modifier to its attack and damage rolls, and to the DCs of any abilities it has. This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a long rest.</description>
 		</sheet>
 	</element>
 </elements>
