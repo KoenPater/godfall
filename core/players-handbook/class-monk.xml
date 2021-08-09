@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.9">
+		<update version="0.4.0">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -712,7 +712,7 @@
 			<p><em>Prerequisite: 6th level</em></p>
 			<p>You can spend 2 essence points to cast Aganazzar’s Scorcher.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_FIREBALL" />
+				<div element="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
 			</div>
 		</description>
 		<sheet>
