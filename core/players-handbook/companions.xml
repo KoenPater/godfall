@@ -4,7 +4,7 @@
 		<name>Companions</name>
 		<description>Companion creatures from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="companions.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/companions.xml" />
 		</update>
 	</info>
@@ -2260,7 +2260,7 @@
 			<set name="size">Medium</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">1/4</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_WOLF_KEEN_HEARING_AND_SMELL,ID_WOTC_PHB_COMPANION_TRAIT_WOLF_PACK_TACTICS</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_WOLF_KEEN_HEARING_AND_SMELL,ID_WOTC_PHB_COMPANION_TRAIT_WOLF_PACK_TACTICS,ID_WOTC_PHB_COMPANION_TRAIT_PRIMAL_INFUSION</set>
 			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_WOLF_BITE</set>
 		</setters>
 		<rules>
@@ -2294,6 +2294,14 @@
 		</description>
 		<sheet>
 			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Primal Infusion" type="Companion Trait" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_TRAIT_PRIMAL_INFUSION">
+		<description>
+			<p>The companion gains advantage on all saving throws and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>The companion gains advantage on all saving throws and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
 		</sheet>
 	</element>
 </elements>
