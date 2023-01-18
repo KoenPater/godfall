@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.1">
+    <update version="0.6.3">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -4426,8 +4426,8 @@
   <element name="Lightning Arrow" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHTNING_ARROW">
     <supports>Ranger</supports>
     <description>
-      <p>The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal, The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.</p>
+      <p>The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal, The target takes 4d10 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d10 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d10 for each slot level above 3rd.</p>
     </description>
     <setters>
       <set name="keywords">lightning</set>
@@ -7999,6 +7999,86 @@
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">a red dragon’s scale</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+	<element name="Flame Arrows" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_FLAME_ARROWS">
+        <supports>Druid, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d8 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when eight pieces of ammunition have been drawn from the quiver.</p>
+            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+	<element name="Summon Fey" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_SUMMON_FEY">
+        <supports>Druid, Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a fey creature marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p>The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>			
+            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>
+			<table>
+				<thead>
+					<tr><td>Fey Spirit</td></tr>
+				</thead>
+				<tr><td><i>Small fey</i></td></tr>				
+				<tr><td><b>Armor Class:</b> 13 + the level of the spell (natural armor)</td></tr>
+				<tr><td><b>Hit Points:</b> 25 + 10 for each level of the spell above 3rd</td></tr>
+				<tr><td><b>Speed:</b> 40 ft., fly 40 ft. (hover) (Tricksy only)</td></tr>
+			</table>
+			<table>
+				<thead>
+					<tr><td>Str</td><td>Dex</td><td>Con</td><td>Int</td><td>Wis</td><td>Cha</td></tr>
+				</thead>
+				<tr><td>11(+0)</td><td>18(+4)</td><td>12(+1)</td><td>14(+2)</td><td>15(+2)</td><td>16(+3)</td></tr>
+			</table>
+			<table>
+				<tr><td><b>Damage Vulnerabilities:</b> necrotic</td></tr>				
+				<tr><td><b>Condition Immunities:</b> charmed</td></tr>
+				<tr><td><b>Senses:</b> darkvision 60 ft., passive Perception 12</td></tr>
+				<tr><td><b>Languages:</b> Sylvan, understands the languages you speak</td></tr>
+				<tr><td><b>Challenge:</b> equals the spell's level</td></tr>
+				<tr><td><b>Proficiency Bonus:</b> equals your bonus</td></tr>
+			</table>
+			<table>
+				<thead>
+					<tr><td>Actions</td></tr>
+				</thead>
+				<tr><td><b>Multiattack.</b> The fey makes a number of attacks equal to half this spell’s level (rounded down).</td></tr>
+				<tr><td><b>Shortsword.</b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d6 + 4 + the spell’s level piercing damage + 1d6 radiant damage.</td></tr>
+				<thead>
+					<tr><td>Bonus Actions</td></tr>
+				</thead>
+				<tr><td><b>Fey Step.</b> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood.</td></tr>
+				<tr><td><em>Fuming.</em> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr>				
+				<tr><td><em>Mirthful.</em> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr>				
+				<tr><td><em>Tricksy.</em> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr>				
+			</table>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="range">90 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a gilded flower worth at least 300 gp</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
