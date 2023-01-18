@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.5.0">
+		<update version="0.5.2">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -159,9 +159,9 @@
 			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1" />
 			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="6" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2" />
 			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="14" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" />
-			<select type="Language" name="Language (Favored Enemy)" level="1" />
-			<select type="Language" name="Language (Favored Enemy)" level="6" />
-			<select type="Language" name="Language (Favored Enemy)" level="14" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="1" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="6" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="14" />
 		</rules>
 	</element>
 	<element name="Natural Explorer" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER">
@@ -184,7 +184,7 @@
 			<p class="indent">You choose additional favored terrain types at 6th and 10th level.</p>
 		</description>
 		<sheet>
-			<description>While in your favored terrain, you gain advantage on initiative rolls, Dexterity saving throws, and double the proficiency bonus for ability checks related to the terrain. In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits: Difficult terrain doesn’t slow your group’s travel. Your group can’t become lost except by magical means. Even when you are engaged in another activity while traveling, you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
+			<description>While in your favored terrain, you gain advantage on initiative rolls and Dexterity saving throws. You also double any proficiency bonus added to ability checks related to the terrain. In addition, while traveling for an hour or more in your favored terrain, you also gain the following benefits: Difficult terrain doesn’t slow your group’s travel. Your group can’t become lost except by magical means. Even when you are engaged in another activity while traveling, you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. If you successfully track other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="1" />
