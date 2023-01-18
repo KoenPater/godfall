@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.7">
+		<update version="0.4.9">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -1106,26 +1106,33 @@
 			<description>The companion gains advantage on all saving throws and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also return it to life when slain by spending 50 gp worth of rare herbs and 8 hours of meditation.</description>
 		</sheet>
 	</element>
-	<element name="Coordinated Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
+	<element name="Protective Fury" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
 		<description>
-			<p>Beginning at 11th level, you and your animal companion form a more potent fighting team. When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</p>
+			<p>Beginning at 11th level, your animal companion can fly into a protective rage when its allies are threatened. When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, the animal companion can use a reaction to enter a protective rage. If it does, it gains the following benefits:</p>
+			<ul>
+			<li>It gains resistance to all damage, with the exception of necrotic damage.</li>
+			<li>Its attacks deal one additional die of damage.</li>
+			<li>Any target of the companion's attacks become <em>threatened</em> until the start of the companion's next turn. A threatened creature suffers disadvantage on any attack made against a target other than the companion.</li>
+			</ul>
+			<p>This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</p>			
 		</description>
 		<sheet>
-			<description>When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</description>
+			<description>When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, your companion can use its reaction to enter a protective rage, gaining the following benefits: it gains resistance to all damage except necrotic, it rolls one additional die of damage, and any targets of its attack become <em>threatened</em> until the start of the companion's next turn (threatened creatures suffer disadvantage on attacks made against targets other than the companion). This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</description>
 		</sheet>
 	</element>
-	<element name="Bestial Fury" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
+	<element name="Primal Manifestation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
 		<description>
-			<p>Beginning at 15th level, whenever you take damage and are below half your maximum hit points, your animal companion can immediately choose to enter a magical rage to gain the following benefits:
+			<p>Beginning at 15th level, your animal companion grows in size and manifests primal markings that indicate its mystical power. It gains the following benefits:</p>
 			<ul>
-			<li>It grows one size larger and gains advantage on all strength and constitution ability checks.</li>
-			<li>It gains resistance to all damage, with the exception of necrotic damage.</li>
-			<li>It adds your Wisdom modifier to its attack and damage rolls, and to the DC of any of its abilities.</li>
-			<li>This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a long rest.</li>
-			</ul></p>
+			<li>Its size increases by one category (usually from medium to large).</li>
+			<li>Its Strength increases by 4. All other ability scores increase by 2.</li>
+			<li>Its hit and damage dice both increase to the next highest die size.</li>
+			<li>Its speed increases by 10 feet.</li>
+			</ul>
+			<p>Recalculate hit points, attacks, skills, and ability DCs as needed.</p>
 		</description>
 		<sheet>
-			<description>Whenever you take damage and are below half your maximum hit points, your animal companion can immediately choose to enter a magical rage to gain the following benefits: It grows one size larger and gains advantage on all strength and constitution ability checks. It gains resistance to all damage, with the exception of necrotic damage. It adds your Wisdom modifier to its attack and damage rolls, and to the DCs of any abilities it has. This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a long rest.</description>
+			<description>Your animal companion grows in size and manifests primal markings that indicate its mystical power. Its size increases by one. It gains +10 feet speed, +4 Strength and +2 to other ability scores. Its hit and damage dice both increase to the next highest die size.</description>
 		</sheet>
 	</element>
 </elements>
