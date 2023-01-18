@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.3">
+    <update version="0.6.4">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -1374,13 +1374,13 @@
       <p>You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p>
       <ul>
         <li>One beast of challenge rating 2 or lower</li>
-        <li>Two beasts of challenge rating 1  or lower</li>
+        <li>Two beasts of challenge rating 1 or lower</li>
         <li>Four beasts of challenge rating 1/2 or lower</li>
         <li>Eight beasts of challenge rating 1/4 or lower</li>
       </ul>
       <p class="indent">Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.</p>      
-      <p class="indent">The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
-      <p class="indent">The DM has the creatures’ statistics.</p>
+      <p class="indent">The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They are not under your direct control, but will obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they will attack any creatures that take hostile actions towards you.</p>
+      <p class="indent">The DM has the creatures’ statistics. When four or more creatures are summoned, the DM is advised to use the "Mobs" rules described in the DMG.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.</p>
     </description>
     <setters>
@@ -8057,11 +8057,13 @@
 					<tr><td>Actions</td></tr>
 				</thead>
 				<tr><td><b>Multiattack.</b> The fey makes a number of attacks equal to half this spell’s level (rounded down).</td></tr>
-				<tr><td><b>Shortsword.</b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d6 + 4 + the spell’s level piercing damage + 1d6 radiant damage.</td></tr>
+				<tr><td><b>Shortsword. </b> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d6 + 4 + the spell’s level piercing damage + 1d6 radiant damage.</td></tr>
+			</table>
+			<table>
 				<thead>
 					<tr><td>Bonus Actions</td></tr>
 				</thead>
-				<tr><td><b>Fey Step.</b> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood.</td></tr>
+				<tr><td><b>Fey Step.</b> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood:</td></tr>
 				<tr><td><em>Fuming.</em> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr>				
 				<tr><td><em>Mirthful.</em> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr>				
 				<tr><td><em>Tricksy.</em> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr>				
