@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.4">
+    <update version="0.6.5">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -599,7 +599,8 @@
   <element name="Barkskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BARKSKIN">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing.</p>
+      <p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 17, regardless of what kind of armor it is wearing.</p>
+	  <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, the AC granted by this spell increases by 1 for each slot level above 2nd.</p>
     </description>
     <setters>
       <set name="keywords">ac</set>
@@ -1729,7 +1730,7 @@
   <element name="Cordon of Arrows" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CORDON_OF_ARROWS">
     <supports>Ranger</supports>
     <description>
-      <p>You plant four pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 1d6 piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains. When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
+      <p>You plant four pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 1d8 piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains. When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd
       </p>
     </description>
@@ -2613,14 +2614,14 @@
   <element name="Ensnaring Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ENSNARING_STRIKE">
     <supports>Ranger</supports>
     <description>
-      <p>The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away. While restrained by this spell, the target takes 1d8 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed.</p>
+      <p>As you hit your target, a writhing mass of thorny vines appears at the point of impact. The target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Huge or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away. While restrained by this spell, the target takes 1d8 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">1</set>
       <set name="school">Conjuration</set>
-      <set name="time">1 bonus action</set>
+      <set name="time">1 bonus action, which you take immediately after hitting a creature with a weapon attack</set>
       <set name="duration">Concentration, up to 1 minute</set>
       <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
@@ -3496,7 +3497,7 @@
   <element name="Goodberry" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GOODBERRY">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>You hold a twig, leaf, or other part of a plant in your hand, and cause up to ten magical berries to grow from it. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. When you cast this spell again, any berries that have not been consumed lose their potency.</p>
+      <p>You hold a twig, leaf, or other part of a plant in your hand, and cause up to six magical berries to grow from it. A creature can use its bonus action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. When you cast this spell again, any berries that have not been consumed lose their potency.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -3721,15 +3722,15 @@
   <element name="Hail of Thorns" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HAIL_OF_THORNS">
     <supports>Ranger</supports>
     <description>
-      <p>The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1d12 piercing damage on a failed save, or half as much damage on a successful one.</p>
+      <p>A rain of thorns sprouts from your ranged weapon or ammunition as it hits your target. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1d12 piercing damage on a failed save, or half as much damage on a successful one.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st (to a maximum of 5d12).</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">1</set>
       <set name="school">Conjuration</set>
-      <set name="time">1 bonus action</set>
-      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="time">1 bonus action, which you take immediately after hitting a creature with a ranged weapon attack</set>
+      <set name="duration">Instantaneous</set>
       <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">false</set>
@@ -7865,8 +7866,8 @@
 	<element name="Zephyr Strike" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_ZEPHYR_STRIKE">
         <supports>Ranger</supports>
         <description>
-            <p>You move like the wind. Until the spell ends, your movement doesn’t provoke opportunity attacks.</p>
-            <p class="indent">Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra 1d10 force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn.</p>
+            <p>You move like the wind. Until the spell ends, your speed increases by 10 feet and your movement doesn’t provoke opportunity attacks.</p>
+            <p class="indent">Once before the spell ends, you can call upon an additional burst of speed at the start of any of your turns. If you do so, your speed increases by an additional 20 feet until the end of that turn. In addition, the first weapon attack roll you make that turn gains advantage and deals an additional 1d10 force damage on a hit.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
         </description>
         <setters>
@@ -7887,7 +7888,7 @@
     <element name="Beast Bond" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_BEAST_BOND">
         <supports>Druid, Ranger</supports>
         <description>
-            <p>You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast’s Intelligence is 6 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.</p>
+            <p>You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast’s Intelligence is 8 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, you can use a bonus action to command the beast to make a melee weapon attack against any creature that you hit with a weapon attack this turn.</p>
         </description>
         <setters>
             <set name="keywords">companion</set>
