@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.7.0">
+    <update version="0.7.2">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -1537,14 +1537,14 @@
     <description>
 	  <p>You summon nature spirits that manifest as a group of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a space within range of the spell as the spell's center. The animals will appear at this point and hunt any hostile creatures within a 20 foot radius, effectively forming the area of the spell. The animals are considered to be moving at all times within this area, and as such do not affect the movement or vision of other creatures.</p>
 	  <p>When a creature hostile to you enters the spell’s area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 2d8 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage.</p> 
-	  <p class="indent">The animals can be attacked as if they were a single Huge creature. This `creature` is considered to have the following traits:</p>
+	  <p class="indent">The animals can be attacked as a group, effectively counting as a single Huge creature. This `creature` is considered to have the following traits:</p>
 	  <ul>
 		<li>It has 60 hit points and an AC of 14.</li>
 		<li>It counts as being present in the entirety of the spell's area.</li>
 		<li>It can be attacked and damaged normally by targetting or affecting a space where it is present (i.e., anywhere within the spell's area)</li>
 		<li>While it can suffer damage, it ignores any and all other effects and conditions.</li>
 		<li>It will automatically fail any Dexterity saving throw it has to make, and will automatically succeed at any other saving throw.</li>		
-		<li>It takes double damage from any attack or spell that damages multiple creatures (such as a spell that damages creatures within a certain radius).</li>
+		<li>It takes double damage from any attack or spell that damages multiple creatures (such as a <i>fireball</i> spell).</li>
 	  </ul>
 	  <p>Attacking the animals can reduce their power or even disperse them. While the group of animals is missing at least half of its hit points, any damage caused by the spell is also halved. When the group of animals is reduced to 0 hit points, they are defeated and the spell ends.</p>
 	  <p class="indent">On each of your turns, you can choose to move the center of the spell to a different space, allowing you to affect a different area. The new center must be within 60 feet of the old one, and within the maximum range of the spell.</p>
