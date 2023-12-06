@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.5">
+    <update version="0.6.6">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -454,9 +454,9 @@
     </setters>
   </element>
   <element name="Aura of Life" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_AURA_OF_LIFE">
-    <supports>Paladin</supports>
+    <supports>Paladin, Ranger</supports>
     <description>
-      <p>Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can’t be reduced. In addition, a non-hostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points.</p>
+      <p>Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) has resistance to necrotic damage and advantage on death saving throws. In addition, you can use a bonus action to cause one creature in the aura to regain a number of hit points equal to 2d6 + your spellcasting ability modifier.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -496,7 +496,7 @@
   <element name="Aura of Vitality" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_AURA_OF_VITALITY">
     <supports>Paladin</supports>
     <description>
-      <p>Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.</p>
+      <p>Life-giving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1369,8 +1369,8 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Conjure Animals" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_ANIMALS">
-    <supports>Druid, Ranger</supports>
+  <element name="Conjure Woodland Beings" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_ANIMALS">
+    <supports>Druid</supports>
     <description>
       <p>You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p>
       <ul>
@@ -1402,7 +1402,7 @@
   <element name="Conjure Barrage" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_BARRAGE">
     <supports>Ranger</supports>
     <description>
-      <p>You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 3d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component.</p>
+      <p>You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 4d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1532,32 +1532,35 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Conjure Woodland Beings" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
+  <element name="Call of the Wild" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears: </p>
-      <ul>
-        <li>One fey creature of challenge rating 2 or lower</li>
-        <li>Two fey creatures of challenge rating 1 or lower</li>
-        <li>Four fey creatures of challenge rating 1/2 or lower</li>
-        <li>Eight fey creatures of challenge rating 1/4 or lower</li>
-      </ul>
-      <p>A summoned creature disappears when it drops to 0 hit points or when the spell ends.</p>
-      <p class="indent">The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
-      <p class="indent">The DM has the creatures’ statistics.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot.</p>
+	  <p>You summon nature spirits that manifest as a swarm of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a point within range of the spell. The swarm of animals will appear at this point and hunt any hostile creatures within a 20 foot radius, forming the effective area of the spell. The animals are considered to be moving at all times within this area, and as such do not physically block movement or vision.</p>
+	  <p>When a creature hostile to you enters the swarm’s area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 2d10 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage.</p> 
+	  <p>The swarm of animals can be attacked as if it were a single Huge creature. It is considered to have the following traits:</p>
+	  <ul>
+		<li>It has 60 hit points and an AC of 15.</li>
+		<li>It counts as occupying all spaces within the spell's area, though it does not prohibit movement in any way.</li>
+		<li>It can be attacked and damaged normally by targetting or affecting a space it occupies</li>
+		<li>While it can suffer damage, it ignores any and all other effects and conditions.</li>
+		<li>It will automatically fail any Dexterity saving throw it has to make, and will automatically succeed at any other saving throw.</li>		
+		<li>It takes double damage from any attack or spell that damages multiple creatures (such as a spell that damages creatures within a certain radius).</li>
+	  </ul>
+	  <p>Attacking the swarm can reduce its power or even disperse it. While the swarm is missing at least half of its hit points, any damage caused by the spell is also halved. When the swarm is reduced to 0 hit points, the swarm is defeated and the spell ends.</p>
+	  <p>On your turn, you can move the center of the swarm to target a different area. The new center must be within 60 feet of the old one, and within the maximum range of the spell. This movement will not trigger opportunity attacks.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell at 5th level, the damage of the swarm is increased by 1d10 and its hit points by 20.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">4</set>
       <set name="school">Conjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 1 hour</set>
-      <set name="range">60 feet</set>
+      <set name="duration">Concentration, up to 10 minutes</set>
+      <set name="range">150 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">one holly berry per creature summoned</set>
+      <set name="materialComponent">twelve holly berries</set>
       <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
@@ -3517,7 +3520,7 @@
   <element name="Grasping Vine" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GRASPING_VINE">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine. Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
+      <p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must make a Dexterity saving throw. If it fails, it takes 2d10 bludgeoning damage as it is pulled 20 feet directly toward the vine, where it becomes restrained until the start of your next turn or the end of the spell. A Huge creature or larger has advantage on the saving throw. Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -3525,7 +3528,7 @@
       <set name="school">Conjuration</set>
       <set name="time">1 bonus action</set>
       <set name="duration">Concentration, up to 1 minute</set>
-      <set name="range">30 feet</set>
+      <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -3736,7 +3739,7 @@
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
-      <set name="isConcentration">true</set>
+      <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
@@ -4427,28 +4430,28 @@
   <element name="Lightning Arrow" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHTNING_ARROW">
     <supports>Ranger</supports>
     <description>
-      <p>The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal, The target takes 4d10 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d10 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form.</p>
+      <p>The weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d10 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d10 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d10 for each slot level above 3rd.</p>
     </description>
     <setters>
       <set name="keywords">lightning</set>
       <set name="level">3</set>
       <set name="school">Transmutation</set>
-      <set name="time">1 bonus action</set>
-      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="time">1 bonus action, which you take right before making a ranged weapon attack against a creature</set>
+      <set name="duration">Instantaneous</set>
       <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
-      <set name="isConcentration">true</set>
+      <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
   <element name="Lightning Bolt" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHTNING_BOLT">
     <supports>Sorcerer, Wizard</supports>
     <description>
-      <p>A stroke of lightning forming a line of 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren’t being worn or carried.</p>
+      <p>A stroke of lightning forming a line of 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw, with disadvantage on the roll if they are wearing armor primarily made of metal. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren’t being worn or carried.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd.</p>
     </description>
     <setters>
@@ -6788,7 +6791,7 @@
     </setters>
   </element>
   <element name="Stoneskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_STONESKIN">
-    <supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+    <supports>Druid, Sorcerer, Wizard, Artificer</supports>
     <description>
       <p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
     </description>
@@ -7540,9 +7543,9 @@
     </setters>
   </element>
   <element name="Warding Bond" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WARDING_BOND">
-    <supports>Cleric</supports>
+    <supports>Cleric, Ranger</supports>
     <description>
-      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p>
+      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. However, each time it takes damage, you take the same amount of damage.</p>
 	  <p class="indent">The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
     </description>
     <setters>
@@ -7554,8 +7557,8 @@
       <set name="range">Touch</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">a pair of platinum rings worth at least 50 gp each, which you and target must wear for the duration</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
@@ -8006,7 +8009,7 @@
 	<element name="Flame Arrows" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_FLAME_ARROWS">
         <supports>Druid, Ranger, Sorcerer, Wizard</supports>
         <description>
-            <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d8 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when eight pieces of ammunition have been drawn from the quiver.</p>
+            <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d10 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when eight pieces of ammunition have been drawn from the quiver.</p>
             <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.</p>
         </description>
         <setters>
@@ -8035,15 +8038,15 @@
 					<tr><td>Fey Spirit</td></tr>
 				</thead>
 				<tr><td><i>Small fey</i></td></tr>				
-				<tr><td><b>Armor Class:</b> 13 + the level of the spell (natural armor)</td></tr>
-				<tr><td><b>Hit Points:</b> 25 + 10 for each level of the spell above 3rd</td></tr>
+				<tr><td><b>Armor Class:</b> 14 + the level of the spell (natural armor)</td></tr>
+				<tr><td><b>Hit Points:</b> 20 + 10 for each level of the spell above 3rd</td></tr>
 				<tr><td><b>Speed:</b> 40 ft., fly 40 ft. (hover) (Tricksy only)</td></tr>
 			</table>
 			<table>
 				<thead>
 					<tr><td>Str</td><td>Dex</td><td>Con</td><td>Int</td><td>Wis</td><td>Cha</td></tr>
 				</thead>
-				<tr><td>11(+0)</td><td>18(+4)</td><td>12(+1)</td><td>14(+2)</td><td>15(+2)</td><td>16(+3)</td></tr>
+				<tr><td>9(-1)</td><td>18(+4)</td><td>8(-1)</td><td>13(+1)</td><td>15(+2)</td><td>16(+3)</td></tr>
 			</table>
 			<table>
 				<tr><td><b>Damage Vulnerabilities:</b> necrotic</td></tr>				
@@ -8058,16 +8061,16 @@
 					<tr><td>Actions</td></tr>
 				</thead>
 				<tr><td><b>Multiattack.</b> The fey makes a number of attacks equal to half this spell’s level (rounded down).</td></tr>
-				<tr><td><b>Shortsword. </b> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d6 + 4 + the spell’s level piercing damage + 1d6 radiant damage.</td></tr>
+				<tr><td><b>Shortsword. </b> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. Hit: 1d4 + 4 + the spell’s level piercing damage + 1d6 radiant damage.</td></tr>
 			</table>
 			<table>
 				<thead>
 					<tr><td>Bonus Actions</td></tr>
 				</thead>
 				<tr><td><b>Fey Step.</b> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood:</td></tr>
-				<tr><td><em>Fuming.</em> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr>				
+				<tr><td><em>Fuming.</em> The fey has advantage on any attack rolls it makes until the end of its turn.</td></tr>				
 				<tr><td><em>Mirthful.</em> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr>				
-				<tr><td><em>Tricksy.</em> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr>				
+				<tr><td><em>Tricksy.</em> Any creatures within 5 feet of the fey lose their reaction. In addition, until the start of the fey's next turn, any creatures that start their turn within 5 feet of the fey lose their reaction and bonus action until the start of their next turn.</td></tr>				
 			</table>
         </description>
         <setters>
@@ -8081,6 +8084,40 @@
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">a gilded flower worth at least 300 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+	    <element name="Guardian of Nature" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>An ancient spirit of nature answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Verdant Sentinel.</p>
+            <p class="indent"><b><i>Primal Beast. </i></b>Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
+            <ul>
+                <li>Your speed increases by 20 feet.</li>
+                <li>You gain darkvision with a range of 120 feet.</li>
+                <li>You make melee weapon attack rolls with advantage.</li>
+                <li>Your melee weapon attacks deal an extra 1d6 damage on a hit.</li>
+            </ul>
+            <p class="indent"><b><i>Verdant Sentinel. </i></b>Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
+            <ul>
+                <li>You gain 15 temporary hit points.</li>
+                <li>You make Constitution saving throws with advantage.</li>
+                <li>You make ranged weapon and spell attack rolls with advantage.</li>
+                <li>While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">V</set>
             <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
