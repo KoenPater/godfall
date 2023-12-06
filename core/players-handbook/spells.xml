@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.6">
+    <update version="0.6.8">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2565,7 +2565,7 @@
     </setters>
   </element>
   <element name="Enhance Ability" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ENHANCE_ABILITY">
-    <supports>Bard, Cleric, Druid, Sorcerer, Artificer</supports>
+    <supports>Bard, Cleric, Druid, Sorcerer, Ranger, Artificer</supports>
     <description>
     	<p>You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects: the target gains the effect until the spell ends.</p>
 		<p class="indent"><strong><em>Bear’s Endurance.</em></strong> The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</p>
@@ -3520,20 +3520,20 @@
   <element name="Grasping Vine" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GRASPING_VINE">
     <supports>Druid, Ranger</supports>
     <description>
-      <p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must make a Dexterity saving throw. If it fails, it takes 2d10 bludgeoning damage as it is pulled 20 feet directly toward the vine, where it becomes restrained until the start of your next turn or the end of the spell. A Huge creature or larger has advantage on the saving throw. Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
+      <p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine. Huge or larger creatures gain advantage on this saving throw. Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">4</set>
       <set name="school">Conjuration</set>
       <set name="time">1 bonus action</set>
-      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="duration">1 minute</set>
       <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
-      <set name="isConcentration">true</set>
+      <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
@@ -7545,20 +7545,20 @@
   <element name="Warding Bond" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WARDING_BOND">
     <supports>Cleric, Ranger</supports>
     <description>
-      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. However, each time it takes damage, you take the same amount of damage.</p>
-	  <p class="indent">The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
+      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +2 bonus to AC and saving throws, and it has resistance to all damage. However, each time it takes damage, you take the same amount of damage. You reduce damage taken this way by an amount equal to your your spellcasting ability modifier.</p>
+	  <p class="indent">The spell ends if you drop to 0 hit points or if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">2</set>
+      <set name="level">4</set>
       <set name="school">Abjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">1 hour</set>
+      <set name="duration">24 hours</set>
       <set name="range">Touch</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a pair of matching wooden ornaments, carved from the same tree, which you and the target must wear for the duration</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
