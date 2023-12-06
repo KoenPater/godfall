@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.6.8">
+    <update version="0.6.9">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -1535,13 +1535,13 @@
   <element name="Call of the Wild" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
     <supports>Druid, Ranger</supports>
     <description>
-	  <p>You summon nature spirits that manifest as a swarm of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a point within range of the spell. The swarm of animals will appear at this point and hunt any hostile creatures within a 20 foot radius, forming the effective area of the spell. The animals are considered to be moving at all times within this area, and as such do not physically block movement or vision.</p>
-	  <p>When a creature hostile to you enters the swarm’s area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 2d10 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage.</p> 
-	  <p>The swarm of animals can be attacked as if it were a single Huge creature. It is considered to have the following traits:</p>
+	  <p>You summon nature spirits that manifest as a swarm of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a point within range of the spell. The animals will appear at this point and hunt any hostile creatures within a 20 foot radius, forming the effective area of the spell. The animals are considered to be moving at all times within this area, and as such do not affect the movement or vision of other creatures.</p>
+	  <p>When a creature hostile to you enters the animal’s area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 2d10 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage.</p> 
+	  <p>The animals can be attacked as if they were a single Huge creature. This creature is considered to have the following traits:</p>
 	  <ul>
 		<li>It has 60 hit points and an AC of 15.</li>
-		<li>It counts as occupying all spaces within the spell's area, though it does not prohibit movement in any way.</li>
-		<li>It can be attacked and damaged normally by targetting or affecting a space it occupies</li>
+		<li>It counts as being present in the entirety of the spell's area.</li>
+		<li>It can be attacked and damaged normally by targetting or affecting a space where it is present</li>
 		<li>While it can suffer damage, it ignores any and all other effects and conditions.</li>
 		<li>It will automatically fail any Dexterity saving throw it has to make, and will automatically succeed at any other saving throw.</li>		
 		<li>It takes double damage from any attack or spell that damages multiple creatures (such as a spell that damages creatures within a certain radius).</li>
@@ -7545,7 +7545,7 @@
   <element name="Warding Bond" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WARDING_BOND">
     <supports>Cleric, Ranger</supports>
     <description>
-      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +2 bonus to AC and saving throws, and it has resistance to all damage. However, each time it takes damage, you take the same amount of damage. You reduce damage taken this way by an amount equal to your your spellcasting ability modifier.</p>
+      <p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +2 bonus to AC and saving throws, and it has resistance to all damage. However, each time it takes damage, you take the same amount of damage. You may reduce this damage by an amount equal to your spellcasting ability modifier.</p>
 	  <p class="indent">The spell ends if you drop to 0 hit points or if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
     </description>
     <setters>
@@ -8092,6 +8092,7 @@
         <supports>Druid, Ranger</supports>
         <description>
             <p>An ancient spirit of nature answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Verdant Sentinel.</p>
+			<p></p>
             <p class="indent"><b><i>Primal Beast. </i></b>Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
             <ul>
                 <li>Your speed increases by 20 feet.</li>
