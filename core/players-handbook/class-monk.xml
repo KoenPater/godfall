@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.1">
+		<update version="0.4.2">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -58,26 +58,26 @@
 				<thead>
 					<tr><td class="col-10">Level</td><td class="col-10">Martial Arts</td><td class="col-10">Essence Points</td><td class="col-10">Unarmored Movement</td><td class="col-60 left">Features</td></tr>
 				</thead>
-				<tr><td>1st</td><td>1d4</td><td>—</td><td>—</td><td class="left">Unarmored Defense, Martial Arts</td></tr>
+				<tr><td>1st</td><td>1d4</td><td>—</td><td>—</td><td class="left">Martial Arts, Unarmored Defense</td></tr>
 				<tr><td>2nd</td><td>1d4</td><td>2</td><td>+10 ft.</td><td class="left">Essence, Unarmored Movement</td></tr>
-				<tr><td>3rd</td><td>1d4</td><td>3</td><td>+10 ft.</td><td class="left">Monastic Tradition, Deflect Missiles</td></tr>
+				<tr><td>3rd</td><td>1d4</td><td>3</td><td>+10 ft.</td><td class="left">Monastic Tradition, Deflect Attacks</td></tr>
 				<tr><td>4th</td><td>1d4</td><td>4</td><td>+10 ft.</td><td class="left">Ability Score Improvement, Slow Fall</td></tr>
 				<tr><td>5th</td><td>1d6</td><td>5</td><td>+10 ft.</td><td class="left">Extra Attack, Stunning Strike</td></tr>
 				<tr><td>6th</td><td>1d6</td><td>6</td><td>+15 ft.</td><td class="left">Essence-Empowered Strikes, Monastic Tradition feature</td></tr>
 				<tr><td>7th</td><td>1d6</td><td>7</td><td>+15 ft.</td><td class="left">Evasion, Stillness of Mind</td></tr>
 				<tr><td>8th</td><td>1d6</td><td>8</td><td>+15 ft.</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>9th</td><td>1d8</td><td>9</td><td>+15 ft.</td><td class="left">Unarmored Movement improvement</td></tr>
-				<tr><td>10th</td><td>1d8</td><td>10</td><td>+20 ft.</td><td class="left">Purity of Body</td></tr>
+				<tr><td>10th</td><td>1d8</td><td>10</td><td>+20 ft.</td><td class="left">Inner Fire, Purity of Body</td></tr>
 				<tr><td>11th</td><td>1d8</td><td>11</td><td>+20 ft.</td><td class="left">Monastic Tradition feature</td></tr>
 				<tr><td>12th</td><td>1d8</td><td>12</td><td>+20 ft.</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>13th</td><td>1d10</td><td>13</td><td>+20 ft.</td><td class="left">Tongue of the Sun and Moon</td></tr>
-				<tr><td>14th</td><td>1d10</td><td>14</td><td>+25 ft.</td><td class="left">Diamond Soul</td></tr>
-				<tr><td>15th</td><td>1d10</td><td>15</td><td>+25 ft.</td><td class="left">Timeless Body</td></tr>
+				<tr><td>13th</td><td>1d10</td><td>13</td><td>+20 ft.</td><td class="left">Deflect Energy, Tongue of the Sun and Moon</td></tr>
+				<tr><td>14th</td><td>1d10</td><td>14</td><td>+25 ft.</td><td class="left">Diamond Soul, Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>1d10</td><td>15</td><td>+25 ft.</td><td class="left">Timeless Body, Wholeness of Self</td></tr>
 				<tr><td>16th</td><td>1d10</td><td>16</td><td>+25 ft.</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td>1d12</td><td>17</td><td>+25 ft.</td><td class="left">Monastic Tradition feature</td></tr>
-				<tr><td>18th</td><td>1d12</td><td>18</td><td>+30 ft.</td><td class="left">Empty Body</td></tr>
-				<tr><td>19th</td><td>1d12</td><td>19</td><td>+30 ft.</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>20th</td><td>1d12</td><td>20</td><td>+30 ft.</td><td class="left">Perfect Self</td></tr>
+				<tr><td>17th</td><td>1d12</td><td>17</td><td>+25 ft.</td><td class="left">Monastic Tradition feature, Master of the Arts</td></tr>
+				<tr><td>18th</td><td>1d12</td><td>18</td><td>+30 ft.</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>19th</td><td>1d12</td><td>19</td><td>+30 ft.</td><td class="left">Empty Body</td></tr>
+				<tr><td>20th</td><td>1d12</td><td>20</td><td>+30 ft.</td><td class="left">Perfect Self, Ability Score Improvement</td></tr>
 			</table>				
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
@@ -93,9 +93,13 @@
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_EVASION_MONK" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE" />			
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY" />			
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS" />			
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF" />
 		</description>
@@ -127,10 +131,14 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EVASION_MONK" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE" level="10" />			
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY" level="13" />			
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" level="14" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" level="15" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" level="18" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF" level="15" />	
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS" level="17" />				
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" level="19" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF" level="20" />
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_MONK">
@@ -168,14 +176,13 @@
 			<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</p>
 			<p class="indent">You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:</p>
 			<ul>
-				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</li>
-				<li>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</li>
-				<li>When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</li>
+				<li><b>Martial Arts Die.</b> You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This Martial Arts die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</li>
+				<li><b>Dextrous Attacks.</b> You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. In addition, when you choose the Grapple or Shove option, you can use your Dexterity modifier instead of Strength to determine the saving throw DC. </li>
+				<li><b>Bonus Unarmed Strike.</b> You can make one unarmed strike as a bonus action.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
-			When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</description>
+			<description>Your unarmed strikes do 1d{{martial arts:dice}}+{{martial arts:damage}} damage. Monk weapon attacks can also roll this damage instead of their normal weapon damage. You can use your Dexterity modifier to determine the saving throw DC for Grapple and Shove attacks. You can make one unarmed strike as a bonus action.</description>
 		</sheet>
 		<rules>
 			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
@@ -199,14 +206,14 @@
 				<p><strong>Essence save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
 			</center>
 			<h6>FLURRY OF BLOWS</h6>
-			<p>Immediately after you take the Attack action on your turn, you can spend 1 essence point to make two unarmed strikes as a bonus action.</p>
+			<p>You can spend 1 essence point to make two unarmed strikes as a bonus action.</p>
 			<h6>PATIENT DEFENSE</h6>
 			<p>You can spend 1 essence point to take the Dodge action as a bonus action on your turn.</p>
 			<h6>STEP OF THE WIND</h6>
-			<p>You can spend 1 essence point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
+			<p>You can spend 1 essence point to take both the Disengage and Dash actions as a single bonus action on your turn, and your jump distance is doubled for the turn.</p>
 		</description>
 		<sheet>
-			<description>You have {{essence:points}} Essence Points and your Essence DC is {{essence:dc}}</description>
+			<description>You have {{essence:points}} Essence Points and your Essence save DC is {{essence:dc}}</description>
 		</sheet>
 		<rules>
 			<stat name="essence:points" value="level:monk" />
@@ -220,10 +227,11 @@
 	</element>
 	<element name="Flurry of Blows" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_FLURRY_OF_BLOWS">
 		<description>
-			<p>Immediately after you take the Attack action on your turn, you can spend 1 essence point to make two unarmed strikes as a bonus action.</p>
+			<p>You can spend 1 essence point to make two unarmed strikes as a bonus action.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
-			<description>Immediately after you take the Attack action on your turn, you can spend 1 essence point to make two unarmed strikes.</description>
+			<description>You can spend 1 essence point to make two unarmed strikes.</description>
+			<description level="17">You can spend 1 essence point to make three unarmed strikes.</description>
 		</sheet>
 	</element>
 	<element name="Patient Defense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE">
@@ -232,14 +240,16 @@
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
 			<description>You can spend 1 essence point to take the Dodge action on your turn.</description>
+			<description level="17">You can spend 1 essence point to take the Dodge action on your turn and gain {{monk:temp_defense}} temporary hit points.</description>
 		</sheet>
 	</element>
 	<element name="Step of the Wind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND">
 		<description>
-			<p>You can spend 1 essence point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
+			<p>You can spend 1 essence point to take both the Disengage and Dash actions as a single bonus action on your turn, and your jump distance is doubled for the turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
-			<description>You can spend 1 essence point to take the Disengage or Dash action on your turn, and your jump distance is doubled for the turn.</description>
+			<description>You can spend 1 essence point to take both the Disengage and Dash actions on your turn, and your jump distance is doubled for the turn.</description>
+			<description level="17">You can spend 1 essence point to take both the Disengage or Dash action on your turn, and your jump distance is limited only by your speed. In addition, you can choose up to {{monk:wind_creatures}} willing creatures within 5 feet of you that are Large size or smaller and do not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</description>
 		</sheet>
 	</element>
 	<element name="Unarmored Movement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
@@ -274,32 +284,43 @@
 			<select type="Archetype" name="Monastic Tradition" supports="Monastic Tradition" />
 		</rules>
 	</element>
-	<element name="Deflect Missiles" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_MISSILES">
+	<element name="Deflect Attacks" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_MISSILES">
 		<description>
-			<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level. </p>
-			<p class="indent">If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 essence point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</p>
+			<p>Starting at 3rd level, you can spend 1 essence and use your reaction to deflect an attack made against you that deals bludgeoning, piercing, or slashing damage. When you do so, the damage you take from the attack is reduced by the roll of Martial Arts dice + your monk level.</p>
+			<p class="indent">If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take half of the deflected attack's original damage.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>You can deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10+{{monk:deflect missiles bonus}}.
-			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 essence point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</description>
+			<description>You can spend 1 essence to deflect an attack made against you that deals bludgeoning, piercing, or slashing damage. When you do so, the damage you take from the attack is reduced by 2d{{martial arts:dice}}+{{monk:deflect attacks bonus}}. If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw (DC {{deflect:dc}}) or take half of the attack's original damage.</description>
+			<description level="13">You can spend 1 essence to deflect an attack made against you that deals any type damage other than psychic. When you do so, the damage you take from the attack is reduced by 2d{{martial arts:dice}}+{{monk:deflect energy bonus}}. If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw (DC {{deflect:dc}}) or take half of the attack's original damage.</description>			
 		</sheet>
 		<rules>
-			<stat name="monk:deflect missiles bonus" value="dexterity:modifier" />
-			<stat name="monk:deflect missiles bonus" value="level:monk" />
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="9" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="13" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
+			<stat name="monk:deflect attacks bonus" value="level:monk" />
+			<stat name="monk:deflect energy bonus" value="level:monk" />			
+			<stat name="monk:deflect energy bonus" value="wisdom:modifier" />						
+			<stat name="deflect:dc" value="8" />
+			<stat name="deflect:dc" value="proficiency" />
+			<stat name="deflect:dc" value="wisdom:modifier" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, if your DM allows it, you can take one feat of your choice instead.</p>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, 18th, and 20th level, you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, if your DM allows it, you can take one feat of your choice instead.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Improvement Option (Monk 4)" supports="Improvement Option,Monk,4" level="4" />
 			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,8" level="8" />
 			<select type="Class Feature" name="Improvement Option (Monk 12)" supports="Improvement Option,Monk,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Monk 14)" supports="Improvement Option,Monk,14" level="14" />			
 			<select type="Class Feature" name="Improvement Option (Monk 16)" supports="Improvement Option,Monk,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Monk 19)" supports="Improvement Option,Monk,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Monk 18)" supports="Improvement Option,Monk,18" level="18" />
+			<select type="Class Feature" name="Improvement Option (Monk 20)" supports="Improvement Option,Monk,20" level="20" />			
 		</rules>
 	</element>
 	<element name="Slow Fall" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_SLOW_FALL">
@@ -330,11 +351,22 @@
 	</element>
 	<element name="Stunning Strike" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STUNNING_STRIKE">
 		<description>
-			<p>Starting at 5th level, you can interfere with the flow of essence in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 essence point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+			<p>Starting at 5th level, you can interfere with the flow of essence in an opponent’s body. Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 1 essence point to attempt a stunning strike. The target must succeed on a Constitution saving throw, gaining advantage on the roll if it failed this save within the last hour. On a failed save, the target is stunned until the start of your next turn. On a successful save, the target takes force damage equal to the roll of a Martial Arts Die plus your Wisdom ability modifier.</p>
 		</description>
 		<sheet usage="Essence">
-			<description>When you hit another creature with a melee weapon attack, you can spend 1 essence point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</description>
+			<description>Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 1 essence point to attempt a stunning strike. The target makes a Constitution saving throw (DC {{stun:dc}}) with advantage if it failed this save within the last hour. On a failed save the target is stunned until the start of your next turn. On a succesful save it suffers 1d{{martial arts:dice}}+{{monk:stun bonus}} force damage.</description>
 		</sheet>
+		<rules>
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="9" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="13" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
+			<stat name="monk:stun bonus" value="wisdom:modifier" />		
+			<stat name="stun:dc" value="8" />
+			<stat name="stun:dc" value="proficiency" />
+			<stat name="stun:dc" value="wisdom:modifier" />
+		</rules>
 	</element>
 	<element name="Essence-Empowered Strikes" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES">
 		<description>
@@ -354,10 +386,10 @@
 	</element>
 	<element name="Stillness of Mind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND">
 		<description>
-			<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
+			<p>Starting at 7th level, at the end of each of your turns you can choose to end either the charmed or frightened condition on yourself.</p>
 		</description>
-		<sheet action="Action">
-			<description>You can end one effect on yourself that is causing you to be charmed or frightened.</description>
+		<sheet>
+			<description>You can end either the charmed or frightened condition on yourself at the end of each of your turns.</description>
 		</sheet>
 	</element>
 	<element name="Purity of Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY">
@@ -368,6 +400,14 @@
 			<description>Your mastery of the essence flowing through you makes you immune to disease and poison.</description>
 		</sheet>
 	</element>
+	<element name="Inner Fire" type="Class Feature" source="Player’s Handbook" id="	ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE">
+		<description>
+			<p>At 10th level, you can call upon deeper reserves of essence in times of need. When you roll Initiative and have 3 essence points or fewer, you regain essence points until you have 4.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative and have 3 essence points or fewer, you regain essence points until you have 4.</description>
+		</sheet>
+	</element>	
 	<element name="Tongue of the Sun and Moon" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">
 		<description>
 			<p>Starting at 13th level, you learn to touch the essence of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</p>
@@ -375,6 +415,11 @@
 		<sheet>
 			<description>You learn to touch the essence of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
 		</sheet>
+	</element>
+	<element name="Deflect Energy" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">	
+		<description>
+			<p>You can now use your Deflect Attacks feature against attacks that deal any type of damage, with the exception of psychic damage. In addition, you may add your Wisdom ability modifier to the amount by which the damage of the attack is reduced.</p>
+		</description>
 	</element>
 	<element name="Diamond Soul" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL">
 		<description>
@@ -395,23 +440,47 @@
 	</element>
 	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK">
 		<description>
-			<p>At 15th level, your essence sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</p>
+			<p>At 15th level, your essence sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, but your maximum lifespan is doubled. In addition, you no longer need food or water.</p>
 		</description>
 		<sheet>
-			<description>Your essence sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically.
-			You no longer need food or water.</description>
+			<description>You suffer no negative effects from aging, can’t be aged magically, and no longer need food or water. Your maximum lifespan is doubled.</description>
 		</sheet>
+	</element>	
+	<element name="Wholeness of Self" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF">
+		<description>
+			<p>At 15th level, your mind and spirit function in perfect harmony. Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal the maximum value of your Martial Arts Die plus your Wisdom ability modifier in additional hit points.</p>
+		</description>
+		<sheet>
+			<description>Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal {{monk:heal bonus}} additional hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="monk:heal bonus" value="4" bonus="martial arts" />
+			<stat name="monk:heal bonus" value="6" bonus="martial arts" level="5" />
+			<stat name="monk:heal bonus" value="8" bonus="martial arts" level="9" />
+			<stat name="monk:heal bonus" value="10" bonus="martial arts" level="13" />
+			<stat name="monk:heal bonus" value="12" bonus="martial arts" level="17" />
+			<stat name="monk:heal bonus" value="wisdom:modifier" />		
+		</rules>
+	</element>
+	<element name="Master of the Arts" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS">
+		<description>Your training has pushed your martial arts to the very pinnacle of competence. Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits:
+            <ul class="unstyled">
+                <li><strong>Flurry of Blows.</strong> When you use Flurry of Blows you can make three unarmed strikes instead of two.</li>
+                <li><strong>Patient Defense.</strong> When you use Patient Defense you gain a number of temporary hit points equal to the roll of two Martial Arts Dice.</li>
+                <li><strong>Step of the Wind.</strong> When you use Step of the Wind your jump distance is limited only by your movement speed. In addition, you can choose a number creatures within 5 feet of you equal to your Wisdom ability modifier. They must be willing, Large size or smaller, and not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</li>
+            </ul>		
+		</description>
 	</element>
 	<element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY">
 		<description>
-			<p>Beginning at 18th level, you can use your action to spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</p>
+			<p>Beginning at 19th level, you can use your action to spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force and psychic damage.</p>
 			<p class="indent">Additionally, you can spend 8 essence points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
 			<div class="reference">
 				<div element="ID_PHB_SPELL_ASTRAL_PROJECTION" />
 			</div>
 		</description>
 		<sheet action="Action" usage="Essence">
-			<description>You can spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+			<description>You can spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force and psychic damage.
 			You can spend 8 essence points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
 		</sheet>
 		<rules>
@@ -420,11 +489,17 @@
 	</element>
 	<element name="Perfect Self" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF">
 		<description>
-			<p>At 20th level, when you roll for initiative and have no essence points remaining, you regain 4 essence points.</p>
+			<p>At 20th level, you have honed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, and your maximum for those scores is now 24.</p>
 		</description>
 		<sheet>
-			<description>When you roll for initiative and have no essence points remaining, you regain 4 essence points.</description>
+			<description>Your Dexterity and Wisdom scores increase by 4, and your maximum for those scores is now 24.</description>
 		</sheet>
+		<rules>
+			<stat name="dexterity" value="4" />
+			<stat name="wisdom" value="4" />
+			<stat name="dexterity:max" value="4" />
+			<stat name="wisdom:max" value="4" />
+		</rules>
 	</element>
 
 	<element name="Way of the Open Hand" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_WAY_OF_THE_OPEN_HAND">
@@ -585,15 +660,15 @@
 				<tr><td>11th—16th</td><td><em>4</em></td></tr>
 				<tr><td>17th—20th</td><td><em>5</em></td></tr>
 			</table>
-			<p class="indent"><strong><em>Elemental Flurry.</em></strong> When you spend an action casting an elemental discipline spell, you can use your Flurry of Blows ability even if you didn't perform an attack action that turn. If you do so, the damage type of the unarmed attacks is the same as the damage type of the spell you cast (if any).</p>
+			<p class="indent"><strong><em>Elemental Flurry.</em></strong> When you spend an action casting an elemental discipline spell, you can choose for the damage of your unarmed attacks to have the same damage type as the spell (if any) until the start of your next turn.</p>
 		</description>
 		<sheet usage="Essence">
 			<description>You learn magical disciplines that harness the power of the four elements.</description>
 			<description level="5">You can spend additional essence points (max total 2) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description level="9">You can spend additional essence points (max total 3) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description level="13">You can spend additional essence points (max total 4) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
+			<description level="8">You can spend additional essence points (max total 3) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
+			<description level="11">You can spend additional essence points (max total 4) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
 			<description level="17">You can spend additional essence points (max total 5) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description>When you spend an action casting an elemental discipline spell, you can use your Flurry of Blows ability even if you didn't perform an attack action that turn. If you do so, the damage type of the unarmed attacks is the same as the damage type of the spell you cast (if any).</description>
+			<description>When you spend an action casting an elemental discipline spell, you can choose for the damage of your unarmed attacks to have the same damage type as the spell (if any) until the start of your next turn.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT" />
@@ -675,10 +750,10 @@
 	<element name="Fangs of the Fire Snake" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FANGS_OF_THE_FIRE_SNAKE">
 		<supports>Elemental Discipline</supports>
 		<description>
-			<p>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, unarmed strikes you gain through Flurry of Blows this turn roll one additional damage die if they hit.</p>
+			<p>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your monk weapon attacks and unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, any unarmed strikes you gain through a bonus action this turn roll one additional damage die if they hit.</p>
 		</description>
 		<sheet>
-			<description>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, unarmed strikes you gain through Flurry of Blows this turn roll one additional damage die if they hit.</description>
+			<description>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your monk weapon attacks and unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, any unarmed strikes you gain through a bonus action this turn roll one additional damage die if they hit.</description>
 		</sheet>
 	</element>
 	<element name="Fist of Four Thunders" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_FOUR_THUNDERS">
@@ -699,10 +774,10 @@
 	<element name="Fist of Unbroken Air" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_UNBROKEN_AIR">
 		<supports>Elemental Discipline</supports>
 		<description>
-			<p>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional essence point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</p>
+			<p>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 force damage, plus an extra 1d10 force damage for each additional essence point you spend, and you can push the creature up to 15 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</p>
 		</description>
 		<sheet action="Action">
-			<description>You can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional essence point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</description>
+			<description>You can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 force damage, plus an extra 1d10 force damage for each additional essence point you spend, and you can push the creature up to 15 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</description>
 		</sheet>
 	</element>
 	<element name="Flames of the Phoenix" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FLAMES_OF_THE_PHOENIX">
