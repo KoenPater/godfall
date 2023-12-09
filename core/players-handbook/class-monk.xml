@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.5.6">
+		<update version="0.5.9">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -63,7 +63,7 @@
 				<tr><td>3rd</td><td>1d4</td><td>3</td><td>+10 ft.</td><td class="left">Monastic Tradition, Deflect Attacks</td></tr>
 				<tr><td>4th</td><td>1d4</td><td>4</td><td>+10 ft.</td><td class="left">Ability Score Improvement, Slow Fall</td></tr>
 				<tr><td>5th</td><td>1d6</td><td>5</td><td>+10 ft.</td><td class="left">Extra Attack, Stunning Strike</td></tr>
-				<tr><td>6th</td><td>1d6</td><td>6</td><td>+15 ft.</td><td class="left">Essence-Empowered Strikes, Monastic Tradition feature</td></tr>
+				<tr><td>6th</td><td>1d6</td><td>6</td><td>+15 ft.</td><td class="left">Monastic Tradition feature, Essence-Empowered Strikes</td></tr>
 				<tr><td>7th</td><td>1d6</td><td>7</td><td>+15 ft.</td><td class="left">Evasion, Stillness of Mind</td></tr>
 				<tr><td>8th</td><td>1d6</td><td>8</td><td>+15 ft.</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>9th</td><td>1d8</td><td>9</td><td>+15 ft.</td><td class="left">Unarmored Movement improvement</td></tr>
@@ -71,13 +71,13 @@
 				<tr><td>11th</td><td>1d8</td><td>11</td><td>+20 ft.</td><td class="left">Monastic Tradition feature</td></tr>
 				<tr><td>12th</td><td>1d8</td><td>12</td><td>+20 ft.</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>13th</td><td>1d10</td><td>13</td><td>+20 ft.</td><td class="left">Deflect Energy, Tongue of the Sun and Moon</td></tr>
-				<tr><td>14th</td><td>1d10</td><td>14</td><td>+25 ft.</td><td class="left">Diamond Soul, Ability Score Improvement</td></tr>
-				<tr><td>15th</td><td>1d10</td><td>15</td><td>+25 ft.</td><td class="left">Timeless Body, Wholeness of Self</td></tr>
-				<tr><td>16th</td><td>1d10</td><td>16</td><td>+25 ft.</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td>1d12</td><td>17</td><td>+25 ft.</td><td class="left">Monastic Tradition feature, Master of the Arts</td></tr>
-				<tr><td>18th</td><td>1d12</td><td>18</td><td>+30 ft.</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>19th</td><td>1d12</td><td>19</td><td>+30 ft.</td><td class="left">Empty Body</td></tr>
-				<tr><td>20th</td><td>1d12</td><td>20</td><td>+30 ft.</td><td class="left">Perfect Self, Ability Score Improvement</td></tr>
+				<tr><td>14th</td><td>1d10</td><td>14</td><td>+25 ft.</td><td class="left">Ability Score Improvement, Wholeness of Self</td></tr>
+				<tr><td>15th</td><td>1d10</td><td>15</td><td>+25 ft.</td><td class="left">Master of the Arts</td></tr>
+				<tr><td>16th</td><td>1d10</td><td>16</td><td>+25 ft.</td><td class="left">Ability Score Improvement, Timeless Body</td></tr>
+				<tr><td>17th</td><td>1d12</td><td>17</td><td>+25 ft.</td><td class="left">Monastic Tradition feature, Diamond Soul</td></tr>
+				<tr><td>18th</td><td>1d12</td><td>18</td><td>+30 ft.</td><td class="left">Empty Body</td></tr>
+				<tr><td>19th</td><td>1d12</td><td>19</td><td>+30 ft.</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>1d12</td><td>20</td><td>+30 ft.</td><td class="left">Perfect Self</td></tr>
 			</table>				
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
@@ -92,14 +92,14 @@
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_EVASION_MONK" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE" />			
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY" />			
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY" />		
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" />	
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS" />			
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" />			
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF" />
 		</description>
@@ -130,15 +130,15 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES" level="6" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EVASION_MONK" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND" level="7" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" level="10" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE" level="10" />			
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY" level="10" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY" level="13" />			
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" level="14" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" level="15" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF" level="15" />	
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS" level="17" />				
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF" level="14" />	
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS" level="15" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" level="16" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL" level="17" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY" level="18" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF" level="20" />
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_MONK">
@@ -208,12 +208,12 @@
 			<h6>FLURRY OF BLOWS</h6>
 			<p>You can spend 1 essence point to make two unarmed strikes as a bonus action.</p>
 			<h6>PATIENT DEFENSE</h6>
-			<p>You can spend 1 essence point to take the Dodge action as a bonus action on your turn.</p>
+			<p>You can spend 1 essence point to take the Dodge action as a bonus action on your turn, and you gain temporary hit points equal to your Wisdom modifier.</p>
 			<h6>STEP OF THE WIND</h6>
 			<p>You can spend 1 essence point to take both the Disengage and Dash actions as a single bonus action on your turn, and your jump distance is doubled for the turn.</p>
 		</description>
 		<sheet>
-			<description>You have {{essence:points}} Essence Points and your Essence save DC is {{essence:dc}}</description>
+			<description>You have {{essence:points}} essence points. The save DC for your essence features is {{essence:dc}}.</description>
 		</sheet>
 		<rules>
 			<stat name="essence:points" value="level:monk" />
@@ -231,16 +231,16 @@
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
 			<description>You can spend 1 essence point to make two unarmed strikes.</description>
-			<description level="17">You can spend 1 essence point to make three unarmed strikes.</description>
+			<description level="15">You can spend 1 essence point to make three unarmed strikes.</description>
 		</sheet>
 	</element>
 	<element name="Patient Defense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE">
 		<description>
-			<p>You can spend 1 essence point to take the Dodge action as a bonus action on your turn.</p>
+			<p>You can spend 1 essence point to take the Dodge action as a bonus action on your turn and gain temporary hit points equal to your Wisdom modifier.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
-			<description>You can spend 1 essence point to take the Dodge action on your turn.</description>
-			<description level="17">You can spend 1 essence point to take the Dodge action on your turn and gain 2d{{martial arts:dice}} temporary hit points.</description>
+			<description>You can spend 1 essence point to take the Dodge action and gain {{wisdom:modifier}} temporary hit points.</description>
+			<description level="15">You can spend 1 essence point to take the Dodge action and gain 1d{{martial arts:dice}}+{{wisdom:modifier}} temporary hit points. You roll an additional Martial Arts die for your Deflect Attacks feature until the start of your next turn.</description>
 		</sheet>
 		<rules>
 			<stat name="martial arts:dice" value="4" bonus="martial arts" />
@@ -256,7 +256,7 @@
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
 			<description>You can spend 1 essence point to take both the Disengage and Dash actions on your turn, and your jump distance is doubled for the turn.</description>
-			<description level="17">You can spend 1 essence point to take both the Disengage or Dash action on your turn, and your jump distance is limited only by your speed. In addition, you can choose up to {{monk:wind_creatures}} willing creatures within 5 feet of you that are Large size or smaller and do not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</description>
+			<description level="15">You can spend 1 essence point to take both the Disengage or Dash action on your turn, and your jump distance is limited only by your speed. In addition, you can choose up to {{monk:wind_creatures}} willing creatures within 5 feet of you that are Large size or smaller and do not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</description>
 		</sheet>
 		<rules>
 			<stat name="monk:wind_creatures" value="wisdom:modifier" />
@@ -301,7 +301,7 @@
 		</description>
 		<sheet action="Reaction" usage="Essence">
 			<description>You can spend 1 essence to deflect an attack made against you that deals bludgeoning, piercing, or slashing damage. When you do so, the damage you take from the attack is reduced by 2d{{martial arts:dice}}+{{monk:deflect attacks bonus}}. If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw (DC {{deflect:dc}}) or take half of the attack's original damage.</description>
-			<description level="13">You can spend 1 essence to deflect an attack made against you that deals any type damage other than psychic. When you do so, the damage you take from the attack is reduced by 2d{{martial arts:dice}}+{{monk:deflect energy bonus}}. If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw (DC {{deflect:dc}}) or take half of the attack's original damage.</description>			
+			<description level="13">You can spend 1 essence to deflect an attack made against you that deals any type damage other than psychic. When you do so, the damage you take from the attack is reduced by 2d{{martial arts:dice}}+{{monk:deflect attacks bonus}}. If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw (DC {{deflect:dc}}) or take half of the attack's original damage.</description>			
 		</sheet>
 		<rules>
 			<stat name="martial arts:dice" value="4" bonus="martial arts" />
@@ -329,8 +329,7 @@
 			<select type="Class Feature" name="Improvement Option (Monk 12)" supports="Improvement Option,Monk,12" level="12" />
 			<select type="Class Feature" name="Improvement Option (Monk 14)" supports="Improvement Option,Monk,14" level="14" />			
 			<select type="Class Feature" name="Improvement Option (Monk 16)" supports="Improvement Option,Monk,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Monk 18)" supports="Improvement Option,Monk,18" level="18" />
-			<select type="Class Feature" name="Improvement Option (Monk 20)" supports="Improvement Option,Monk,20" level="20" />			
+			<select type="Class Feature" name="Improvement Option (Monk 19)" supports="Improvement Option,Monk,19" level="19" />
 		</rules>
 	</element>
 	<element name="Slow Fall" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_SLOW_FALL">
@@ -361,10 +360,10 @@
 	</element>
 	<element name="Stunning Strike" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STUNNING_STRIKE">
 		<description>
-			<p>Starting at 5th level, you can interfere with the flow of essence in an opponent’s body. Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 1 essence point to attempt a stunning strike. The target must succeed on a Constitution saving throw, gaining advantage on the roll if it failed this save within the last hour. On a failed save, the target is stunned until the start of your next turn. On a successful save, the target takes force damage equal to the roll of a Martial Arts Die plus your Wisdom ability modifier.</p>
+			<p>Starting at 5th level, you can interfere with the flow of essence in an opponent’s body. Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 2 essence points to attempt a stunning strike. The target must make on a Constitution saving throw, and has advantage on the roll if it suffered from the stunned condition within the last 10 minutes. On a failed save, the target is stunned until the start of your next turn. On a successful save, the target takes force damage equal to the roll of a Martial Arts Die plus your Wisdom ability modifier.</p>
 		</description>
 		<sheet usage="Essence">
-			<description>Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 1 essence point to attempt a stunning strike. The target makes a Constitution saving throw (DC {{stun:dc}}) with advantage if it failed this save within the last hour. On a failed save the target is stunned until the start of your next turn. On a succesful save it suffers 1d{{martial arts:dice}}+{{monk:stun bonus}} force damage.</description>
+			<description>Once per turn, when you hit another creature with a monk weapon or unarmed strike, you can spend 2 essence points to attempt a stunning strike. The target makes a Constitution saving throw (DC {{stun:dc}}) with advantage if it suffered from the stunned condition within the last 10 minutes. On a failed save the target is stunned until the start of your next turn. On a succesful save it suffers 1d{{martial arts:dice}}+{{monk:stun bonus}} force damage.</description>
 		</sheet>
 		<rules>
 			<stat name="martial arts:dice" value="4" bonus="martial arts" />
@@ -412,7 +411,7 @@
 	</element>
 	<element name="Inner Fire" type="Class Feature" source="Player’s Handbook" id="	ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE">
 		<description>
-			<p>At 10th level, you can call upon deeper reserves of essence in times of need. When you roll Initiative and have 3 essence points or fewer, you regain essence points until you have 4.</p>
+			<p>At 10th level, you learn to call upon deeper reserves of essence in times of need. When you roll Initiative and have 3 essence points or fewer, you regain essence points until you have 4.</p>
 		</description>
 		<sheet>
 			<description>When you roll Initiative and have 3 essence points or fewer, you regain essence points until you have 4.</description>
@@ -428,13 +427,13 @@
 	</element>
 	<element name="Deflect Energy" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY">	
 		<description>
-			<p>You can now use your Deflect Attacks feature against attacks that deal any type of damage, with the exception of psychic damage. In addition, you may add your Wisdom ability modifier to the amount by which the damage of the attack is reduced.</p>
+			<p>You can now use your Deflect Attacks feature against attacks that deal any type of damage, with the exception of psychic damage.</p>
 		</description>
 		<sheet display="false" />
 	</element>
 	<element name="Diamond Soul" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL">
 		<description>
-			<p>Beginning at 14th level, your mastery of essence grants you proficiency in all saving throws.</p>
+			<p>Beginning at 17th level, your mastery of essence grants you proficiency in all saving throws.</p>
 			<p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 essence point to reroll it and take the second result.</p>
 		</description>
 		<sheet usage="Essence">
@@ -459,7 +458,7 @@
 	</element>	
 	<element name="Wholeness of Self" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF">
 		<description>
-			<p>At 15th level, your mind and spirit function in perfect harmony. Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal the maximum value of your Martial Arts Die plus your Wisdom ability modifier in additional hit points.</p>
+			<p>At 14th level, your mind and spirit function in perfect harmony. Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal the maximum value of your Martial Arts Die plus your Wisdom ability modifier in additional hit points.</p>
 		</description>
 		<sheet>
 			<description>Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal {{monk:heal bonus}} additional hit points.</description>
@@ -477,22 +476,22 @@
 		<description>Your training has pushed your martial arts to the very pinnacle of competence. Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits:
             <ul class="unstyled">
                 <li><strong>Flurry of Blows.</strong> When you use Flurry of Blows you can make three unarmed strikes instead of two.</li>
-                <li><strong>Patient Defense.</strong> When you use Patient Defense you gain a number of temporary hit points equal to the roll of two Martial Arts Dice.</li>
-                <li><strong>Step of the Wind.</strong> When you use Step of the Wind your jump distance is limited only by your movement speed. In addition, you can choose a number creatures within 5 feet of you equal to your Wisdom ability modifier. They must be willing, Large size or smaller, and not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</li>
+                <li><strong>Patient Defense.</strong> When you use Patient Defense you add the roll of a Martial Arts Die to your Wisdom modifier to determine the temporary hit points gained. In addition, you roll an additional Martial Arts die for your Deflect Attacks feature until the start of your next turn.</li>
+                <li><strong>Step of the Wind.</strong> When you use Step of the Wind your jump distance is limited only by your movement speed. In addition, you can choose a number creatures within 5 feet of you equal to your Wisdom modifier. They must be willing, Large size or smaller, and not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</li>
             </ul>		
 		</description>
 		<sheet display="false" />
 	</element>
 	<element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY">
 		<description>
-			<p>Beginning at 19th level, you can use your action to spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force and psychic damage.</p>
+			<p>Beginning at 18th level, you can use your action to spend 6 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage except force and psychic damage.</p>
 			<p class="indent">Additionally, you can spend 8 essence points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
 			<div class="reference">
 				<div element="ID_PHB_SPELL_ASTRAL_PROJECTION" />
 			</div>
 		</description>
 		<sheet action="Action" usage="Essence">
-			<description>You can spend 4 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage but force and psychic damage.
+			<description>You can spend 6 essence points to become invisible for 1 minute. During that time, you also have resistance to all damage except force and psychic damage.
 			You can spend 8 essence points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
 		</sheet>
 		<rules>
@@ -656,35 +655,22 @@
 	</element>
 	<element name="Disciple of the Elements" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS">
 		<description>
-			<p>When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. A discipline requires you to spend essence points each time you use it.</p>
-			<p class="indent">You know the Elemental Attunement discipline and one other elemental discipline of your choice, which are detailed in the “Elemental Disciplines” section below. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.</p>
+			<p>When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. Each discipline grants you access to a spell that requires you to spend essence points each time you cast it.</p>
+			<p class="indent">You know the Elemental Attunement discipline and two other elemental disciplines of your choice, which are detailed in the “Elemental Disciplines” section below. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.</p>
 			<p class="indent">Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.</p>
-			<p class="indent"><strong><em>Casting Elemental Spells.</em></strong> Some elemental disciplines allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don’t need to provide material components for it.</p>
-			<p class="indent">Once you reach 5th level in this class, you can spend additional essence points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell’s level increases by 1 for each additional essence point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 2 essence points to cast it as a 2nd-level spell (the discipline’s base cost of 1 essence points plus 1).</p>
-			<p class="indent">The maximum number of essence points you can spend to cast a spell in this way (including its base essence point cost and any additional essence points you spend to increase its level) is determined by your monk level, as shown in the Spells and Essence Points table.</p>
-			<h5 class="caption">SPELLS AND ESSENCE POINTS</h5>
-			<table>
-				<thead>
-					<tr><td>Monk Levels</td><td>Maximum Essence Points for a Spell</td></tr>
-				</thead>
-				<tr><td>5th—7th</td><td><em>2</em></td></tr>
-				<tr><td>8th—10th</td><td><em>3</em></td></tr>
-				<tr><td>11th—16th</td><td><em>4</em></td></tr>
-				<tr><td>17th—20th</td><td><em>5</em></td></tr>
-			</table>
+			<p class="indent"><strong><em>Casting Elemental Spells.</em></strong> Each elemental discipline gives you access to a spell. To cast one of these spells, you spend essence points equal to its level. The spell is then cast following all the normal rules for spellcasting (see chapter 10). Certain spells can be cast at a higher level to enhance their effects, as stated in their description. To do so, spend essence points equal to the desired level of the spell, rather than its actual level. The maximum number of essence points you can spend on a single spellcasting is equal to your proficiency bonus.</p>
+			<p class="indent"><i>For example, it would normally cost 1 essence point to cast <i>Sweeping Cinder Strike</i> (a 1st-level spell). However, you could instead spend 2 essence points to cast it as a 2nd-level spell, increasing its damage by one die (as stated in the spell's description). For a third-level character with a profiency bonus of +2, this is the highest level at which the spell can be cast.</i></p> 
+			<p class="indent">Wisdom is your spellcasting ability for your elemental discipline spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a discipline spell you cast and when making an attack roll with one.</p>
+			<p class="indent"><strong><em>Martial Magic.</em></strong> Your aptitude with your elemental spells increases with your martial arts training. When casting an elemental discipline spell, you can choose to use your Martial Arts dice instead of the dice the spell would normally use. This only changes the die type, not the number of dice. For example, <i>Sweeping Cinder Strike</i> normally does 4d4 damage, but if your Martial Arts Die is a d8, the spell would do 4d8 damage instead. 
 			<p class="indent"><strong><em>Elemental Flurry.</em></strong> When you spend an action casting an elemental discipline spell, you can choose for the damage of your unarmed attacks to have the same damage type as the spell (if any) until the start of your next turn.</p>
 		</description>
 		<sheet usage="Essence">
-			<description>You learn magical disciplines that harness the power of the four elements.</description>
-			<description level="5">You can spend additional essence points (max total 2) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description level="8">You can spend additional essence points (max total 3) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description level="11">You can spend additional essence points (max total 4) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description level="17">You can spend additional essence points (max total 5) to increase the level of an elemental discipline spell that you cast. The spell’s level increases by 1 for each additional essence point you spend.</description>
-			<description>When you spend an action casting an elemental discipline spell, you can choose for the damage of your unarmed attacks to have the same damage type as the spell (if any) until the start of your next turn.</description>
+			<description>You learn elemental disciplines that grant you access to spells.</description>
+			<description>You can cast an elemental discipline spell by spending essence points equal to its level. You can spend additional essence points to cast the spell at a higher level if the spell allows for it. The maximum level at which you can cast a spell is {{proficiency}}. You can use your Martial Arts Dice instead of the normal dice of the spell. After casting a spell, you can choose for your unarmed attacks to have the same damage type as the spell until the start of your next turn.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT" />
-			<select type="Archetype Feature" name="Elemental Discipline (Level 3)" supports="Elemental Discipline" level="3" />
+			<select type="Archetype Feature" name="Elemental Discipline (Level 3)" supports="Elemental Discipline" level="3" numer="2" />
 			<select type="Archetype Feature" name="Elemental Discipline (Level 6)" supports="Elemental Discipline" level="6" />
 			<select type="Archetype Feature" name="Elemental Discipline (Level 11)" supports="Elemental Discipline" level="11" />
 			<select type="Archetype Feature" name="Elemental Discipline (Level 17)" supports="Elemental Discipline" level="17" />
@@ -712,178 +698,488 @@
 		<requirements>[level:17]</requirements>
 		<description>
 			<p><em>Prerequisite: 17th level</em></p>
-			<p>You can spend 5 essence points to cast cone of cold.</p>
+			<p>You can spend 5 or more essence points to cast Breath of Winter.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_CONE_OF_COLD" />
+				<div element="ID_KOEN_SPELL_BREATH_OF_WINTER" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 5 essence points to cast cone of cold.</description>
+			<description>You can spend 5 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
 			<!-- remove from known spells but allow modded spellcards for reference -->
-			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" />
+			<grant type="Spell" id="ID_KOEN_SPELL_BREATH_OF_WINTER" />
 		</rules>
 	</element>
+	  <element name="Breath of Winter" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_BREATH_OF_WINTER">
+		<supports></supports>
+		<description>
+		  <p>You breathe a gale of freezing air. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 6d12 cold damage on a failed save, or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.</p>
+		</description>
+		<setters>
+		  <set name="keywords">cold</set>
+		  <set name="level">5</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">Self (60-foot cone)</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Clench of the North Wind" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_CLENCH_OF_THE_NORTH_WIND">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:6]</requirements>
 		<description>
 			<p><em>Prerequisite: 6th level</em></p>
-			<p>You can spend 2 essence points to cast hold person.</p>
+			<p>You can spend 2 essence points to cast Clench of the North Wind.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_HOLD_PERSON" />
+				<div element="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 2 essence points to cast hold person.</description>
+			<description>You can spend 2 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" />
+			<grant type="Spell" id="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND" />
 		</rules>
 	</element>
+	  <element name="Clench of the North Wind" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND">
+		<supports></supports>
+		<description>
+		  <p>As you clench your fist, crushing winds envelop your target and hold them into place. Choose a humanoid that you can see within range. The target must succeed on a Dexterity saving throw or take 2d6 bludgeoning damage and be restrained for the duration. To escape, the target can use its action to make a Strength saving throw. On a success, the spell ends on the target. If the target attempts to use its action for anything other than escape, it will first suffer 2d6 bludgeoning damage.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, both the initial and subsequent damage increase by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">3</set>
+		  <set name="school">Enchantment</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Concentration, up to 1 minute</set>
+		  <set name="range">60 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">true</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Eternal Mountain Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ETERNAL_MOUNTAIN_DEFENSE">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:11]</requirements>
 		<description>
 			<p><em>Prerequisite: 11th level</em></p>
-			<p>You can spend 4 essence points to cast stoneskin, targeting yourself.</p>
+			<p>You can spend 4 essence points to cast Eternal Mountain Defense.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_STONESKIN" />
+				<div element="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 4 essence points to cast stoneskin, targeting yourself.</description>
+			<description>You can spend 4 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" />
+			<grant type="Spell" id="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE" />
 		</rules>
 	</element>
+	  <element name="Eternal Mountain Defense" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE">
+		<supports></supports>
+		<description>
+		  <p>You enter the stance of the implacable mountain, your skin becoming as hard as stone. Until the spell ends, you have resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">4</set>
+		  <set name="school">Abjuration</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Concentration, up to 1 hour</set>
+		  <set name="range">Self</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent"/>
+		  <set name="isConcentration">true</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Fangs of the Fire Snake" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FANGS_OF_THE_FIRE_SNAKE">
-		<supports>Elemental Discipline</supports>
-		<description>
-			<p>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your monk weapon attacks and unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, any unarmed strikes you gain through a bonus action this turn roll one additional damage die if they hit.</p>
-		</description>
-		<sheet>
-			<description>When you use the Attack action on your turn, you can spend 1 essence point to cause tendrils of flame to stretch out from your fists and feet. For this action and the rest of your turn, all your monk weapon attacks and unarmed strikes deal fire damage and have their reach increased to 15 feet. In addition, any unarmed strikes you gain through a bonus action this turn roll one additional damage die if they hit.</description>
-		</sheet>
-	</element>
-	<element name="Fist of Four Thunders" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_FOUR_THUNDERS">
-		<supports>Elemental Discipline</supports>
-		<description>
-			<p>You can spend 1 essence point to cast thunderwave.</p>
-			<div class="reference">
-				<div element="ID_PHB_SPELL_THUNDERWAVE" />
-			</div>
-		</description>
-		<sheet>
-			<description>You can spend 1 essence point to cast thunderwave.</description>
-		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" />
-		</rules>
-	</element>
-	<element name="Fist of Unbroken Air" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_UNBROKEN_AIR">
-		<supports>Elemental Discipline</supports>
-		<description>
-			<p>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 force damage, plus an extra 1d10 force damage for each additional essence point you spend, and you can push the creature up to 15 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</p>
-		</description>
-		<sheet action="Action">
-			<description>You can spend 2 essence points and choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 force damage, plus an extra 1d10 force damage for each additional essence point you spend, and you can push the creature up to 15 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.</description>
-		</sheet>
-	</element>
-	<element name="Flames of the Phoenix" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FLAMES_OF_THE_PHOENIX">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:6]</requirements>
 		<description>
 			<p><em>Prerequisite: 6th level</em></p>
-			<p>You can spend 2 essence points to cast Aganazzar’s Scorcher.</p>
+			<p>You can spend 2 essence points to cast Fangs of the Fire Snake.</p>
 			<div class="reference">
-				<div element="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
+				<div element="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 2 essence points to cast Aganazzar’s Scorcher.</description>
+			<description>You can spend 2 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
+			<grant type="Spell" id="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE" />
 		</rules>
 	</element>
+	  <element name="Fangs of the Fire Snake" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE">
+		<supports></supports>
+		<description>
+		  <p>Tendrils of flame stretch out from your fists and feet. You can take an Attack action as part of the action used to cast this spell. Attacks you make through the casting of this spell, as well as any other monk weapon attacks and unarmed strikes you make before the start of your next turn, deal one additional die of fire damage and have their reach increased to 15 feet.</p>
+		</description>
+		<setters>
+		  <set name="keywords">fire</set>
+		  <set name="level">2</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">1 round</set>
+		  <set name="range">Self</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent"/>
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
+	<element name="Fist of Four Thunders" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_FOUR_THUNDERS">
+		<supports>Elemental Discipline</supports>
+		<description>
+			<p>You can spend 1 essence point to cast Fist of Four Thunders.</p>
+			<div class="reference">
+				<div element="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 1 or more essence points to cast this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS" />
+		</rules>
+	</element>
+	  <element name="Fist of Four Thunders" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS">
+		<supports></supports>
+		<description>
+		  <p>You gather a trembling force in your hand, then unleash it with a deafening strike. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 3d4 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+		  <set name="keywords">thunder</set>
+		  <set name="level">1</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">Self (15-foot cube)</set>
+		  <set name="hasVerbalComponent">true</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>
+	<element name="Fist of Unbroken Air" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_UNBROKEN_AIR">
+		<supports>Elemental Discipline</supports>
+		<requirements>[level:6]</requirements>
+		<description>
+			<p><em>Prerequisite: 6th level</em></p>
+			<p>You can spend 2 essence points to cast Fist of Unbroken Air.</p>
+			<div class="reference">
+				<div element="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 2 or more essence points to cast this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR" />
+		</rules>
+	</element>
+	  <element name="Fist of Unbroken Air" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR">
+		<supports></supports>
+		<description>
+		  <p>You strike out with both hands, creating a blast of compressed air that slams into your opponent like a mighty fist. Choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d6 bludgeoning damage and you push the creature 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage and you must choose to have it either be pushed back 5 feet or knocked prone.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">2</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">15 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>
+	<element name="Flames of the Phoenix" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FLAMES_OF_THE_PHOENIX">
+		<supports>Elemental Discipline</supports>
+		<requirements>[level:11]</requirements>
+		<description>
+			<p><em>Prerequisite: 11th level</em></p>
+			<p>You can spend 3 essence points to cast Flames of the Phoenix.</p>
+			<div class="reference">
+				<div element="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 3 or more essence points to cast this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX" />
+		</rules>
+	</element>
+	  <element name="Flames of the Phoenix" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX">
+		<supports></supports>
+		<description>
+		  <p>You leap into the air and land between your enemies in an explosion of flames. As part of the action to cast this spell, you can jump up to 30 feet horizontally or 15 feet vertically. This jump does not cost any of your movement and does not provoke opportunity attacks. It can extend a jump that was started before the casting of this spell. When you land, a wave of fire sweeps out from you in all directions. Each creature within a 20-foot radius of you, other than yourself, must make a Dexterity saving throw. A creature suffers 5d8 fire damage on a failed save, or half as much on a succesful one. The fire spreads around corners. It ignites flammable objects in the area that aren’t being worn or carried.</p>		  
+		  <p class="indent">You cannot cast this spell if you are restrained, grappled, or your movement speed is reduced to 0 for any other reason.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+		  <set name="keywords">fire</set>
+		  <set name="level">3</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">Self (20-foot radius)</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Mist Stance" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_MIST_STANCE">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:11]</requirements>
 		<description>
 			<p><em>Prerequisite: 11th level</em></p>
-			<p>You can spend 3 essence points to cast gaseous form, targeting yourself.</p>
+			<p>You can spend 3 essence points to cast Mist Stance.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_GASEOUS_FORM" />
+				<div element="ID_KOEN_SPELL_MIST_STANCE" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 3 essence points to cast gaseous form, targeting yourself.</description>
+			<description>You can spend 3 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" />
+			<grant type="Spell" id="ID_KOEN_SPELL_MIST_STANCE" />
 		</rules>
 	</element>
+	  <element name="Mist Stance" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_MIST_STANCE">
+		<supports></supports>
+		<description>
+		  <p>As you trace intricate gestures through the air, mist rises around you until finally you disappear in the mist yourself. You transform into a misty cloud for the duration of the spell, along with everything you're wearing and carrying. The spell ends if you drop to 0 hit points. While in this form, your only method of movement is a flying speed equal to your unarmored movement bonus. You can enter and occupy the space of another creature. You have resistance to nonmagical damage, and you have advantage on Strength, Dexterity, and Constitution saving throws. You can pass through small holes, narrow openings, and even mere cracks, though you treat liquids as though they were solid surfaces. You can’t fall and remain hovering in the air even when stunned or otherwise incapacitated. While in the form of a misty cloud, you can’t talk or manipulate objects, and any objects you were carrying or holding can’t be dropped, used, or otherwise interacted with. You can’t attack or cast spells.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">3</set>
+		  <set name="school">Transmutation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Concentration, up to 1 hour</set>
+		  <set name="range">Self</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">true</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>		
 	<element name="Ride the Wind" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_RIDE_THE_WIND">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:11]</requirements>
 		<description>
 			<p><em>Prerequisite: 11th level</em></p>
-			<p>You can spend 3 essence points to cast fly, targeting yourself.</p>
+			<p>You can spend 3 essence points to cast Ride the Wind.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_FLY" />
+				<div element="ID_KOEN_SPELL_RIDE_THE_WIND" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 3 essence points to cast fly, targeting yourself.</description>
+			<description>You can spend 3 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FLY" />
+			<grant type="Spell" id="ID_KOEN_SPELL_RIDE_THE_WIND" />
 		</rules>
 	</element>
+	  <element name="Ride the Wind" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_RIDE_THE_WIND">
+		<supports></supports>
+		<description>
+		  <p>Wind gathers around you as you leap into the air. You gain a flying speed of 60 feet for the duration of the spell. When the spell ends, you fall if you are still aloft, unless you can stop the fall.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you increase the flying speed by 20 feet for each slot level above 3rd.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">3</set>
+		  <set name="school">Transmutation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Concentration, up to 10 minutes</set>
+		  <set name="range">Touch</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">true</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="River of Hungry Flame" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_RIVER_OF_HUNGRY_FLAME">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:11]</requirements>
 		<description>
 			<p><em>Prerequisite: 11th level</em></p>
-			<p>You can spend 4 essence points to cast wall of fire.</p>
+			<p>You can spend 4 essence points to cast River of Hungry Flame.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_WALL_OF_FIRE" />
+				<div element="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 4 essence points to cast wall of fire.</description>
+			<description>You can spend 4 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" />
+			<grant type="Spell" id="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME" />
 		</rules>
 	</element>
-	<element name="Sweeping Cinder Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_SWEEPING_CINDER_STRIKE">
+	  <element name="River of Hungry Flame" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME">
+		<supports></supports>
+		<description>
+		  <p>As you trace your foot over the ground, a river of lava opens up at a distance from you on a solid surface within range. You can make the river up to 60 feet long, 1 foot deep, and 10 foot wide, or a ringed moat with an inner diameter of up to 30 feet, 1 foot deep, and 10 foot wide. Flames and lava spurts leap from the river up to 5 feet above ground level, and the river lasts for the duration of the spell. The area of the river is considered difficult terrain.</p>
+		  <p class="indent">When the river appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage. On a successful save the creature takes only half as much damage.</p>
+		  <p class="indent">A creature that enters the river's area for the first time on its turn or ends its turn there takes 5d8 fire damage. A creature can attempt to jump over the river, but will need to cross a distance of at least 20 feet and succeed at an Strength (Athletics) check to take no damage. Creatures that fail to or are unable to do so still take half of the 5d8 fire damage. Creatures that fail to jump the required 10 feet end up in the river and take full damage.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+		  <set name="keywords">fire</set>
+		  <set name="level">4</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Concentration, up to 1 minute</set>
+		  <set name="range">90 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">true</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
+	<element name="Sweeping Cinder Kick" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_SWEEPING_CINDER_STRIKE">
 		<supports>Elemental Discipline</supports>
 		<description>
-			<p>You can spend 1 essence point to cast burning hands.</p>
+			<p>You can spend 1 essence point to cast Sweeping Cinder Strike.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_BURNING_HANDS" />
+				<div element="ID_KOEN_SPELL_SWEEPING_CINDER_KICK" />
 			</div>
 		</description>
 		<sheet>
-			<description>You can spend 1 essence point to cast burning hands.</description>
+			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+			<grant type="Spell" id="ID_KOEN_SPELL_SWEEPING_CINDER_KICK" />
 		</rules>
 	</element>
+	  <element name="Sweeping Cinder Kick" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_SWEEPING_CINDER_KICK">
+		<supports></supports>
+		<description>
+		  <p>You make a sweeping kick that sends out a wave of fire. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 4d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+		  <set name="keywords">fire</set>
+		  <set name="level">1</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">Self (15-foot cone)</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
+	<element name="Earth Trembling Step" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_EARTH_TREMBLING_STEP">
+		<supports>Elemental Discipline</supports>
+		<description>
+			<p>You can spend 1 essence point to cast Earth Trembling Step.</p>
+			<div class="reference">
+				<div element="ID_KOEN_SPELL_EARTH_TREMBLING_STEP" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 1 or more essence points to cast this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KOEN_SPELL_EARTH_TREMBLING_STEP" />
+		</rules>
+	</element>
+	  <element name="Earth Trembling Step" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_EARTH_TREMBLING_STEP">
+		<supports></supports>
+		<description>
+		  <p>You stomp the ground, sending a tremor through the earth that unbalances nearby foes. Each creature other than you within a 10-foot radius makes a Dexterity saving throw. On a failed save, the creature takes 2d4 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, which requires at least 1 minute.</p>
+		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">1</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">Self (10-foot radius)</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>		  
 	<element name="Water Whip" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_WATER_WHIP">
-		<supports>Elemental Discipline</supports>
+			<supports>Elemental Discipline</supports>
 		<description>
-			<p>You can spend 1 essence point as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 2d8 bludgeoning damage, plus an extra 1d8 bludgeoning damage for each additional essence point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.</p>
+			<p>You can spend 1 essence point to cast Water Whip.</p>
+			<div class="reference">
+				<div element="ID_KOEN_SPELL_WATER_WHIP" />
+			</div>
 		</description>
-		<sheet action="Action">
-			<description>You can spend 1 essence point to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 2d8 bludgeoning damage, plus an extra 1d8 bludgeoning damage for each additional essence point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.</description>
+		<sheet>
+			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KOEN_SPELL_WATER_WHIP" />
+		</rules>
 	</element>
+	  <element name="Water Whip" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_WATER_WHIP">
+		<supports></supports>
+		<description>
+			<p>You lash out with a whip of water to pull creatures toward you. You can attack three times with the water whip, attacking either the same target or several. Make a ranged spell attack roll for each whip attack. On a hit, the target takes 1d4 bludgeoning damage and if it is Large or smaller it is pulled 5 feet towards you.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can make one additional whip attack for each slot level above 1st, up to a maximum of three additional whip attacks at 4th level.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">1</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">30 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Wave of Rolling Earth" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_WAVE_OF_ROLLING_EARTH">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:17]</requirements>
