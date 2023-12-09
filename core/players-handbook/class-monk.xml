@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.5.5">
+		<update version="0.5.6">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -240,8 +240,15 @@
 		</description>
 		<sheet action="Bonus Action" usage="Essence">
 			<description>You can spend 1 essence point to take the Dodge action on your turn.</description>
-			<description level="17">You can spend 1 essence point to take the Dodge action on your turn and gain {{monk:temp_defense}} temporary hit points.</description>
+			<description level="17">You can spend 1 essence point to take the Dodge action on your turn and gain 2d{{martial arts:dice}} temporary hit points.</description>
 		</sheet>
+		<rules>
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="9" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="13" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
+		</rules>
 	</element>
 	<element name="Step of the Wind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND">
 		<description>
@@ -251,6 +258,9 @@
 			<description>You can spend 1 essence point to take both the Disengage and Dash actions on your turn, and your jump distance is doubled for the turn.</description>
 			<description level="17">You can spend 1 essence point to take both the Disengage or Dash action on your turn, and your jump distance is limited only by your speed. In addition, you can choose up to {{monk:wind_creatures}} willing creatures within 5 feet of you that are Large size or smaller and do not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</description>
 		</sheet>
+		<rules>
+			<stat name="monk:wind_creatures" value="wisdom:modifier" />
+		</rules>
 	</element>
 	<element name="Unarmored Movement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
 		<description>
@@ -471,6 +481,7 @@
                 <li><strong>Step of the Wind.</strong> When you use Step of the Wind your jump distance is limited only by your movement speed. In addition, you can choose a number creatures within 5 feet of you equal to your Wisdom ability modifier. They must be willing, Large size or smaller, and not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</li>
             </ul>		
 		</description>
+		<sheet display="false" />
 	</element>
 	<element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY">
 		<description>
