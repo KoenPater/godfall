@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.7.5">
+		<update version="0.7.6">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -473,8 +473,8 @@
 		</rules>
 	</element>
 	<element name="Master of the Arts" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_MASTER_OF_THE_ARTS">
-		<description>Your training has pushed your martial arts to the very pinnacle of competence. Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits:
-            <ul class="unstyled">
+		<description><p>At 15th level, your training has pushed your martial arts to the very pinnacle of competence. Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits:</p>
+            <ul>
                 <li><strong>Flurry of Blows.</strong> When you use Flurry of Blows you can make three unarmed strikes instead of two.</li>
                 <li><strong>Patient Defense.</strong> When you use Patient Defense you add the roll of a Martial Arts Die to your Wisdom modifier to determine the temporary hit points gained. In addition, you roll an additional Martial Arts die for your Deflect Attacks feature until the start of your next turn.</li>
                 <li><strong>Step of the Wind.</strong> When you use Step of the Wind your jump distance is limited only by your movement speed. In addition, you can choose a number creatures within 5 feet of you equal to your Wisdom modifier. They must be willing, Large size or smaller, and not have their movement speed reduced to 0. These creatures will move with you until the end of your turn and will not provoke opportunity attacks for this movement.</li>
@@ -663,6 +663,7 @@
 			<p class="indent">Wisdom is your spellcasting ability for your elemental discipline spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a discipline spell you cast and when making an attack roll with one.</p>
 			<p class="indent"><strong><em>Martial Magic.</em></strong> Your aptitude with your elemental spells increases with your martial arts training. When casting an elemental discipline spell, you can choose to use your Martial Arts dice instead of the dice the spell would normally use. This only changes the die type, not the number of dice. For example, <i>Sweeping Cinder Strike</i> normally does 4d4 damage, but if your Martial Arts Die is a d8, the spell would do 4d8 damage instead.</p> 
 			<p class="indent"><strong><em>Elemental Flurry.</em></strong> When you spend an action casting an elemental discipline spell, you can choose for the damage of your unarmed attacks to have the same damage type as the spell (if any) until the start of your next turn.</p>
+			<div element="ID_KOEN_ELEMENTAL_EMPOWERMENT" />
 		</description>
 		<sheet usage="Essence">
 			<description>You learn elemental disciplines that grant you access to spells.</description>
