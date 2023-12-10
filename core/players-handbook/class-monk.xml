@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.6.6">
+		<update version="0.6.8">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -668,7 +668,7 @@
 			<description>You learn elemental disciplines that grant you access to spells.</description>
 			<description>You can cast an elemental discipline spell by spending essence points equal to its level. You can spend additional essence points to cast the spell at a higher level if the spell allows for it. The maximum level at which you can cast a spell is {{proficiency}}. You can use your Martial Arts Dice instead of the normal dice of the spell. After casting a spell, you can choose for your unarmed attacks to have the same damage type as the spell until the start of your next turn.</description>
 		</sheet>
-		<spellcasting name="Disciple of the Elements" ability="Wisdom" prepare="false" allowReplace="false">
+		<spellcasting name="Monk" ability="Wisdom" prepare="false" allowReplace="false">
 			<list>Monk</list>
 		</spellcasting>
 		<rules>
@@ -715,7 +715,7 @@
 		</rules>
 	</element>
 	  <element name="Breath of Winter" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_BREATH_OF_WINTER">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You breathe a gale of freezing air. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 6d12 cold damage on a failed save, or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.</p>
@@ -749,11 +749,11 @@
 			<description>You can spend 2 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND" />
+			<grant type="Spell" id="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Clench of the North Wind" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_CLENCH_OF_THE_NORTH_WIND">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>As you clench your fist, crushing winds envelop your target and hold them into place. Choose a humanoid that you can see within range. The target must succeed on a Dexterity saving throw or take 2d6 bludgeoning damage and be restrained for the duration. To escape, the target can use its action to make a Strength saving throw. On a success, the spell ends on the target. If the target attempts to use its action for anything other than escape, it will first suffer 2d6 bludgeoning damage.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, both the initial and subsequent damage increase by 1d6 for each slot level above 3rd.</p>
@@ -787,11 +787,11 @@
 			<description>You can spend 4 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE" />
+			<grant type="Spell" id="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Eternal Mountain Defense" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_ETERNAL_MOUNTAIN_DEFENSE">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You enter the stance of the implacable mountain, your skin becoming as hard as stone. Until the spell ends, you have resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
 		</description>
@@ -824,11 +824,11 @@
 			<description>You can spend 2 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE" />
+			<grant type="Spell" id="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Fangs of the Fire Snake" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FANGS_OF_THE_FIRE_SNAKE">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>Tendrils of flame stretch out from your fists and feet. You can take an Attack action as part of the action used to cast this spell. Attacks you make through the casting of this spell, as well as any other monk weapon attacks and unarmed strikes you make before the start of your next turn, deal one additional die of fire damage and have their reach increased to 15 feet.</p>
 		</description>
@@ -859,11 +859,11 @@
 			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS" />
+			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Fist of Four Thunders" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FIST_OF_FOUR_THUNDERS">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You gather a trembling force in your hand, then unleash it with a deafening strike. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 3d4 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
@@ -897,11 +897,11 @@
 			<description>You can spend 2 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR" />
+			<grant type="Spell" id="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Fist of Unbroken Air" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FIST_OF_UNBROKEN_AIR">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You strike out with both hands, creating a blast of compressed air that slams into your opponent like a mighty fist. Choose a creature within 15 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d6 bludgeoning damage and you push the creature 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage and you must choose to have it either be pushed back 5 feet or knocked prone.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
@@ -935,11 +935,11 @@
 			<description>You can spend 3 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX" />
+			<grant type="Spell" id="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Flames of the Phoenix" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_FLAMES_OF_THE_PHOENIX">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You leap into the air and land between your enemies in an explosion of flames. As part of the action to cast this spell, you can jump up to 30 feet horizontally or 15 feet vertically. This jump does not cost any of your movement and does not provoke opportunity attacks. It can extend a jump that was started before the casting of this spell. When you land, a wave of fire sweeps out from you in all directions. Each creature within a 20-foot radius of you, other than yourself, must make a Dexterity saving throw. A creature suffers 5d8 fire damage on a failed save, or half as much on a succesful one. The fire spreads around corners. It ignites flammable objects in the area that aren’t being worn or carried.</p>		  
 		  <p class="indent">You cannot cast this spell if you are restrained, grappled, or your movement speed is reduced to 0 for any other reason.</p>
@@ -974,11 +974,11 @@
 			<description>You can spend 3 essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_MIST_STANCE" />
+			<grant type="Spell" id="ID_KOEN_SPELL_MIST_STANCE" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Mist Stance" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_MIST_STANCE">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>As you trace intricate gestures through the air, mist rises around you until finally you disappear in the mist yourself. You transform into a misty cloud for the duration of the spell, along with everything you're wearing and carrying. The spell ends if you drop to 0 hit points. While in this form, your only method of movement is a flying speed equal to your unarmored movement bonus. You can enter and occupy the space of another creature. You have resistance to nonmagical damage, and you have advantage on Strength, Dexterity, and Constitution saving throws. You can pass through small holes, narrow openings, and even mere cracks, though you treat liquids as though they were solid surfaces. You can’t fall and remain hovering in the air even when stunned or otherwise incapacitated. While in the form of a misty cloud, you can’t talk or manipulate objects, and any objects you were carrying or holding can’t be dropped, used, or otherwise interacted with. You can’t attack or cast spells.</p>
 		</description>
@@ -1011,11 +1011,11 @@
 			<description>You can spend 3 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_RIDE_THE_WIND" />
+			<grant type="Spell" id="ID_KOEN_SPELL_RIDE_THE_WIND" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Ride the Wind" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_RIDE_THE_WIND">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>Wind gathers around you as you leap into the air. You gain a flying speed of 60 feet for the duration of the spell. When the spell ends, you fall if you are still aloft, unless you can stop the fall.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you increase the flying speed by 20 feet for each slot level above 3rd.</p>
@@ -1049,11 +1049,11 @@
 			<description>You can spend 4 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME" />
+			<grant type="Spell" id="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="River of Hungry Flame" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_RIVER_OF_HUNGRY_FLAME">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>As you trace your foot over the ground, a river of lava opens up at a distance from you on a solid surface within range. You can make the river up to 60 feet long, 1 foot deep, and 10 foot wide, or a ringed moat with an inner diameter of up to 30 feet, 1 foot deep, and 10 foot wide. Flames and lava spurts leap from the river up to 5 feet above ground level, and the river lasts for the duration of the spell. The area of the river is considered difficult terrain.</p>
 		  <p class="indent">When the river appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage. On a successful save the creature takes only half as much damage.</p>
@@ -1087,11 +1087,11 @@
 			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_SWEEPING_CINDER_KICK" />
+			<grant type="Spell" id="ID_KOEN_SPELL_SWEEPING_CINDER_KICK" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Sweeping Cinder Kick" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_SWEEPING_CINDER_KICK">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You make a sweeping kick that sends out a wave of fire. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 4d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
@@ -1123,11 +1123,11 @@
 			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_EARTH_TREMBLING_STEP" />
+			<grant type="Spell" id="ID_KOEN_SPELL_EARTH_TREMBLING_STEP" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Earth Trembling Step" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_EARTH_TREMBLING_STEP">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 		  <p>You stomp the ground, sending a tremor through the earth that unbalances nearby foes. Each creature other than you within a 10-foot radius makes a Dexterity saving throw. On a failed save, the creature takes 2d4 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, which requires at least 1 minute.</p>
 		  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
@@ -1159,11 +1159,11 @@
 			<description>You can spend 1 or more essence points to cast this spell.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_KOEN_SPELL_WATER_WHIP" />
+			<grant type="Spell" id="ID_KOEN_SPELL_WATER_WHIP" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Water Whip" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_WATER_WHIP">
-		<supports></supports>
+		<supports>Monk</supports>
 		<description>
 			<p>You lash out with a whip of water to pull creatures toward you. You can attack three times with the water whip, attacking either the same target or several. Make a ranged spell attack roll for each whip attack. On a hit, the target takes 1d4 bludgeoning damage and if it is Large or smaller it is pulled 5 feet towards you.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can make one additional whip attack for each slot level above 1st, up to a maximum of three additional whip attacks at 4th level.</p>
@@ -1197,7 +1197,7 @@
 			<description>You can spend 5 essence points to cast wall of stone.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Monk"/>
 		</rules>
 	</element>
 	<!-- KENSEI -->
