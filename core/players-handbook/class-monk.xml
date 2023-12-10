@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.6.8">
+		<update version="0.7.2">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -406,7 +406,7 @@
 			<p>At 10th level, your mastery of the essence flowing through you makes you immune to disease and poison.</p>
 		</description>
 		<sheet>
-			<description>Your mastery of the essence flowing through you makes you immune to disease and poison.</description>
+			<description>You are immune to disease and poison.</description>
 		</sheet>
 	</element>
 	<element name="Inner Fire" type="Class Feature" source="Player’s Handbook" id="	ID_WOTC_PHB_CLASS_FEATURE_MONK_INNER_FIRE">
@@ -422,7 +422,7 @@
 			<p>Starting at 13th level, you learn to touch the essence of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</p>
 		</description>
 		<sheet>
-			<description>You learn to touch the essence of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
+			<description>You understand all spoken languages, and be understood by any creature that understands a language.</description>
 		</sheet>
 	</element>
 	<element name="Deflect Energy" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY">	
@@ -437,7 +437,7 @@
 			<p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 essence point to reroll it and take the second result.</p>
 		</description>
 		<sheet usage="Essence">
-			<description>Whenever you make a saving throw and fail, you can spend 1 essence point to reroll it and take the second result.</description>
+			<description>You can spend 1 essence point to reroll a failed saving throw and take that result.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
@@ -450,10 +450,10 @@
 	</element>
 	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK">
 		<description>
-			<p>At 15th level, your essence sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, but your maximum lifespan is doubled. In addition, you no longer need food or water.</p>
+			<p>At 15th level, your essence sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, but your lifespan is doubled. In addition, you no longer need food or water.</p>
 		</description>
 		<sheet>
-			<description>You suffer no negative effects from aging, can’t be aged magically, and no longer need food or water. Your maximum lifespan is doubled.</description>
+			<description>You suffer no negative effects from aging, age at half the normal rate, can’t be aged magically, and no longer need food or water.</description>
 		</sheet>
 	</element>	
 	<element name="Wholeness of Self" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_WHOLENESS_OF_SELF">
@@ -656,7 +656,7 @@
 	<element name="Disciple of the Elements" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS">
 		<description>
 			<p>When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. Each discipline grants you access to a spell that requires you to spend essence points each time you cast it.</p>
-			<p class="indent">You know the Elemental Attunement discipline and two other elemental disciplines of your choice, which are detailed in the “Elemental Disciplines” section below. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.</p>
+			<p class="indent">You know the Elementalism discipline and two other elemental disciplines of your choice, which are detailed in the “Elemental Disciplines” section below. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.</p>
 			<p class="indent">Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.</p>
 			<p class="indent"><strong><em>Casting Elemental Spells.</em></strong> Each elemental discipline gives you access to a spell. To cast one of these spells, you spend essence points equal to its level. The spell is then cast following all the normal rules for spellcasting (see chapter 10). Certain spells can be cast at a higher level to enhance their effects, as stated in their description. To do so, spend essence points equal to the desired level of the spell, rather than its actual level. The maximum number of essence points you can spend on a single spellcasting is equal to your proficiency bonus.</p>
 			<p class="indent"><i>For example, it would normally cost 1 essence point to cast <i>Sweeping Cinder Strike</i> (a 1st-level spell). However, you could instead spend 2 essence points to cast it as a 2nd-level spell, increasing its damage by one die (as stated in the spell's description). For a third-level character with a profiency bonus of +2, this is the highest level at which the spell can be cast.</i></p> 
@@ -666,7 +666,7 @@
 		</description>
 		<sheet usage="Essence">
 			<description>You learn elemental disciplines that grant you access to spells.</description>
-			<description>You can cast an elemental discipline spell by spending essence points equal to its level. You can spend additional essence points to cast the spell at a higher level if the spell allows for it. The maximum level at which you can cast a spell is {{proficiency}}. You can use your Martial Arts Dice instead of the normal dice of the spell. After casting a spell, you can choose for your unarmed attacks to have the same damage type as the spell until the start of your next turn.</description>
+			<description>You can cast an elemental discipline spell by spending essence points equal to its level (0 for cantrips). You can spend additional essence points to cast the spell at a higher level if the spell allows for it. The maximum level at which you can cast a spell is {{proficiency}}. Spell damage dice scale with your Martial Arts dice. After casting a spell, you can choose for your unarmed attacks to have the same damage type as the spell until the start of your next turn.</description>
 		</sheet>
 		<spellcasting name="Monk" ability="Wisdom" prepare="false" allowReplace="false">
 			<list>Monk</list>
@@ -676,26 +676,93 @@
 			<select type="Archetype Feature" name="Elemental Discipline (Level 3)" supports="Elemental Discipline" level="3" number="2" />
 			<select type="Archetype Feature" name="Elemental Discipline (Level 6)" supports="Elemental Discipline" level="6" />
 			<select type="Archetype Feature" name="Elemental Discipline (Level 11)" supports="Elemental Discipline" level="11" />
+			<grant type="Archetype Feature" id="ID_KOEN_ELEMENTAL_EMPOWERMENT" level="11"/>			
+			<grant type="Spell" id="ID_KOEN_SPELL_CHAOS_BOLT"  spellcasting="Monk" level="12"/>						
 			<select type="Archetype Feature" name="Elemental Discipline (Level 17)" supports="Elemental Discipline" level="17" />
 		</rules>
 	</element>
-
-	<!-- Elemental Disciplines -->
-	<element name="Elemental Attunement" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT">
-		<supports>Elemental Discipline</supports>
+	  <element name="Chaos Bolt" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_CHAOS_BOLT">
+		<supports>Monk</supports>
 		<description>
-			<p>You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:</p>
-			<ul>
-				<li>Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.</li>
-				<li>Instantaneously light or snuff out a candle, a torch, or a small campfire.</li>
-				<li>Chill or warm up to 1 pound of nonliving material for up to 1 hour.</li>
-				<li>Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.</li>
-			</ul>
+			<p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d6 + 2d4 damage. Choose one of the d6s. The number rolled on that die determines the attack's damage type, as shown below.</p>
+			<table>
+				<thead>
+				<tr><td>D6</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>1</td><td>Thunder</td></tr>
+				<tr><td>2</td><td>Cold</td></tr>
+				<tr><td>3</td><td>Poison</td></tr>
+				<tr><td>4</td><td>Lightning</td></tr>
+				<tr><td>5</td><td>Fire</td></tr>
+				<tr><td>6</td><td>Acid</td></tr>
+			</table>
+			<p class="indent">If you roll the same number on any of the d6s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.</p>
+			<p class="indent">A creature can be targeted only once by each casting of this spell. Note that you <em>must</em> pick a new target when the spell leaps, if possible. This means you might be forced to pick a less desirable target (such as an ally!).</p>
+			<p class="indent">For this spell, only the 2d4 dice scale with your Martial Arts dice. While your Martial Arts dice are also d6s, use two pair of different colored dice to keep them apart.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d4 extra damage of the type rolled for each slot level above 1st.</p>
 		</description>
-		<sheet action="Action">
-			<description>You can briefly control elemental forces within 30 feet of you.</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">1</set>
+		  <set name="school">Evocation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">90 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
+	<element name="Elemental Empowerment" type="Archetype Feature" source="Player’s Handbook" id="ID_KOEN_ELEMENTAL_EMPOWERMENT">
+		<description>
+			<p>Starting at level 11, you can add your Wisdom modifier to one damage roll of any elemental discipline spell you cast.</p>
+		</description>
+		<sheet>
+			<description>You can add {{wisdom:modifier}} to one damage roll of any elemental discipline spell you cast.</description>
 		</sheet>
 	</element>
+	<!-- Elemental Disciplines -->
+	<element name="Elementalism" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT">
+		<supports>Elemental Discipline</supports>
+		<description>
+			<p>You can cast Elementalism without spending essence points.</p>
+		</description>
+		<sheet display="false">
+			<description>You can briefly control elemental forces within 30 feet of you.</description>
+		</sheet>
+		<rules>
+			<!-- remove from known spells but allow modded spellcards for reference -->
+			<grant type="Spell" id="ID_KOEN_SPELL_ELEMENTALISM"  spellcasting="Monk"/>
+		</rules>
+	</element>
+	  <element name="Elementalism" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_ELEMENTALISM">
+		<supports>Monk</supports>
+		<description>
+			<p>You exert control over the elements, creating one of the following effects within range:</p> 
+			<p class="indent"><strong><em>Beckon Air.</em></strong> You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot cube. Doors and shutters being held open by someone or something aren’t affected.</p> 
+			<p class="indent"><strong><em>Beckon Earth.</em></strong> You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.</p> 
+			<p class="indent"><strong><em>Beckon Fire.</em></strong> You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke’s scent lingers for 1 minute.</p> 
+			<p class="indent"><strong><em>Beckon Water.</em></strong> You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.</p> 
+			<p class="indent"><strong><em>Sculpt Element.</em></strong> You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot cube to assume a crude shape (such as that of a creature or an object) for 1 hour.</p>
+		</description>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">cantrip</set>
+		  <set name="school">Transmutation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">30 feet</set>
+		  <set name="hasVerbalComponent">false</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+	  </element>	
 	<element name="Breath of Winter" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_BREATH_OF_WINTER">
 		<supports>Elemental Discipline</supports>
 		<requirements>[level:17]</requirements>
@@ -711,7 +778,7 @@
 		</sheet>
 		<rules>
 			<!-- remove from known spells but allow modded spellcards for reference -->
-			<grant type="Spell" id="ID_KOEN_SPELL_BREATH_OF_WINTER" />
+			<grant type="Spell" id="ID_KOEN_SPELL_BREATH_OF_WINTER" spellcasting="Monk"/>
 		</rules>
 	</element>
 	  <element name="Breath of Winter" type="Spell" source="Player’s Handbook" id="ID_KOEN_SPELL_BREATH_OF_WINTER">
