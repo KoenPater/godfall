@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.5.7">
+		<update version="0.5.9">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -338,17 +338,13 @@
 		<description>
 			<p>Starting at 13th level, you can draw upon primal forces to fuel your journeys. Whenever you finish a short or long rest, you gain the following benefits:</p>
 			<ul>
-			  <li>You gain temporary hit points equal to 1d12 + your Wisdom modifier. When resting in your favored terrain you can take the maximum result of the roll.</li>
+			  <li>You gain temporary hit points equal to 1d12 + your Wisdom modifier. When resting in your favored terrain, you double the amount of temporary hit points gained.</li>
 			  <li>In addition you can make a DC 10 Wisdom ability check. If you succeed, you can either remove one level of exhaustion or recover an expended 1st level spell slot.</li>
 			</ul>
 		</description>
 		<sheet use="Short Rest">
-			<description>After finishing a short or long rest, gain 1d12 + {{wisdom:modifier}} temporary hit points, or {{temphp:amount}} in your favored terrain. Make a Wisdom check (DC 10) to recover one level of exhaustion or one 1st level spell slot.</description>
+			<description>After finishing a short or long rest gain 1d12 + {{wisdom:modifier}} temporary hit points, or twice that if you rested in your favored terrain. Make a Wisdom check (DC 10) to recover one level of exhaustion or one expended 1st level spell slot.</description>
 		</sheet>
-		<rules>
-			<stat name="temphp:amount" value="12" />
-			<stat name="temphp:amount" value="wisdom:modifier" />
-		</rules>
 	</element>
 	<element name="Feral Senses" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES">
 		<description>
@@ -1076,7 +1072,7 @@
 			<description>The companion obeys your commands as best as it can. It acts on its own initiative. While traveling through your favored terrain with only the companion, you can move stealthily at a normal pace. You can obtain a new companion by spending 50 gp worth of rare herbs and food and 8 hours in a bonding ritual. You can only have one animal companion at a time.</description>
 		</sheet>
 		<rules>
-			<select type="Companion" name="Ranger’s Companion" requirements="![level:15]" supports="Ranger,Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<select type="Companion" name="Ranger’s Companion" supports="Ranger,Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
 			<stat name="additional:hp:max" value="companion:hplevel" level="3"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="4"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="5"/>
@@ -1089,6 +1085,12 @@
 			<stat name="additional:hp:max" value="companion:hplevel" level="12"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="13"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="14"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="15"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="16"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="17"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="18"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="19"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="20"/>			
 			<stat name="companion:hp:max" value="additional:hp:max" />
 			<stat name="companion:ac" value="proficiency" bonus="proficiency"/>
 			<stat name="companion:proficiency" value="proficiency" bonus="base"/>
@@ -1100,13 +1102,6 @@
 			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
 			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
 			<!-- PRIMAL -->
-			<select type="Companion" name="Ranger’s Companion" requirements="[level:15]" supports="Ranger,Beast,(Large),(6)" />
-			<stat name="additional:hp:max" value="companion:hplevel" level="15"/>
-			<stat name="additional:hp:max" value="companion:hplevel" level="16"/>
-			<stat name="additional:hp:max" value="companion:hplevel" level="17"/>
-			<stat name="additional:hp:max" value="companion:hplevel" level="18"/>
-			<stat name="additional:hp:max" value="companion:hplevel" level="19"/>
-			<stat name="additional:hp:max" value="companion:hplevel" level="20"/>			
 		</rules>
 	</element>
 	<element name="Primal Infusion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
