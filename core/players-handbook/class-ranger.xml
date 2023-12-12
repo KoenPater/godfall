@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.5.4">
+		<update version="0.5.6">
 			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-ranger.xml" />
 		</update>
 	</info>
@@ -62,21 +62,21 @@
 				<tr><td> 3rd</td><td class="left">Ranger Archetype, Primeval Awareness</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 5th</td><td class="left">Extra Attack, Additional Fighting Style</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td class="left">Favored Enemy and Natural Explorer improvements</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td class="left">Ranger Archetype feature</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement, Land’s Stride</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td class="left">Natural Explorer improvement, Nature`s Veil</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td class="left">Ranger Archetype feature</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td class="left">—</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>14th</td><td class="left">Favored Enemy improvement, Tireless</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>15th</td><td class="left">Ranger Archetype feature</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>17th</td><td class="left">—</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>18th</td><td class="left">Feral Senses</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
-				<tr><td>20th</td><td class="left">Foe Slayer</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td> 6th</td><td class="left">Favored Enemy and Natural Explorer improvements</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Ranger Archetype feature</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement, Land’s Stride</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Natural Explorer improvement, Nature`s Veil</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">Ranger Archetype feature</td><td>9</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">Tireless</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Ability Score Improvement</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Ranger Archetype feature, Favored Enemy improvement</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Feral Senses</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="left">Foe Slayer</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 			</table>
 			<div element="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY" />
 			<div element="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER" />
@@ -119,7 +119,7 @@
 			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_ADDITIONALFIGHTINGSTYLE" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_LANDS_STRIDE" level="8"/>
 			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT" level="10"/>
-			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_VANISH" level="14"/>
+			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_VANISH" level="13"/>
 			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES" level="18"/>
 			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_FOE_SLAYER" level="20"/>
 		</rules>
@@ -144,24 +144,24 @@
 		<description>
 			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
 			<p class="indent">Choose a type of favored enemy: beasts, fey, monstrosities, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.</p>
-			<p class="indent">You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type.</p>
+			<p class="indent">You add your Wisdom modifier to damage rolls with weapon attacks against creatures of the chosen type, in addition to your normal ability modifier.</p>
 			<p class="indent">Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
 			<p class="indent">When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</p>
-			<p class="indent">You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. At these levels, you may also select your favored enemy from among aberrations, celestials, constructs, or elementals. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
+			<p class="indent">You choose one additional favored enemy, as well as an associated language, at 6th and 15th level. At these levels, you may also select your favored enemy from among aberrations, celestials, constructs, or elementals. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
 		</description>
 		<sheet>
-			<description>You gain +2 damage against your favored enemies. You also have advantage on Survival checks to track them, as well as on Intelligence checks to recall information about them.</description>
+			<description>You deal {{wisdom:modifier}} additional damage against your favored enemies. You also have advantage on Survival checks to track them, as well as on Intelligence checks to recall information about them.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy,Basic" level="1" />
 			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="6" />
-			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="14" />			
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="15" />			
 			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1" />
 			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="6" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2" />
-			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="14" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" />
-			<select type="Language" name="Language (Favored Enemy)" optional="true" level="1" />
-			<select type="Language" name="Language (Favored Enemy)" optional="true" level="6" />
-			<select type="Language" name="Language (Favored Enemy)" optional="true" level="14" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="15" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="6" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2" />
+			<select type="Language" name="Language (Favored Enemy)" optional="true" level="15" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" />
 		</rules>
 	</element>
 	<element name="Natural Explorer" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER">
@@ -260,13 +260,17 @@
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Ranger"/>
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Ranger" />
 			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Ranger" />
-			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Ranger" />
 		</rules>
 	</element>
 	<element name="Ranger Archetype" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
@@ -280,22 +284,23 @@
 	</element>
 	<element name="Primeval Awareness" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
 		<description>
-			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For the next 10 minutes, you can sense whether the following types of creatures are present within a number of miles equal to the level of the spell slot you expended (or twice that distance if you are in your Favored terrain): Aberrations, Celestials, Elementals, Fey, and Undead. This feature doesn't reveal the creatures' exact location or number, though it might give a rough estimation.</p>
+			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For the next 10 minutes, you can sense whether the following types of creatures are present within a number of miles equal to the level of the spell slot you expended (or three times that distance if you are in your Favored terrain): Aberrations, Celestials, Elementals, Fey, and Undead. In addition, these creature types cannot surprise you, nor can they gain advantage on attack rolls against you as a result of being unseen. This feature doesn't reveal the creatures' exact location or number, though it might give a decent estimation.</p>
 		</description>
 		<sheet action="Action">
-			<description>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For the next 10 minutes, you can sense whether the following types of creatures are present within a number of miles equal to the level of the spell slot you expended (or twice that distance if you are in your Favored terrain): Aberrations, Celestials, Elementals, Fey, and Undead. This feature doesn't reveal the creatures' exact location or number, though it might give a rough estimation.</description>
+			<description>You must expend one ranger spell slot to use this feature. For the next 10 minutes, you can sense whether the following types of creatures are present within a number of miles equal to the level of the spell slot you expended (or three times that distance if you are in your Favored terrain): Aberrations, Celestials, Elementals, Fey, and Undead. In addition, these creature types cannot surprise you, nor can they gain advantage on attack rolls against you as a result of being unseen. This feature doesn't reveal the creatures' exact location or number, though it might give a decent estimation.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_ASI">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, if your DM allows it, you can take one feat of your choice instead.</p>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, if your DM allows it, you can take one feat of your choice instead.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" level="4" />
 			<select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" level="8" />
 			<select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Ranger 14)" supports="Improvement Option,Ranger,14" level="14" />			
 			<select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" level="16" />
 			<select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" level="19" />
 		</rules>
@@ -313,12 +318,11 @@
 	</element>
 	<element name="Land’s Stride" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_LANDS_STRIDE">
 		<description>
-			<p>Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.</p>
-			<p class="indent">In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</p>
+			<p>Starting at 8th level, moving through difficult terrain costs you no extra movement. You also have resistance against any piercing or slashing damage caused by moving through terrain.</p>
+			<p class="indent">Lastly, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</p>
 		</description>
 		<sheet>
-			<description>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
-			You have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</description>
+			<description>Moving through difficult terrain costs you no extra movement. You also have resistance against any piercing or slashing damage caused by moving through terrain. You have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</description>
 		</sheet>
 	</element>
 	<element name="Nature's Veil" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT">
@@ -332,36 +336,34 @@
 	</element>
 	<element name="Tireless" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_VANISH">
 		<description>
-			<p>Starting at 14th level, you can draw upon primal forces to fuel your journeys. Whenever you finish a short or long rest, you gain the following benefits:</p>
+			<p>Starting at 13th level, you can draw upon primal forces to fuel your journeys. Whenever you finish a short or long rest, you gain the following benefits:</p>
 			<ul>
-			  <li>You gain temporary hit points equal to 1d8 + your Constitution modifier. When resting in your favored terrain you gain 8 + your Constitution modifier temporary hit points instead.</li>
-			  <li>If you have any levels of exhaustion, you can make a DC 10 Constitution ability check. If you succeed you remove one level of exhaustion.</li>
+			  <li>You gain temporary hit points equal to 1d12 + your Wisdom modifier. When resting in your favored terrain you can take the maximum result of the roll.</li>
+			  <li>In addition you can make a DC 10 Wisdom ability check. If you succeed, you can either remove one level of exhaustion or recover an expended 1st level spell slot.</li>
 			</ul>
 		</description>
 		<sheet use="Short Rest">
-			<description>After finishing a short or long rest, gain temporary hit points equal to 1d8 + {{constitution:modifier}}, or {{temphp:amount}} in your favored terrain. You can also make a DC10 Constitution check to recover one level of exhaustion.</description>
+			<description>After finishing a short or long rest, gain 1d12 + {{wisdom:modifier}} temporary hit points, or {{temphp:amount}} in your favored terrain. Make a Wisdom check (DC 10) to recover one level of exhaustion or one 1st level spell slot.</description>
 		</sheet>
 		<rules>
-			<stat name="temphp:amount" value="8" />
-			<stat name="temphp:amount" value="constitution:modifier" />
+			<stat name="temphp:amount" value="12" />
+			<stat name="temphp:amount" value="wisdom:modifier" />
 		</rules>
 	</element>
 	<element name="Feral Senses" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES">
 		<description>
-			<p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.</p>
-			<p class="indent">You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</p>
+			<p>At 18th level, your heightened attunement to the world around you grants you Blindsight with a range of 30 feet.</p>
 		</description>
 		<sheet>
-			<description>When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it. 
-			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</description>
+			<description>You have Blindsight with a range of 30 feet.</description>
 		</sheet>
 	</element>
 	<element name="Foe Slayer" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FOE_SLAYER">
 		<description>
-			<p>At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to any attack or damage roll you make. You can choose to use this feature after the roll, but before any effects of the roll are applied.</p>
+			<p>At 20th level, you become an unparalleled hunter of your enemies. You learn the <i>Hunter's Mark</i> spell. This spell no longer requires Concentration when you cast it. In addition, once per turn you may reroll a failed attack roll made against the target of your <i>Hunter's Mark</i>.</p>
 		</description>
 		<sheet>
-			<description>Once on each of your turns, you can add {{wisdom:modifier}} to any attack or damage roll you make. You can choose to use this feature after the roll, but before any effects of the roll are applied.</description>
+			<description><i>Hunter's Mark</i> no longer requires Concentration. Once per turn you may reroll a failed attack roll made against the target of your <i>Hunter's Mark</i>.</description>
 		</sheet>
 	</element>
 	<element name="Aberrations" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY_ABERRATIONS">
@@ -1068,13 +1070,37 @@
 			<p>You normally select your companion from among the following animals: an <em>ape</em>, a <em>black bear</em>, a <em>boar</em>, a <em>giant badger</em>, a <em>giant weasel</em>, a <em>mule</em>, a <em>panther</em>, or a <em>wolf</em>. However, your DM may allow for different animals, or may pick an animal for you based on the surrounding terrain and on what types of creatures would logically be present in the area.</p>
 			<p>If the selected animal is not present at the start of the ritual, it will be called forth from the wild and appear shortly after the ritual has begun. At the end of the ritual it gains all the benefits listed below. You can have only one animal companion at a time.</p>
 			<p class="indent">The companion is completely devoted to you and obeys your commands as best it can. It rolls for initiative separately and is nominally controlled by the DM, but you can determine its actions, decisions, attitudes, and so on when desired, as long as you are present and conscious. If left to its own device, the companion will focus on protecting you and itself. While traveling through your favored terrain with only the companion, you can move stealthily at a normal pace (as if you were alone).</p>
-			<p class="indent">You animal companion increases in strength as you level. It uses your proficiency bonus rather than its own, and adds its proficiency bonus to its AC and damage rolls. It also becomes proficient with all saving throws. Lastly, your animal companion has a number of hit dice equal to your level, which will determine its hit points as normal.</p>
+			<p class="indent">Your animal companion increases in strength as you level. It uses your proficiency bonus rather than its own, and adds its proficiency bonus to its AC and damage rolls. It also becomes proficient with all saving throws. Lastly, your animal companion has a number of hit dice equal to your level, which will determine its hit points as normal.</p>
 		</description>
 		<sheet>
 			<description>The companion obeys your commands as best as it can. It acts on its own initiative. While traveling through your favored terrain with only the companion, you can move stealthily at a normal pace. You can obtain a new companion by spending 50 gp worth of rare herbs and food and 8 hours in a bonding ritual. You can only have one animal companion at a time.</description>
 		</sheet>
 		<rules>
-			<select type="Companion" name="Ranger’s Companion" supports="Ranger,Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<select type="Companion" name="Ranger’s Companion" requirements="![level:15]" supports="Ranger,Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<stat name="additional:hp:max" value="companion:hplevel" level="3"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="4"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="5"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="6"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="7"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="8"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="9"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="10"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="11"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="12"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="13"/>
+			<stat name="additional:hp:max" value="companion:hplevel" level="14"/>
+			<stat name="companion:hp:max" value="additional:hp:max" />
+			<stat name="companion:ac" value="proficiency" bonus="proficiency"/>
+			<stat name="companion:proficiency" value="proficiency" bonus="base"/>
+			<stat name="companion:proficiency" value="-2"/>
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<!-- PRIMAL -->
+			<select type="Companion" name="Ranger’s Companion" requirements="[level:15]" supports="Ranger,Beast,(Large),(6)" />
 			<stat name="additional:hp:max" value="companion:hplevel" level="3"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="4"/>
 			<stat name="additional:hp:max" value="companion:hplevel" level="5"/>
@@ -1107,40 +1133,40 @@
 	</element>
 	<element name="Primal Infusion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
 		<description>
-			<p>Beginning at 7th level, your primal magic suffuses the animal companion at your side. It gains advantage on all saving throws, and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p>Beginning at 7th level, your primal magic suffuses the animal companion at your side. It gains advantage on all saving throws, it adds your Wisdom modifier to its attack rolls, and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 			<p>In addition, if your animal companion is ever slain, the magical bond you share now allows you to return it to life. With 8 hours of meditation and the expenditure of 50 gp worth of rare herbs, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.</p>
 		</description>
 		<sheet>
-			<description>The companion gains advantage on all saving throws and its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also return it to life when slain by spending 50 gp worth of rare herbs and 8 hours of meditation.</description>
+			<description>You can return your companion to life when slain by spending 50 gp worth of rare herbs and 8 hours of meditation.</description>
 		</sheet>
 	</element>
 	<element name="Protective Fury" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
 		<description>
-			<p>Beginning at 11th level, your animal companion can fly into a protective rage when its allies are threatened. When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, the animal companion can use a reaction to enter a protective rage. If it does, it gains the following benefits:</p>
+			<p>Beginning at 11th level, your animal companion can fly into a protective rage when its allies are threatened. When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, the animal companion can use its reaction to enter a protective rage. If it does, it gains the following benefits:</p>
 			<ul>
 			<li>It gains resistance to all damage, with the exception of necrotic damage.</li>
-			<li>Its attacks deal one additional die of damage.</li>
+			<li>It can attack twice, instead of once, whenever it takes the attack action on its turn.</li>
 			<li>Any targets of the companion's attacks become <em>threatened</em> until the start of the companion's next turn. A threatened creature suffers disadvantage on any attack made against a target other than the companion.</li>
 			</ul>
 			<p>This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</p>			
 		</description>
-		<sheet>
-			<description>When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, your companion can use its reaction to enter a protective rage, gaining the following benefits: it gains resistance to all damage except necrotic, it rolls one additional die of damage, and any targets of its attacks become <em>threatened</em> until the start of the companion's next turn (threatened creatures suffer disadvantage on attacks made against targets other than the companion). This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</description>
+		<sheet display="false">
+			<description>When an ally of your companion is struck by a critical hit or any other attack that reduces them below half of their maximum hit points, your companion can use its reaction to enter a protective rage, gaining the following benefits: it gains resistance to all damage except necrotic, can make two attacks on its turn, and any targets of its attacks become <em>threatened</em> until the start of the companion's next turn (threatened creatures suffer disadvantage on attacks made against targets other than the companion). This rage lasts for 1 minute. After it has been used, your companion cannot rage again until it has performed a short or long rest.</description>
 		</sheet>
 	</element>
 	<element name="Primal Manifestation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
 		<description>
-			<p>Beginning at 15th level, your animal companion grows in size and manifests primal markings that indicate its mystical power. It gains the following benefits:</p>
+			<p>Beginning at 15th level, your animal companion grows in size and manifests primal markings indicative of its mystical power. It gains the following benefits:</p>
 			<ul>
 			<li>Its size increases by one category (usually from medium to large).</li>
-			<li>Its Strength increases by 4. All other ability scores increase by 2.</li>
-			<li>Its hit and damage dice both increase to the next highest die size.</li>
+			<li>Its Strength score increases by 4. All other ability scores increase by 2.</li>
+			<li>Its hit and damage dice both increase to the next highest die size (so d6 becomes d8, etc.).</li>
 			<li>Its speed increases by 10 feet.</li>
 			</ul>
 			<p>Recalculate hit points, attacks, skills, and ability DCs as needed.</p>
 		</description>
-		<sheet>
-			<description>Your animal companion grows in size and manifests primal markings that indicate its mystical power. Its size increases by one. It gains +10 feet speed, +4 Strength and +2 to other ability scores. Its hit and damage dice both increase to the next highest die size.</description>
+		<sheet display="false">
+			<description>Your animal companion has grown in size and power, and its traits have been increased.</description>
 		</sheet>
 	</element>
 </elements>

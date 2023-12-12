@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.7.2">
+    <update version="0.7.3">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -456,14 +456,14 @@
   <element name="Aura of Life" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_AURA_OF_LIFE">
     <supports>Paladin, Ranger</supports>
     <description>
-      <p>Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) has resistance to necrotic damage and advantage on death saving throws. In addition, you can use a bonus action to cause one creature in the aura to regain a number of hit points equal to 2d6 + your spellcasting ability modifier.</p>
+      <p>Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) has resistance to necrotic damage and advantage on death saving throws. In addition, you can use a bonus action to cause one creature in the aura to regain a number of hit points equal to 3d6 + your spellcasting ability modifier.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">4</set>
       <set name="school">Abjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 10 minutes</set>
+      <set name="duration">Concentration, up to 1 minute</set>
       <set name="range">Self (30-foot radius)</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">false</set>
@@ -1402,7 +1402,7 @@
   <element name="Conjure Barrage" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_BARRAGE">
     <supports>Ranger</supports>
     <description>
-      <p>You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 4d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component.</p>
+      <p>You throw a single nonmagical weapon or fire a single nonmagical piece of ammunition that transforms into a barrage of identical weapons. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 5d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1535,20 +1535,10 @@
   <element name="Call of the Wild" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
     <supports>Druid, Ranger</supports>
     <description>
-	  <p>You summon nature spirits that manifest as a group of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a space within range of the spell as the spell's center. The animals will appear at this point and hunt any hostile creatures within a 20 foot radius, effectively forming the area of the spell. The animals are considered to be moving at all times within this area, and as such do not affect the movement or vision of other creatures.</p>
-	  <p>When a creature hostile to you enters the spell’s area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 2d8 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage.</p> 
-	  <p class="indent">The animals can be attacked as a group, effectively counting as a single Huge creature. This `creature` is considered to have the following traits:</p>
-	  <ul>
-		<li>It has 60 hit points and an AC of 14.</li>
-		<li>It counts as being present in the entirety of the spell's area.</li>
-		<li>It can be attacked and damaged normally by targetting or affecting a space where it is present (i.e., anywhere within the spell's area)</li>
-		<li>While it can suffer damage, it ignores any and all other effects and conditions.</li>
-		<li>It will automatically fail any Dexterity saving throw it has to make, and will automatically succeed at any other saving throw.</li>		
-		<li>It takes double damage from any attack or spell that damages multiple creatures (such as a <i>fireball</i> spell).</li>
-	  </ul>
-	  <p>Attacking the animals can reduce their power or even disperse them. While the group of animals is missing at least half of its hit points, any damage caused by the spell is also halved. When the group of animals is reduced to 0 hit points, they are defeated and the spell ends.</p>
-	  <p class="indent">On each of your turns, you can choose to move the center of the spell to a different space, allowing you to affect a different area. The new center must be within 60 feet of the old one, and within the maximum range of the spell.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell at 5th level, the damage of the spell is increased by 1d8 and the animal group's hit points by 20.</p>
+	  <p>You summon nature spirits that manifest as a group of animals of your choosing, such as a pack of wolves, a flock of birds, or a den of snakes. Choose a space within range of the spell as the spell's center. The animals will appear around this point and hunt any hostile creatures within a 20 foot radius, effectively forming the area of the spell. The animals are considered to be moving at all times within this area, and as such do not affect the movement or vision of other creatures.</p>
+	  <p>When a creature hostile to you enters the animals' area for the first time on its turn or starts its turn there, that creature must make a Dexterity saving throw. If it fails, the creature takes 3d6 piercing damage and its movement speed is reduced by 10 feet until the start of its next turn. A creature of size Large or larger makes the saving throw with disadvantage. While a hostile creature is in the animals' area, it counts as having an enemy within 5 feet of it (this might hinder its ability to make ranged attacks or make it eligible for sneak attacks).</p> 
+	  <p class="indent">On each of your turns, you can choose to move the animals to a different space, allowing them to affect a different area. The new area must be within 60 feet of the old one, and within the maximum range of the spell.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell at 5th level, the damage of the spell is increased by 1d6.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1733,8 +1723,9 @@
   <element name="Cordon of Arrows" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CORDON_OF_ARROWS">
     <supports>Ranger</supports>
     <description>
-      <p>You plant four pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 1d8 piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains. When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd
+      <p>You plant five pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on its turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 1d8 plus your spellcasting ability modifier as piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.</p> 
+	  <p class="indent">When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by five for each slot level above 2nd
       </p>
     </description>
     <setters>
@@ -1747,7 +1738,7 @@
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">four or more arrows or bolts</set>
+      <set name="materialComponent">five or more arrows or bolts</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
@@ -1899,8 +1890,8 @@
   <element name="Cure Wounds" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CURE_WOUNDS">
     <supports>Bard, Cleric, Druid, Paladin, Ranger, Artificer</supports>
     <description>
-      <p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+      <p>A creature you touch regains a number of hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d8 for each slot level above 1st.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -2617,8 +2608,8 @@
   <element name="Ensnaring Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ENSNARING_STRIKE">
     <supports>Ranger</supports>
     <description>
-      <p>As you hit your target, a writhing mass of thorny vines appears at the point of impact. The target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Huge or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away. While restrained by this spell, the target takes 1d8 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+      <p>As you hit your target, a writhing mass of thorny vines appears at the point of impact. The target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Huge or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away. While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength saving throw against your spell save DC. On a success, the target is freed.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -4055,8 +4046,8 @@
   <element name="Hunter’s Mark" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HUNTERS_MARK">
     <supports>Ranger</supports>
     <description>
-      <p>You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you damage it with an attack or spell, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on any subsequent turn of yours to mark a new creature.</p>
-      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, the extra damage it deals is increased to 1d8.</p>
+      <p>You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target the first time you hit it with an attack roll on any turn. You also have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on any subsequent turn of yours to mark a new creature.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd or 4th level, the extra damage increases to 2d6 and you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, the extra damage increases to 3d6 and you can maintain your concentration on the spell for up to 24 hours.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -5773,7 +5764,8 @@
   <element name="Protection from Energy" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
     <supports>Cleric, Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
     <description>
-      <p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.</p>
+      <p>Up to three willing creatures within range that you can see have resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder. This resistance lasts until the spell ends.</p>
+	  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the number of creatures affected increases by three for each slot level above 3rd.</p>
     </description>
     <setters>
       <set name="keywords">acid, cold, fire, lightning, thunder</set>
@@ -5781,7 +5773,7 @@
       <set name="school">Abjuration</set>
       <set name="time">1 action</set>
       <set name="duration">Concentration, up to 1 hour</set>
-      <set name="range">Touch</set>
+      <set name="range">15 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -5813,7 +5805,7 @@
   <element name="Protection from Poison" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
     <supports>Cleric, Druid, Paladin, Ranger, Artificer</supports>
     <description>
-      <p>You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize on poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>
+      <p>You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>
     </description>
     <setters>
       <set name="keywords">poison</set>
@@ -6438,7 +6430,8 @@
   <element name="Silence" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SILENCE">
     <supports>Bard, Cleric, Ranger</supports>
     <description>
-      <p>For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>
+      <p>For the duration, no sound can be created within or pass through a 30-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>
+	  <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the radius increases by 30 feet for each slot level above 2nd.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -7870,7 +7863,7 @@
         <supports>Ranger</supports>
         <description>
             <p>You move like the wind. Until the spell ends, your speed increases by 10 feet and your movement doesn’t provoke opportunity attacks.</p>
-            <p class="indent">Once before the spell ends, you can call upon an additional burst of speed at the start of any of your turns. If you do so, your speed increases by an additional 20 feet until the end of that turn. In addition, the first weapon attack roll you make that turn gains advantage and deals an additional 1d10 force damage on a hit.</p>
+            <p class="indent">Once before the spell ends, you can call upon an additional burst of speed at the start of your turn. If you do so, your speed increases by an additional 20 feet until the end of that turn. In addition, the first weapon attack roll you make that turn gains advantage and deals an additional 1d10 force damage on a hit.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
         </description>
         <setters>
@@ -8009,8 +8002,8 @@
 	<element name="Flame Arrows" type="Spell" source="Player’s Handbook" id="ID_XGTE_SPELL_FLAME_ARROWS">
         <supports>Druid, Ranger, Sorcerer, Wizard</supports>
         <description>
-            <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d10 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when eight pieces of ammunition have been drawn from the quiver.</p>
-            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.</p>
+            <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, it is engulfed in flames and takes an extra 2d8 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when eight pieces of ammunition have been drawn from the quiver.</p>
+            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by four for each slot level above 3rd.</p>
         </description>
         <setters>
             <set name="keywords">fire</set>
@@ -8099,12 +8092,14 @@
                 <li>You gain darkvision with a range of 120 feet.</li>
                 <li>You make melee weapon attack rolls with advantage.</li>
                 <li>Your melee weapon attacks deal an extra 1d6 damage on a hit.</li>
+				<li>After a creature within 5 feet of you damages you, you can use your reaction to make an opportunity attack against that creature.</li>
             </ul>
             <p class="indent"><b><i>Verdant Sentinel. </i></b>Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
             <ul>
-                <li>You gain 15 temporary hit points.</li>
+                <li>You gain 10 temporary hit points.</li>
                 <li>You make Constitution saving throws with advantage.</li>
-                <li>You make ranged weapon and spell attack rolls with advantage.</li>
+                <li>You make ranged weapon attack rolls with advantage.</li>
+				<li>When you roll for damage or healing for a spell you cast, you add +1 to the total of the roll for each die rolled.</li>
                 <li>While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.</li>
             </ul>
         </description>
