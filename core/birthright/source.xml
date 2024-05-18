@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/birthright/source.xml" />
+		</update>
+	</info>
+	<element name="Birthright Campaign Setting" type="Source" source="Birthright Campaign Setting" id="ID_GF_SOURCE_BIRTHRIGHT">
+		<description>
+			<![CDATA[<p>All rules unique to the Birthright setting.</p>]]>
+		</description>
+		<setters>
+			<set name="url">false</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="abbreviation">GFCS</set>
+			<set name="core">true</set>
+			<set name="official">true</set>
+		</setters>
+	</element>
+</elements>
