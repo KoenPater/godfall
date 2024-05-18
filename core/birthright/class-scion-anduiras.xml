@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Scion of Anduiras</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-scion-anduiras.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-scion-anduiras.xml" />
 		</update>
 	</info>
