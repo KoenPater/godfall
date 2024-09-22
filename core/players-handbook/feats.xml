@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.3.6">
+		<update version="0.3.8">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -479,11 +479,15 @@
 			<p>Your exposure to the Feywild or one of its denizens has left a magical mark on you. You gain the following benefits:</p>
 			<ul>
 				<li>Increase your Wisdom or Charisma score by 1, to a maximum of 20.</li>
-				<li>You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</li>
+				<li>You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast these spells using any spell slots you have of the appropriate level. You can also cast each of these spells without expending a spell slot. The spells’ spellcasting ability is the ability increased by this feat. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest.</li>
+				<li>Spells you cast through this feat become more powerful as you gain levels. Starting at 5th level, when you cast one of these spells without expending a spell slot, treat the spell as if it's being cast using a 2nd level spell slot. At 11th level, this becomes a 3rd level spell slot, and at 17th level a 4th level spell slot.</li>
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level.</description>
+			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have.</description>
+			<description level="5">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 2nd level spell slot was used. You can also cast these spells using spell slots you have.</description>
+			<description level="11">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 3rd level spell slot was used. You can also cast these spells using spell slots you have.</description>
+			<description level="17">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 4th level spell slot was used. You can also cast these spells using spell slots you have.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase, Fey Touched" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
@@ -496,11 +500,15 @@
 			<p>Your soul is touched by the Shadowfell, leaving you with an aptitude for its dark powers. You gain the following benefits:</p>
 			<ul>
 				<li>Increase your Intelligence or Charisma score by 1, to a maximum of 20.</li>
-				<li>You learn the darkness spell and one 1st-level spell of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</li>
+				<li>You learn the darkness spell and one 1st-level spell of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast these spells using any spell slots you have of the appropriate level. You can also cast each of these spells without expending a spell slot. The spells’ spellcasting ability is the ability increased by this feat. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest.</li>
+				<li>Spells you cast through this feat become more powerful as you gain levels. Starting at 5th level, when you cast one of these spells without expending a spell slot, treat the spell as if it's being cast using a 2nd level spell slot. At 11th level, this becomes a 3rd level spell slot, and at 17th level a 4th level spell slot.</li>
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level.</description>
+			<description>You can cast each of your chosen spells once without expending a spell slot. You can also cast these spells using spell slots you have.</description>
+			<description level="5">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 2nd level spell slot was used. You can also cast these spells using spell slots you have.</description>
+			<description level="11">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 3rd level spell slot was used. You can also cast these spells using spell slots you have.</description>
+			<description level="17">You can cast each of your chosen spells once without expending a spell slot, resolving their effects as if a 4th level spell slot was used. You can also cast these spells using spell slots you have.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase, Shadow Touched" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
@@ -516,15 +524,15 @@
 			<p>You have an intuitive grasp of magic that exceeds that of your peers. You gain the following benefits:</p>
 			<ul>
 				<li>You learn two Metamagic options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise.</li>
-				<li>You gain 3 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
+				<li>You gain 4 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 3 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
+			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 4 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Metamagic, Metamagic Adept" supports="Metamagic" number="2" />
-			<stat name="sorcery-points" value="3" />
+			<stat name="sorcery-points" value="4" />
 		</rules>
 	</element>
 	<element name="Student of Magic" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MAGICINITIATE">		
@@ -799,8 +807,8 @@
 		</rules>
 	</element>
 	<element name="Unyielding Might" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_STRENGTH">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_STRENGTH || ID_PHB_FEAT_RESILIENT_STRENGTH),[str:15]</requirements>
-		<prerequisite>Strength 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_STRENGTH || ID_PHB_FEAT_RESILIENT_STRENGTH),[str:13]</requirements>
+		<prerequisite>Strength 13 or higher</prerequisite>
 		<description>
 			<p>Your Strength and Constitution both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Strength saving throws.</p>
@@ -813,8 +821,8 @@
 		</rules>
 	</element>
 	<element name="Lightning Reflexes" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_DEXTERITY">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY || ID_PHB_FEAT_RESILIENT_DEXTERITY),[dex:15]</requirements>
-		<prerequisite>Dexterity 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY || ID_PHB_FEAT_RESILIENT_DEXTERITY),[dex:13]</requirements>
+		<prerequisite>Dexterity 13 or higher</prerequisite>
 		<description>
 			<p>Your Dexterity increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Dexterity saving throws.</p>
@@ -826,8 +834,8 @@
 		</rules>
 	</element>
 	<element name="Great Fortitude" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CONSTITUTION">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION || ID_PHB_FEAT_RESILIENT_CONSTITUTION),[con:15]</requirements>
-		<prerequisite>Constitution 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION || ID_PHB_FEAT_RESILIENT_CONSTITUTION),[con:13]</requirements>
+		<prerequisite>Constitution 13 or higher</prerequisite>
 		<description>
 			<p>Your Constitution increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Constitution saving throws.</p>
@@ -839,8 +847,8 @@
 		</rules>
 	</element>
 	<element name="Keen Mind" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_INTELLIGENCE">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE || ID_PHB_FEAT_RESILIENT_INTELLIGENCE),[int:15]</requirements>
-		<prerequisite>Intelligence 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE || ID_PHB_FEAT_RESILIENT_INTELLIGENCE),[int:13]</requirements>
+		<prerequisite>Intelligence 13 or higher</prerequisite>
 		<description>
 			<p>Your Intelligence and Dexterity both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Intelligence saving throws.</p>
@@ -853,8 +861,8 @@
 		</rules>
 	</element>
 	<element name="Iron Vigilance" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_WISDOM">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_WISDOM || ID_PHB_FEAT_RESILIENT_WISDOM),[wis:15]</requirements>
-		<prerequisite>Wisdom 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_WISDOM || ID_PHB_FEAT_RESILIENT_WISDOM),[wis:13]</requirements>
+		<prerequisite>Wisdom 13 or higher</prerequisite>
 		<description>
 			<p>Your Wisdom increases by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Wisdom saving throws.</p>
@@ -866,8 +874,8 @@
 		</rules>
 	</element>
 	<element name="Strong Soul" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RESILIENT_CHARISMA">
-		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CHARISMA || ID_PHB_FEAT_RESILIENT_CHARISMA),[cha:15]</requirements>
-		<prerequisite>Charisma 15 or higher</prerequisite>
+		<requirements>(!ID_PROFICIENCY_SAVINGTHROW_CHARISMA || ID_PHB_FEAT_RESILIENT_CHARISMA),[cha:13]</requirements>
+		<prerequisite>Charisma 13 or higher</prerequisite>
 		<description>
 			<p>Your Charisma and Wisdom both increase by 1, to a maximum of 20.</p>
 			<p>You gain proficiency with Charisma saving throws.</p>
