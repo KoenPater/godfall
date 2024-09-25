@@ -2,12 +2,14 @@
 <elements>
 	<info>
 		<name>Scion of Anduiras</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-scion-anduiras.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-scion-anduiras.xml" />
 		</update>
 	</info>
 
 	<element name="Scion of Anduiras" type="Class" source="Player’s Handbook" id="ID_KP_BR_CLASS_FIGHTER">
+		<requirements>ID_GODS_LIVING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.</p>
 			<p class="indent">A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.</p>
