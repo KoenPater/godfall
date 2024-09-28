@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.4">
+		<update version="0.4.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -14,6 +14,7 @@
 			<p>Skilled at mimicry and dramatics, you gain the following benefits</p>
 			<ul>
 				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in either the Deception or Performance skill. If you are already proficient in both skills, you can double the proficiency bonus of one of these skills.</li>
 				<li>You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.</li>
 				<li>You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.</li>
 			</ul>
@@ -24,6 +25,8 @@
 		</sheet>
 		<rules>
 			<stat name="charisma" value="1" />
+			<select type="Proficiency" name="Skill Proficiency (Actor)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_PROFICIENCY_SKILL_DECEPTION,!ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Class Feature" name="Expertise (Actor)" supports="Expertise, (ID_EXPERTISE_SKILL_DECEPTION||ID_EXPERTISE_SKILL_PERFORMANCE)" requirements="ID_PROFICIENCY_SKILL_DECEPTION,ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		</rules>
 	</element>
 	<element name="Demonic Mark" type="Feat" source="Player’s Handbook" id="ID_KOEN_FEAT_DEMONIC_MARK">
@@ -44,7 +47,7 @@
 		<description>
 			<p>Always on the lookout for danger, you gain the folloing benefits:</p>
 			<ul>
-				<li>You gain a +5 bonus to initiative.</li>
+				<li>When you roll Initiative, you add your Proficiency bonus to the roll.</li>
 				<li>You can’t be surprised while you are conscious.</li>
 				<li>Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.</li>
 			</ul>
@@ -53,43 +56,45 @@
 			<description>You can't be surprised while conscious. Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.</description>
 		</sheet>
 		<rules>
-			<stat name="initiative" value="5" />
+			<stat name="initiative" value="proficiency" />
 		</rules>
 	</element>
 	<element name="Athlete" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ATHLETE">
-		<prerequisite>Proficiency in Acrobatics or Athletics</prerequisite>
-		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS||ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
+		<prerequisite>Strength and Dexterity of 13 or higher</prerequisite>
+		<requirements>[str:13],[dex:13]</requirements>
 		<description>
 			<p>You have undergone extensive physical training to gain the following benefits:</p>
 			<ul>
 				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
-				<li>When you are prone, standing up uses only 5 feet of your movement and doesn't provoke opportunity attacks.</li>
+				<li>You gain proficiency in the Athletics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li>When you are prone, standing up uses only 5 feet of your movement.</li>
 				<li>Climbing doesn’t cost you extra movement.</li>
 				<li>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>When you are prone, standing up uses only 5 feet of your movement and doesn't provoke opportunity attacks.
-			Climbing doesn’t cost you extra movement.
+			<description>When you are prone, standing up uses only 5 feet of your movement. 
+			Climbing doesn’t cost you extra movement. 
 			You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Athlete" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
 		</rules>
 	</element>
 	<element name="Charger" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CHARGER">
 		<description>
 		<p>You are eager to engage your foes, and know how to add the momentum of your charge to the power of your attack. You gain the following benefits:</p>
 		<ul>
-			<li>When you move at least 20 feet in a straight line to engage a target, the first melee weapon attack you make against that target gains a +5 bonus to damage. In addition, if this attacks hits, the target must succeed at a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</li>
-			<li>As a bonus action, you can move up to 10 feet in a straight line to engage a target you were not already engaged with.</li>
+			<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+			<li>If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack, the attack gains a +5 bonus to damage. In addition, if this attacks hits a target no more than one size larger than you, it must succeed at a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be pushed back 10 feet.</li>
 		</ul>
 		</description>
 		<sheet>
-			<description>Moving at least 20 feet in a straight line before a melee weapon attack adds +5 damage and forces the target to succeed at a Strength saving throw (DC: {{charger:dc}}) or be knocked prone.</description>
-			<description action="Bonus Action">You can move up to 10 feet in a straight line to engage a target you were not already engaged with.</description>
+			<description>Moving at least 10 feet in a straight line before a melee weapon attack adds +5 damage and forces a target no more than one size larger than you to succeed at a Strength saving throw (DC: {{charger:dc}}) or be pushed back 10 feet.</description>
 		</sheet>
 		<rules>
+			<select type="Ability Score Improvement" name="Charger" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
 			<stat name="charger:dc" value="8" />
 			<stat name="charger:dc" value="proficiency" />
 			<stat name="charger:dc" value="strength:modifier" />
@@ -97,46 +102,54 @@
 	</element>
 	<element name="Crossbow Expert" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CROSSBOWEXPERT">
 		<description>
-			<p>Thanks to extensive practice with the crossbow, you gain the following benefits:</p>
+			<p>Thanks to extensive practice with the crossbow, you gain the following benefits with any crossbow weapon with which you are proficient:</p>
 			<ul>
-				<li>You ignore the loading quality of crossbows with which you are proficient.</li>
-				<li>When using a crossbow to attack a target within 30 feet of you, you can reroll any damage die that rolls a 1 or 2. You must use the new roll, even if the new roll is a 1 or a 2.</li>
-				<li>When you use the Attack action and attack with a one-handed weapon, you can also make an attack with a hand crossbow you are holding.</li>
+				<li>Increase one Ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You add your proficiency bonus to damage rolls made with crossbow weapons.</li>
+				<li>If your attack roll with a crossbow weapon misses a creature, you can deal damage to that creature equal to your proficiency bonus. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way other than increasing your proficiency bonus.</li>
+				<li>After you have made an attack with a crossbow weapon, the first attack you make that turn with another weapon against the same target gains advantage. This can be achieved through the Extra Attack class feature, or when attacking with a hand crossbow and another weapon at the same time.</li>
 			</ul>			
 		</description>
 		<sheet>
-			<description>You ignore the loading quality of crossbows with which you are proficient.
-			When using a crossbow to attack a target within 30 feet, you can reroll any damage die that rolls a 1 or 2. You must use the new roll even if it's a 1 or 2.
-			When you use the Attack action and attack with a one-handed weapon, you can also make an attack with a hand crossbow you are holding.</description>
+			<description>Crossbow attacks deal +{{crossbow:prof}} bonus damage. Missed attacks with crossbows still deal {{crossbow:prof}} damage. After you have made an attack with a crossbow, the first attack you make that turn with another weapon against the same target gains advantage.</description>
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Crossbow Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="crossbow:prof" value="proficiency"/>
+		</rules>
 	</element>
 	<element name="Crowd Controller" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_CROWD_CONTROLLER">
 		<description><p>You know how to get your enemies where you want them, and how to keep them there. You gain the following benefits:</p>
 		<ul>
+			<li>Increase your Strength or Intelligence score by 1, to a maximum of 20.</li>
 			<li>Whenever you reduce a creature's speed by 10 feet or more, you can reduce it by an additional 5 feet.</li>
 			<li>Whenever you push a creature 10 feet or more, you can push them an additional 5 feet.</li>
-			<li>Once during your turn, when you push a creature 10 feet or more, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</li>
+			<li>Once during your turn, when you push a creature 5 feet or more or knock it prone, you can choose for it to also become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</li>
 		</ul>
 		</description>
 		<sheet>
-			<description>Whenever you reduce a creature's speed by 10 feet or more, you can reduce it by an additional 5 feet.
-			Whenever you push a creature 10 feet or more, you can push them an additional 5 feet.
-			Once during your turn, when you push a creature 10 feet or more, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</description>
+			<description>Whenever you reduce a creature's speed by 10 feet or more, you can reduce it by an additional 5 feet. 
+			Whenever you push a creature 10 feet or more, you can push them an additional 5 feet. 
+			Once during your turn, when you push a creature at least 5 feet or knock it prone, you can choose for it to become exposed (-2 to AC and Dexterity Saving Throws) until the start of its next turn.</description>
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Crowd Controller" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_INTELLIGENCE" />
+		</rules>
 	</element>
-
 	<element name="Duelist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
 		<description>
 			<p>You are familiar with the back-and-forth of martial combat, and gain the following benefits:</p>
 			<ul>
-			<li>When you are wielding a melee weapon with which you are proficient and another creature of size Large or smaller hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</li>
-			<li>When you make an opportunity attack with a melee weapon with which you are proficient, you have advantage on the attack roll.</li>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li>When you are wielding a melee weapon with which you are proficient and another creature no more than one size larger than you hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</li>
+				<li>When you make an opportunity attack with a melee weapon with which you are proficient, you have advantage on the attack roll.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>When you are wielding a melee weapon and another creature of size Large or smaller hits you with a melee attack, you can use your reaction to add {{defensive duelist:ac}} to your AC for that attack, potentially causing the attack to miss you. In addition, when you make an opportunity attack with a melee weapon you have advantage on the attack roll.</description>
+			<description>When you are wielding a melee weapon and another creature no more than one size larger than you hits you with a melee attack, you can use your reaction to add {{defensive duelist:ac}} to your AC for that attack, potentially causing the attack to miss you. In addition, when you make an opportunity attack with a melee weapon you have advantage on the attack roll.</description>
 		</sheet>
 		<rules>
+			<select type="Ability Score Improvement" name="Duelist" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
 			<stat name="defensive duelist:ac" value="proficiency" />
 		</rules>
 	</element>
@@ -144,17 +157,15 @@
 		<description>
 			<p>You master fighting with two weapons, gaining the following benefits:</p>
 			<ul>
-				<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
 				<li>You can use two-weapon fighting even when the one handed melee weapons you are wielding aren’t light.</li>
-				<li>If you do choose to use one of more light weapons, you gain a +1 bonus to AC for each light melee weapon you are wielding.</li>
-				<li>If you have the Extra Attack feature, you can make one additional attack with your second weapon whenever you take the Attack action (regardless of whether you use your Bonus Action to engage in two weapon fighting).</li>
+				<li>If you do choose to use one or more light weapons, you gain a +1 bonus to AC for each light melee weapon you are wielding.</li>
+				<li>If you have the Extra Attack feature, you can make one additional attack with your second weapon whenever you take the Attack action.</li>
 			</ul>
 		</description>
 		<sheet>
 			<description>You can use two-weapon fighting even when the one handed melee weapons you are wielding aren’t light.
 			You gain a +1 bonus to AC for each light melee weapon you are wielding.
-			If you have the Extra Attack feature, you can make one additional attack with your second weapon whenever you take the Attack action.
-			You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</description>
+			If you have the Extra Attack feature, you can make one additional attack with your second weapon whenever you take the Attack action.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:misc" value="1" equipped="[primary:light],[primary:melee]" />
@@ -165,18 +176,21 @@
 		<description>
 			<p>Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:</p>
 			<ul>
+				<li>Increase your Intelligence or Wisdom score by 1, to a maximum of 20.</li>
 				<li>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.</li>
 				<li>You have advantage on saving throws made to avoid or resist traps.</li>
+				<li>Traps that make attack rolls do so with disadvantage against you.</li>
 				<li>You have resistance to the damage dealt by traps.</li>
-				<li>Traveling at a fast pace doesn’t impose the normal −5 penalty on your passive Wisdom (Perception) score.</li>
 			</ul>
 		</description>
 		<sheet>
 			<description>You have advantage on Perception and Investigation checks made to detect the presence of secret doors.
-			You have advantage on saving throws made to avoid or resist traps.
-			You have resistance to the damage dealt by traps.
-			Traveling at a fast pace doesn’t impose the normal −5 penalty on your passive Perception score.</description>			
+			You have advantage on saving throws made to avoid or resist traps. Traps that make attack rolls do so with disadvantage against you.
+			You have resistance to the damage dealt by traps.</description>			
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Dungeon Delver" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+		</rules>
 		<!-- todo: traps resistance condition -->
 	</element>
 	<element name="Survivor" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DURABLE">
