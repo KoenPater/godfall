@@ -4,7 +4,7 @@
 		<name>Monk</name>
 		<description>The Monk class from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.8.3">
+		<update version="0.8.4">
 			<file name="class-monk.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/class-monk.xml" />
 		</update>
 	</info>
@@ -296,7 +296,7 @@
 	</element>
 	<element name="Deflect Attacks" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DEFLECT_MISSILES">
 		<description>
-			<p>Starting at 3rd level, you can spend 1 essence and use your reaction to deflect an attack made against you that deals bludgeoning, piercing, or slashing damage. When you do so, the damage you take from the attack is reduced by the roll of Martial Arts dice + your monk level.</p>
+			<p>Starting at 3rd level, you can spend 1 essence and use your reaction to deflect an attack made against you that deals bludgeoning, piercing, or slashing damage. When you do so, the damage you take from the attack is reduced by the roll of two Martial Arts dice + your monk level.</p>
 			<p class="indent">If you reduce the damage to 0, you can redirect the attack to a creature other than yourself. Choose a creature within 5 feet if the attack was a melee attack, or 60 feet if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take half of the deflected attack's original damage.</p>
 		</description>
 		<sheet action="Reaction" usage="Essence">
@@ -461,7 +461,7 @@
 			<p>At 14th level, your mind and spirit function in perfect harmony. Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal the maximum value of your Martial Arts Die plus your Wisdom ability modifier in additional hit points.</p>
 		</description>
 		<sheet>
-			<description>Whenever you spend a hit die for healing, you also regain 1 essence point. Whenever you do so as part of a short rest, you instead heal {{monk:heal bonus}} additional hit points.</description>
+			<description>Whenever you spend a hit die for healing outside of a short rest, you also recover 1 essence point. When you spend a hit dice for healing during a short rest, you recover {{monk:heal bonus}} additional hit points.</description>
 		</sheet>
 		<rules>
 			<stat name="monk:heal bonus" value="4" bonus="martial arts" />
