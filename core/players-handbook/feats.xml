@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.4.9">
+		<update version="0.5.0">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -287,15 +287,15 @@
 		<prerequisite>The ability to cast at least one spell</prerequisite>
 		<requirements>[type:spell]</requirements>
 		<description>
-			<p>You have mastered the use of acid, necrotic and poison magic in combat. You gain the following benefits:</p>
+			<p>You have mastered the use of acid and poison magic in combat. You gain the following benefits:</p>
 			<ul>
-				<li>Spells you cast ignore resistance to acid, necrotic and poison damage.</li>
-				<li>When you cast a spell of 1st level or higher that deals acid, necrotic, or poison damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
+				<li>Spells you cast ignore resistance to acid and poison damage.</li>
+				<li>When you cast a spell of 1st level or higher that deals acid or poison damage, you can add your proficiency bonus to the damage roll. The damage bonus applies to one damage roll of a spell, not multiple rolls.</li>
 			</ul>
 		</description>		
 		<sheet>
-			<description>Spells you cast ignore resistance to acid, necrotic and poison damage.
-			When you cast a spell of 1st level or higher that deals acid, necrotic, or poison damage, you can add +{{atrophyadept:prof}} to the damage roll.</description>
+			<description>Spells you cast ignore resistance to acid and poison damage.
+			When you cast a spell of 1st level or higher that deals acid or poison damage, you can add +{{atrophyadept:prof}} to the damage roll.</description>
 		</sheet>
 		<rules>
 			<stat name="atrophyadept:prof" value="proficiency" />
