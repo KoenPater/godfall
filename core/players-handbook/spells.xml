@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.7.7">
+    <update version="0.7.8">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2227,7 +2227,7 @@
       <p>Shimmering primal energy surrounds you and enhances your attacks to be particularly effective against otherwordly creatures such as fey and demons. For the duration of the spell you have advantage on any attack rolls made against aberrations, celestials, elementals, fey, and undead. In addition, creatures of these types make saving throws against spells cast by you with disadvantage.</p>
 	  <p>You can end the spell early by using either of the following special functions.</p>
 	  <p class="indent"><b><i>Break  Enchantment.</i></b> As a bonus action, you touch a creature that is charmed, frightened, or possessed by an aberration, a celestial, an elemental, a fey, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.</p>
-	  <p class="indent"><b><i>Unleash.</b></i> After you successfully hit an aberration, celestial, elemental, fey, or undead creature with an attack, you can deal an additional 6d10 force damage to it.</p>
+	  <p class="indent"><b><i>Unleash.</i></b> After you successfully hit an aberration, celestial, elemental, fey, or undead creature with an attack, you can deal an additional 6d10 force damage to it.</p>
     </description>
     <setters>
       <set name="keywords"></set>
