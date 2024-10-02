@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.7.3">
+    <update version="0.7.4">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2221,22 +2221,24 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Dispel Outsiders" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
-    <supports>Cleric, Paladin</supports>
+  <element name="Disrupt Outsiders" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+    <supports>Cleric, Paladin, Ranger</supports>
     <description>
-      <p>Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, and undead have disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions. Break  Enchantment. As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures. Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn’t there already). If they aren’t on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.</p>
+      <p>Shimmering primal energy surrounds you and enhances your attacks to be particularly effective against otherwordly creatures such as fey and demons. For the duration of the spell you have advantage on any attack rolls made against aberrations, celestials, elementals, fey, and undead. You can end the spell early by using either of the following special functions.</p>
+	  <p class="indent">Break  Enchantment. As a bonus action, you touch a creature that is charmed, frightened, or possessed by an aberration, a celestial, an elemental, a fey, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.</p>
+	  <p class="indent">Unleash. After you successfully hit an aberration, celestial, elemental, fey, or undead creature with an attack, you can deal an additional 5d10 force damage to it.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">5</set>
+      <set name="level">4</set>
       <set name="school">Abjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="duration">Concentration, up to 1 hour</set>
       <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">holy water or powdered silver and iron</set>
+      <set name="materialComponent">clear spring water or powdered silver and iron</set>
       <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
@@ -2323,25 +2325,24 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Divine Word" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DIVINE_WORD">
-    <supports>Cleric</supports>
+  <element name="Primal Scream" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DIVINE_WORD">
+    <supports>Cleric,Ranger</supports>
     <description>
-      <p>You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:</p>
+      <p>You let loose a scream imbued with the power that shaped the world, hurting and possibly destroying any creature not native to it. Choose any number of the following creature types when you cast this spell: abberations, celestials, elementals, fey, or undead. Each creature that can hear you and belongs to one of the chosen types must make a Constitution saving throw. On a failed save, the creature suffers an effect based on its current hit points:</p>
 	  <ul>
-	  	<li>50 hit points or fewer: deafened for 1 minute</li>
-	  	<li>40 hit points or fewer: deafened and blinded for 10 minutes</li>
-	  	<li>30 hit points or fewer: blinded, deafened, and stunned for 1 hour</li>
-	  	<li>20 hit points or fewer: killed instantly</li>		  
+	  	<li>100 hit points or fewer: deafened for 1 minute</li>
+	  	<li>75 hit points or fewer: deafened and blinded for 10 minutes</li>
+	  	<li>50 hit points or fewer: deafened, blinded, and stunned for 1 hour</li>
+	  	<li>25 hit points or fewer: killed instantly</li>		  
 	  </ul>
-	  <p class="indent">Regardless of its current hit points, a celestial, an elemental, or a fey that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to your current plane for 24 hours by any means short of a wish spell.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">7</set>
+      <set name="level">5</set>
       <set name="school">Evocation</set>
       <set name="time">1 bonus action</set>
       <set name="duration">Instantaneous</set>
-      <set name="range">30 feet</set>
+      <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
@@ -3220,13 +3221,13 @@
     </setters>
   </element>
   <element name="Forbiddance" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FORBIDDANCE">
-    <supports>Cleric</supports>
+    <supports>Cleric, Ranger</supports>
     <description>
-      <p>You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can’t teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell. In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, and undead. When a chosen creature enters the spell’s area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell). When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell. The spell’s area can’t overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.</p>
+      <p>You create a ward against magical travel that protects up to 20,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can’t teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Elemental Chaos, Feywild, Shadowfell, Far Realm, or the plane shift spell. In addition, when a creature of the aberration, celestial, elemental, fey, or undead type enters the spell’s area for the first time on a turn or start its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell). When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell. The spell’s area can’t overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.</p>
     </description>
     <setters>
       <set name="keywords">teleport</set>
-      <set name="level">6</set>
+      <set name="level">5</set>
       <set name="school">Abjuration</set>
       <set name="time">10 minutes</set>
       <set name="duration">1 day</set>
@@ -3234,7 +3235,7 @@
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp</set>
+      <set name="materialComponent">a sprinkling of clear spring water, rare incense, and powdered ruby worth at least 200 gp</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">true</set>
     </setters>
@@ -3898,6 +3899,27 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
+  <element name="Nature's Rebuke" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_NATURES_REBUKE">
+    <supports>Ranger</supports>
+    <description>
+      <p>Spirits of the natural world manifest as a powerful gust in an attempt to drive the attacker back. The attacking creature must make a Strength saving throw. If it fails, it is knocked back 20 feet and lands prone, causing the triggering attack to miss. If the creature succeeds at its saving throw, the sudden gust will still force it to reroll the triggering attack.</p>
+	  <p>Creatures of the aberration, celestial, elemental, fey, or undead type make the saving throw with disadvantage and suffer 2d10 thunder damage on a failed save, in addition to the effects described above.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">Reaction, which you take when a creature hits you or an ally within range with a melee attack</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>  
   <element name="Heroes’ Feast" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HEROES_FEAST">
     <supports>Cleric, Druid</supports>
     <description>
