@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.7.4">
+    <update version="0.7.6">
       <file name="spells.xml" url="https://raw.githubusercontent.com/KoenPater/godfall/master/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2224,14 +2224,15 @@
   <element name="Disrupt Outsiders" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
     <supports>Cleric, Paladin, Ranger</supports>
     <description>
-      <p>Shimmering primal energy surrounds you and enhances your attacks to be particularly effective against otherwordly creatures such as fey and demons. For the duration of the spell you have advantage on any attack rolls made against aberrations, celestials, elementals, fey, and undead. You can end the spell early by using either of the following special functions.</p>
-	  <p class="indent">Break  Enchantment. As a bonus action, you touch a creature that is charmed, frightened, or possessed by an aberration, a celestial, an elemental, a fey, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.</p>
-	  <p class="indent">Unleash. After you successfully hit an aberration, celestial, elemental, fey, or undead creature with an attack, you can deal an additional 5d10 force damage to it.</p>
+      <p>Shimmering primal energy surrounds you and enhances your attacks to be particularly effective against otherwordly creatures such as fey and demons. For the duration of the spell you have advantage on any attack rolls made against aberrations, celestials, elementals, fey, and undead. In addition, creatures of these types make saving throws against spells cast by you with disadvantage.</p>
+	  <p>You can end the spell early by using either of the following special functions.</p>
+	  <p class="indent"><b><i>Break  Enchantment.</i></b> As a bonus action, you touch a creature that is charmed, frightened, or possessed by an aberration, a celestial, an elemental, a fey, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.</p>
+	  <p class="indent"><b><i>Unleash.</b></i> After you successfully hit an aberration, celestial, elemental, fey, or undead creature with an attack, you can deal an additional 6d10 force damage to it.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">4</set>
-      <set name="school">Abjuration</set>
+      <set name="level">5</set>
+      <set name="school">Evocation</set>
       <set name="time">1 action</set>
       <set name="duration">Concentration, up to 1 hour</set>
       <set name="range">Self</set>
@@ -2330,7 +2331,7 @@
     <description>
       <p>You let loose a scream imbued with the power that shaped the world, hurting and possibly destroying any creature not native to it. Choose any number of the following creature types when you cast this spell: abberations, celestials, elementals, fey, or undead. Each creature that can hear you and belongs to one of the chosen types must make a Constitution saving throw. On a failed save, the creature suffers an effect based on its current hit points:</p>
 	  <ul>
-	  	<li>100 hit points or fewer: deafened for 1 minute</li>
+	  	<li>125 hit points or fewer: deafened for 1 minute</li>
 	  	<li>75 hit points or fewer: deafened and blinded for 10 minutes</li>
 	  	<li>50 hit points or fewer: deafened, blinded, and stunned for 1 hour</li>
 	  	<li>25 hit points or fewer: killed instantly</li>		  
@@ -2338,11 +2339,11 @@
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">5</set>
+      <set name="level">4</set>
       <set name="school">Evocation</set>
-      <set name="time">1 bonus action</set>
+      <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
-      <set name="range">60 feet</set>
+      <set name="range">30 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
